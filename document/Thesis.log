@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  2 AUG 2022 11:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  4 AUG 2022 13:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1429,18 +1429,18 @@ LaTeX Info: Redefining \% on input line 2.
 ]
 \openout2 = `MainMatter/Introduction.aux'.
 
- (./MainMatter/Introduction.tex) [1
+ (./MainMatter/Introduction.tex [1
 
 
 
 
-]
+]) [2]
 \openout2 = `MainMatter/Background.aux'.
 
 
 (./MainMatter/Background.tex
 Cap\'{\i }tulo 1.
-) [2
+) [3
 
 
 
@@ -1449,7 +1449,7 @@ Cap\'{\i }tulo 1.
 
  (./MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
-) [3
+) [4
 
 
 
@@ -1458,14 +1458,14 @@ Cap\'{\i }tulo 2.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [4
+) [5
 
 
 
 ]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [5
+ (./BackMatter/Conclusions.tex) [6
 
 
 
@@ -1474,7 +1474,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `BackMatter/Recomendations.aux'.
 
  (./BackMatter/Recomendations.tex)
-[6
+[7
 
 
 
@@ -1501,28 +1501,28 @@ LaTeX Info: Redefining \% on input line 29.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: E760789732A3E5FC263C65FB36CFDD43;324.
+(rerunfilecheck)             Checksum: 408C93FE68DFA44CFCF2FB57048626AC;325.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31534 strings out of 480608
- 582510 string characters out of 5903629
- 1396417 words of memory out of 5000000
- 46784 multiletter control sequences out of 15000+600000
- 561315 words of font info for 35 fonts, out of 8000000 for 9000
+ 31544 strings out of 480608
+ 582611 string characters out of 5903629
+ 1398417 words of memory out of 5000000
+ 46786 multiletter control sequences out of 15000+600000
+ 564345 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,106p,834b,2701s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,11n,106p,1222b,2701s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (15 pages, 194552 bytes).
+Output written on Thesis.pdf (16 pages, 200925 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 129 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
+ 183 PDF objects out of 1000 (max. 8388607)
+ 141 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
  162 words of extra memory for PDF output out of 10000 (max. 10000000)
 
