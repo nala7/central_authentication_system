@@ -1,21 +1,21 @@
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
-El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar  las credenciales  digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la instituci\'on registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa informaci\'on  es utilizada m\'as adelante para automatizar la generación de cuentas de correo en tiempo real respaldado por sus sistemas de origen.
+El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar  las credenciales  digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la instituci\'on registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa informaci\'on  es utilizada m\'as adelante para automatizar la generación de cuentas de correo en tiempo real, respaldado por sus sistemas de origen.
 
 
 \section*{Motivación}
-Todo trabajador o estudiante al momento de ingresar en la Universidad, dígase al realizar el contrato en recursos humanos u ofrecer sus datos en secretaría docente debe esperar un plazo de al menos 24 horas hasta que el sistema vigente actualice todos sus datos, generando molestias e inquietudes en los usuarios.
+Todo trabajador o estudiante al momento de ingresar en la Universidad, dígase al realizar el contrato en recursos humanos u ofrecer sus datos en secretaría docente, debe esperar un plazo de al menos 24 horas hasta que el sistema vigente actualice todos sus datos, generando molestias e inquietudes en los usuarios.
 
-El sistema actual es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los servicios de autenticación. Esto genera tiempos elevados de respuesta y dificulta el proceso de Transformación Digital que está siendo llevado a cabo por nuestra Universidad.
+Por otra parte, el sistema actual es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los servicios de autenticación. Esto genera tiempos elevados de respuesta y dificulta el proceso de Transformación Digital que está siendo llevado a cabo por nuestra Universidad.
 
 \section*{Antecedentes}
-El funcionamiento del sistema vigente consta de dos fases. La primera está implementada en directorio, la cual obtiene toda su información realizando una copia parcial de los sistemas originales, borrando y recreando cada noche todos sus usuarios. La segunda fase hace uso del Protocolo Ligero de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas de LDAP). Este sistema es dependiente directamente del anterior y por tanto se considera una segunda capa. También replica el proceso de la misma forma: eliminando todos los datos y reconstruyéndolos. 
+El funcionamiento del sistema vigente consta de dos fases. La primera está implementada en directorio y obtiene toda su información realizando una copia parcial de los sistemas originales, borrando y recreando cada noche todos sus usuarios. La segunda fase hace uso del Protocolo Ligero de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas como LDAP). Este sistema es dependiente directamente del anterior y por tanto se considera una segunda capa. También replica el proceso de la misma forma: eliminando todos los datos y reconstruyéndolos. 
 \section*{Problemática}
- Este sistema ofrece autenticación múltiple con tecnologías obsoletas por lo cual todos los navegadores clientes en la actualidad refutan su conexión a no ser que una excepción manual sea generada. Esto genera brechas de seguridad no permisibles en la actualidad.
+ Este sistema ofrece autenticación múltiple con tecnologías obsoletas por lo cual todos los navegadores clientes en la actualidad rechazan su conexión a no ser que una excepción manual sea generada. Esto genera brechas de seguridad no permisibles hoy en día.
 
-El procedimiento anteriormente descrito tiene problemas estructurales y funcionales, por lo que es propenso a errores. Entre los problemas más destacados se encuentra el mal manejo de recursos de hardware causando que el servicio se congele. Mantener la consistencia de los datos es una de las tareas m\'as complejas. Crear, borrar y actualizar  datos en tiempo real es  debe ser tolerante a fallas en la comunicaci\'on y en los servidores. 
+El procedimiento anteriormente descrito tiene problemas estructurales y funcionales, por lo que es propenso a errores. Entre los problemas más destacados se encuentra el mal manejo de recursos de hardware causando que el servicio se congele. Mantener la consistencia de los datos es una de las tareas m\'as complejas. Crear, borrar y actualizar  datos en tiempo real  debe ser tolerante a fallas en la comunicaci\'on y en los servidores. 
 
-Otro problema del sistema es el desuso de encriptación para almacenar datos, lo cual representa una vulnerabilidad. El sistema debe cumplir los protocolos de seguridad y ser resistente a ataques externos. Tambi\'en, dada la sensibilidad de la informaci\'on con la que trabaja, se debe proteger la privacidad de los usuarios.
+Otro problema del sistema es el no uso de encriptación para almacenar los datos, lo cual representa otra vulnerabilidad. El sistema debe cumplir los protocolos de seguridad y ser resistente a ataques externos. Tambi\'en, dada la sensibilidad de la informaci\'on con la que trabaja, se debe proteger la privacidad de los usuarios.
 % causando que metadatos se escriban en código, entre otros.
 
 \section*{Objetivo}
@@ -30,9 +30,9 @@ Otro problema del sistema es el desuso de encriptación para almacenar datos, lo
 \subsubsection*{Objetivos Específicos}
 \begin{itemize}	
 	\item Integrar las fuentes institucionales de usuarios existentes — Assests y Sigenu — de forma extensible a futuras fuentes de usuarios.
-	\item Automatizar la generación de cuentas en tiempo real respaldado por sus sistemas de origen.
+	\item Automatizar la generación de cuentas en tiempo real, respaldado por sus sistemas de origen.
 	\item Permitir el manejo de usuarios excepcionales y/o casos externos no incluidos en las fuentes de datos estándar.
-	\item Implementar la gestión semi-automatizada del control de roles según metadatos descriptores del usuario.
+	\item Implementar la gestión semi-automatizada del control de roles según los metadatos descriptores del usuario.
 	\item Generar los servicios de autenticación con compatibilidad con todas las tecnologías existentes y previstas en la institución.
 	\item Implementar la gestión de control de acceso a todos los servicios ofrecidos por el Nodo Central de forma extensible a futuros servicios
 \end{itemize}
