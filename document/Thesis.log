@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  29 AUG 2022 11:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  18 OCT 2022 12:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1357,7 +1357,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count482
-<Graphics/uhlogo.pdf, id=55, 375.98297pt x 481.67456pt>
+<Graphics/uhlogo.pdf, id=71, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 <use Graphics/uhlogo.pdf>
 Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 81.
@@ -1402,6 +1402,48 @@ ics/uhlogo.pdf>]
  (./FrontMatter/Contents.tex (./Thesis.toc
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
+.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
+.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
+8.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
+8.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 8.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 8
+.
+
+(/usr/local/texlive/2020/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 )
 \tf@toc=\write7
 \openout7 = `Thesis.toc'.
@@ -1410,7 +1452,8 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 
-] (./Thesis.lof
+]
+(./Thesis.lof
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
@@ -1419,8 +1462,7 @@ LaTeX Info: Redefining \% on input line 2.
 
  [8
 
-]
-(./Thesis.lol)
+] (./Thesis.lol)
 \tf@lol=\write9
 \openout9 = `Thesis.lol'.
 
@@ -1434,22 +1476,28 @@ LaTeX Info: Redefining \% on input line 2.
 
 
 
-]) [2]
+])
+[2]
 \openout2 = `MainMatter/Background.aux'.
 
-
-(./MainMatter/Background.tex
+ (./MainMatter/Background.tex
 Cap\'{\i }tulo 1.
-) [3
+[3
 
 
 
 ]
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
+ [4])
+LaTeX Info: Redefining \. on input line 92.
+LaTeX Info: Redefining \% on input line 92.
+ [5]
 \openout2 = `MainMatter/Proposal.aux'.
 
  (./MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
-) [4
+) [6
 
 
 
@@ -1458,14 +1506,14 @@ Cap\'{\i }tulo 2.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [5
+) [7
 
 
 
 ]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [6
+ (./BackMatter/Conclusions.tex) [8
 
 
 
@@ -1474,7 +1522,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `BackMatter/Recomendations.aux'.
 
  (./BackMatter/Recomendations.tex)
-[7
+[9
 
 
 
@@ -1501,28 +1549,29 @@ LaTeX Info: Redefining \% on input line 29.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 408C93FE68DFA44CFCF2FB57048626AC;325.
+(rerunfilecheck)             Checksum: 8582C95CACEFE7FE98F2FDEE70013B1A;562.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31544 strings out of 480608
- 582611 string characters out of 5903629
- 1398411 words of memory out of 5000000
- 46786 multiletter control sequences out of 15000+600000
- 564345 words of font info for 36 fonts, out of 8000000 for 9000
+ 31683 strings out of 480608
+ 585221 string characters out of 5903629
+ 1398415 words of memory out of 5000000
+ 46889 multiletter control sequences out of 15000+600000
+ 585832 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,106p,834b,2701s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,106p,834b,2701s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-di
 st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
-pe1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (16 pages, 202140 bytes).
+pe1/public/lm/lmro10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/nc
+ntrsbk/uncb8a.pfb>
+Output written on Thesis.pdf (18 pages, 235229 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
- 141 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 500000)
- 162 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 
