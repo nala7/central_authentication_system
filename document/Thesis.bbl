@@ -1,0 +1,113 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{kutera2016single}{article}{}
+      \name{author}{2}{}{%
+        {{hash=71d9ce784a0db9a5105a93b83b0cd3d7}{%
+           family={Kutera},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b4f7c0f3b795506ed09b41229524f5a6}{%
+           family={Gryncewicz},
+           familyi={G\bibinitperiod},
+           given={Wies{ł}awa},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{fullhash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{bibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authorbibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authornamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authorfullhash}{75b4efaa62f9315d9ad7acda1854c032}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Informatyka Ekonomiczna}
+      \field{number}{2 (40)}
+      \field{title}{Single sign on as an effective way of managing user identity in distributed web systems. The ActGo-Gate project case study}
+      \field{year}{2016}
+    \endentry
+    \entry{KeycloakDoc}{misc}{}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://www.keycloak.org/documentation}}
+      \field{title}{Keycloak Documentation}
+    \endentry
+    \entry{vassallo2017continuous}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b18b0397ad8f3b2f81391f6a9b44adde}{%
+           family={Vassallo},
+           familyi={V\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b8adbff25ced901fb8b08523ce5ad81e}{%
+           family={Chiusano},
+           familyi={C\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=af4793f424b7bc9924c9a88df890dcce}{%
+           family={Preuveneers},
+           familyi={P\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{fullhash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{bibnamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authorbibnamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authornamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authorfullhash}{474e11ed6954b5fc513dee26084d0652}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Continuous authentication with behaviometrics on smartphones}
+      \field{year}{2017}
+    \endentry
+    \entry{el2019reproducible}{report}{}
+      \name{author}{1}{}{%
+        {{hash=ad9e374424f6d3e9bb23d37d92700594}{%
+           family={El\bibnamedelima Hajj\bibnamedelima Hussein},
+           familyi={E\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Mohammad},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{ad9e374424f6d3e9bb23d37d92700594}
+      \strng{fullhash}{ad9e374424f6d3e9bb23d37d92700594}
+      \strng{bibnamehash}{ad9e374424f6d3e9bb23d37d92700594}
+      \strng{authorbibnamehash}{ad9e374424f6d3e9bb23d37d92700594}
+      \strng{authornamehash}{ad9e374424f6d3e9bb23d37d92700594}
+      \strng{authorfullhash}{ad9e374424f6d3e9bb23d37d92700594}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Reproducible Examples for Integration with Keycloak}
+      \field{type}{techreport}
+      \field{year}{2019}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,27 +1,47 @@
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
 En este capítulo se brindan las definiciones de herramientas utilizadas. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
 
-\section{Keycloak}
-Keycloak es un software de código abierto que permite el Single Sign-On o Inicio de Sesión Único (IdP) con Identity Management y Access Management para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un IdP permite que una aplicación (a menudo llamada Service Provider o SP) delegue su autenticación.
+\textcolor{red}{estas son las unicas dos técnicas que existen?? no hay otras propietarias o no posible de utilzar por nosotros por el equipamiento que poseemos... en fin. \\
+	Al final debes decirme que tiene esa tecnica que no usas como defecto o como compatiblidad con la estructura existente en nuestra red. \\\\
+	Aqui en este capitulo debes hablar de la segurirdad que es algo importante para que no entrn intrusos que tecnica utilizas para ello-...}
 
-Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es compatible con Red Hat.
+\section{Autenticación}
+Authentication is about validating your credentials like User Name/User ID and password to verify your identity. The system determines whether you are what you say you are using your credentials. In public and private networks, the system authenticates the user identity via login passwords. Authentication is usually done by a username and password, and sometimes in conjunction with factors of authentication, which refers to the various ways to be authenticated.
+[\cite{el2019reproducible}]
 
-	\subsection{Características}
-	Los usuarios se autentican en Keycloak en lugar de hacerlo en las aplicaciones. Esto significa que no es necesario que cada aplicación tenga un formulario de inicio de sesión, autentique a los usuarios o almacene sus datos. Una vez entren en Keycloak, los usuarios no tendrán que iniciar sesión en las demás aplicaciones conectadas al software.
-	
-	Lo mismo sucede cuando un usuario cierra sesión. Keycloak ofrece cierre de sesión único, lo cual significa que los usuarios solo tienen que desconectarse en una de las aplicaciones para salir de su cuenta en el resto.
-	
-	Otra prestación de Keycloak son las federaciones de usuarios, que facilitan la compatibilidad con LDAP y otros servidores de directorios activos. También admite la implementación de servicios propios para usuarios guardados en otros tipos de almacenamientos como en bases de datos relacionales.
-	
-	Keycloak ofrece como herramienta una consola de administración de cuentas, a través de la cual los usuarios pueden administrar sus propias cuentas. Pueden actualizar su perfil, cambiar sus contraseñas y configurar la autenticación en dos pasos. También pueden administrar sus sesiones y visualizar el historial de su cuenta.
-	
-	Otra característica es que es una herramienta extensible porque permite la eliminación, adición y modificación de las bases de datos de usuarios, los métodos de autenticación y los protocolos. Está basada en protocolos estándares y soportan OpenID Connect, OAuth 2.0 y SAML.
-	
-	\subsection{Ventajas}
-	Keycloak facilita añadir la autenticación y un servicio seguro a aplicaciones. Permite que los desarrolladores se centren en la funcionalidad empresarial al no tener que preocuparse por los aspectos de seguridad de la autenticación. También posibilita la unificación de los métodos de autenticación de distintas aplicaciones sin modificarlas.
-	
+
+\section{Inicio de Sesión Único}
+El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) has been widely adopted for online authentication due to its favorable usability and security.
+
+\section{OpenID Connect}
+\textcolor{red}{A third protocol worth considering, is OpenID Connect – an authentication
+	protocol based on OAuth 2.0 that provides a RESTful HTTP API and uses JSON as
+	data format [Denis et al. 2015]. It is a simplified format that has gained large traction
+	and is supported by many vendors, e.g. Google, IBM, Microsoft, Ping Identity etc.
+	It extends pure OAuth 2.0 by providing user identity details in an efficient way so
+	the requesting application knows not only the user’s access rights to a particular
+	asset, but also has a deep knowledge (to the given extent) about user identity. It also
+	supports native apps like OAuth 2.0. \\
+	The OpenID Connect protocol, as it is based on OAuth 2.0, follows the same
+	steps as OAuth (see again Figure 2), but the main difference is that OpenID connect
+	provides an additional step to obtain information about user identity. Conceptually
+	OAuth is developed for granting access to resources, not for authenticating the
+	user. OpenID Connect provides an additional flow for providing id-token with
+	some information about the user.[\cite{kutera2016single}]}
+
+\subsection{Comparación}
+\textcolor{red}{
+	Ventajas:\\
+	-It resolves the potential security gaps of OAuth 2.0 and enhances the data by including user data (name, address etc.) \\
+	-Management \& Configuration is simple.	\\
+	VS Auth 2.0: \\
+	- tiene las ventajas de OAuth 2.0
+	- Architecture based security gaps have/ had to be solved in the implementations of it.\\
+	- It does not directly contain user information (name, address, etc.).\\
+	- Clients are moving away from OAuth 2.0 for new projects.[\cite{kutera2016single}]}
+
 \section{LDAP}
-El Protocolo Ligero de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas de LDAP) es un conjunto de protocolos de licencia abierta que son utilizados para acceder a la información que está almacenada de forma centralizada en una red. Este protocolo se utiliza a nivel de aplicación para acceder a los servicios de directorio remoto.
+El Protocolo Ligero de Acceso a Directorios (en inglés: \emph{Lightweight Directory Access Protocol}, también conocido por sus siglas de LDAP) es un conjunto de protocolos de licencia abierta que son utilizados para acceder a la información que está almacenada de forma centralizada en una red. Este protocolo se utiliza a nivel de aplicación para acceder a los servicios de directorio remoto.
 
 LDAP está basado en estándares implementados sobre TCP/IP. Permite a los clientes interactuar directamente con los servidores de los directorios: almacenar y consultar información, buscar datos filtrados, autenticar usuarios, entre otros.
 
@@ -32,3 +52,36 @@ Un directorio remoto es un conjunto de objetos que están organizados de forma j
 LDAP está basado en el protocolo X.500 para compartir directorios, y contiene esta información de forma jerarquizada y mediante categorías para proporcionarnos una estructura intuitiva desde el punto de vista de la gestión por parte de los administradores.
 
 Estos directorios se utilizan generalmente para contener información virtual de usuarios, para que otros usuarios accedan y dispongan de información acerca de los contactos que están aquí almacenados. Además es capaz de comunicarse de forma remota con otros directorios LDAP situados en servidores que pueden estar en el otro lado del mundo para acceder a la información disponible. De esta forma se crea una base de datos de información descentralizada y completamente accesible.
+ 
+El sistema de autenticación vigente en el Nodo Central verifica sus usuarios con dos sistemas implementados con LDAP. Este protocolo se adapta a las necesidades y condiciones actuales de la Universidad ya que es \textit{Open Source} (OSS o código abierto)
+\textcolor{red}{Por qué se utiliza LDAP? \\ 
+	R/ \\
+	- ya se usaba en el nodo \\
+	- es open source: there are free LDAP server software solutions available (1. pq es bueno el open source? 2. se ajusta a las necesidades y posibilidades del nodo, existen pocos recursos) \\
+	- It is a mature, flexible, and well supported standards-based mechanism for interacting with directory servers. It’s often used for authentication and storing information about users, groups, and applications, but an LDAP directory server is a fairly general-purpose data store and can be used in a wide variety of applications. \\ LDAP is a tool in the User Management and Authentication category of a tech stack.}
+
+
+
+\section{Keycloak}
+Keycloak es un software de código abierto que permite el \emph{Single Sign-On} o Inicio de Sesión Único (IdP) con \emph{Identity Management} y \emph{Access Management} para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un IdP permite que una aplicación (a menudo llamada \emph{Service Provider} o SP) delegue su autenticación. [\cite{KeycloakDoc}]
+
+Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es compatible con Red Hat. [\cite{KeycloakDoc}]
+
+	\subsection{Características}
+	Los usuarios se autentican en Keycloak en lugar de hacerlo en las aplicaciones. Esto significa que no es necesario que cada aplicación tenga un formulario de inicio de sesión, autentique a los usuarios o almacene sus datos. Una vez entren en Keycloak, los usuarios no tendrán que iniciar sesión en las demás aplicaciones conectadas al software. [\cite{KeycloakDoc}]
+	
+	Lo mismo sucede cuando un usuario cierra sesión. Keycloak ofrece cierre de sesión único, lo cual significa que los usuarios solo tienen que desconectarse en una de las aplicaciones para salir de su cuenta en el resto. [\cite{KeycloakDoc}]
+	
+	Otra prestación de Keycloak son las federaciones de usuarios, que facilitan la compatibilidad con LDAP y otros servidores de directorios activos. También admite la implementación de servicios propios para usuarios guardados en otros tipos de almacenamientos como en bases de datos relacionales. [\cite{KeycloakDoc}]
+	
+	Keycloak ofrece como herramienta una consola de administración de cuentas, a través de la cual los usuarios pueden administrar sus propias cuentas. Pueden actualizar su perfil, cambiar sus contraseñas y configurar la autenticación en dos pasos. También pueden administrar sus sesiones y visualizar el historial de su cuenta. [\cite{KeycloakDoc}]
+	
+	Otra característica es que es una herramienta extensible porque permite la eliminación, adición y modificación de las bases de datos de usuarios, los métodos de autenticación y los protocolos. Está basada en protocolos estándares y soportan OpenID Connect, OAuth 2.0 y SAML. [\cite{KeycloakDoc}]
+	
+	\subsection{Ventajas}
+	Keycloak facilita añadir la autenticación y un servicio seguro a aplicaciones. Permite que los desarrolladores se centren en la funcionalidad empresarial al no tener que preocuparse por los aspectos de seguridad de la autenticación. También posibilita la unificación de los métodos de autenticación de distintas aplicaciones sin modificarlas.
+	
+	\textcolor{red}{\textbf{Comparación}}
+	\textcolor{red}{Gluu: \\ Free open source access management suite with support for SAML and OpenID Connect SSO, and OAuth2 based web and API access management. The Gluu Server can include multiple components. Each one fulfills a different requirement, and can be included or excluded in individual deployments based on an organization’s unique requirements.}
+	\textcolor{red}{Gluu vs Keycloak: \\
+		- The Keycloak system requires 512 Mb of RAM and 1 GB of disk space, whereas the Gluu system requires 8 GB of RAM and 40 GB of disk space. \\ - Gluu is less flexible to extend} [\cite{vassallo2017continuous}]

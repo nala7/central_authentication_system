@@ -1,17 +1,56 @@
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
-El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar  las credenciales  digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la instituci\'on registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa informaci\'on  es utilizada m\'as adelante para que los usuarios puedan autenticarse en los distintos servicios de la institución, respaldado por sus sistemas de origen. 
+\textcolor{red}{Nowadays people use many different independent software systems and accumulate
+	more and more identities. User identity is considered as a set of permanent or longlived temporal attributes associated with a user entity [Ceccarelli et al. 2015]. In order
+	to access the service most of systems require the user to be registered and logged
+	in. Quite often a user is registered in many web sites under the same user name and
+	with the same or closely related passwords, which is not the best security practice.
+	What is more they often forget their credentials, and the user management system
+	have to send an unencrypted e-mail with these confidential data [Singer, Friedman
+	2013]. \\ 
+	That is why the management of multiple user names and passwords is such an
+	annoying aspect of the current Internet.\\
+	Taking into account all those security issues and the lack of the required
+	competencies needed to fulfil them – more and more administrators of websites
+	decide to outsource those management and authentication services to third parties,
+	external entities specialized in that kind of activity. Such entities can solve those
+	problems using different techniques. They can host, store, manage and secure user data on behalf of a particular service provider. They offer application programming
+	interfaces (API), which can provide an access to user data for external applications.
+	Such solutions enable to share user data among more than one web system, thus
+	providing Single sign on (SSO) property for third party applications. The aim of the
+	paper is to present an example of such a solution based on an internet platform for
+	\sout{ gathering services dedicated to elderly people – ActGo-Gate (AGG).} *Aqui lo relaciono con la UH* \\
+	when users try to log in to any system, they are usually first
+	requested to identify themselves with a user name and a password. Afterwards, the
+	data input is checked against an existing user record to verify if the given combination
+	is authentic. If so, the user becomes authenticated (i.e. the identification data he/she
+	supplied previously is valid). Finally, a set of pre-defined permissions and restrictions
+	for that particular login name is assigned to this user, which completes the final step,
+	authorization. Usually authorization cannot be performed without any kind of authentication a} [\cite{kutera2016single}]
 
+El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar las credenciales digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la institución registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa información es utilizada más adelante para que los usuarios puedan autenticarse en los distintos servicios de la institución, respaldado por sus sistemas de origen.
+
+\textcolor{red}{La Universidad brinda servicios como correo, WI-FI, , FTP (\textit{File Transfer Protocol}/Transferencia de Archivos) y alojamiento web. . En cada uno de estos el usuario debe autenticarse con una cuenta distinta.}
 
 \section*{Motivación}
-Actualmente todos los usuarios de la Universidad de La Habana se almacenan en dos Protocolos Ligeros de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas como LDAP). En los dos directorios se guardan las cuentas de correo y los datos de sus usuarios. En uno ellos se registra la información de los estudiantes y en el otro la de los trabajadores. A partir de estos, todos los sitios web y aplicaciones de la universidad, individualmente, verifican la pertenencia del usuario a la institución.
+Actualmente vivimos en un mundo donde la tecnología tiene un papel protagónico. La Universidad de La Habana en los últimos años ha estado inmersa en el proceso de transformación digital que lleva a cabo nuestro país, como continuidad de la estrategia de informatización de la sociedad cubana, que pretende integrar las tecnologías digitales a todos los ámbitos de la sociedad.
 
-El sistema actual es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los servicios de autenticación. Esto genera tiempos elevados de respuesta y dificulta el proceso de Transformación Digital que está siendo llevado a cabo por nuestra Universidad.
+En este sentido, nuestra sede universitaria ha avanzado en la digitalización de la información y los procesos y trabaja para facilitar el acceso a la red de todos sus estudiantes y trabajadores. A la par de estos avances, debe crecer también la seguridad de los sistemas para evitar brechas de información y asegurar la privacidad de los usuarios.
+
+Garantizar un acceso seguro y sencillo a los recursos de la red es esencial para alcanzar este objetivo. Por consiguiente, se deben establecer mecanismos que cuenten con un alto nivel de seguridad y permitan identificar quién realmente está autorizado para acceder a los recursos del sistema.
+
+La creación de una plataforma central de autenticación resolvería muchos de estos problemas y mejoraría la experiencia de los usuarios. Estos solo tendrían una cuenta para acceder a todos los servicios que ofrece la Universidad, por lo que no tendrían que lidiar con formularios de inicio de sesión cada vez que vayan a acceder a un servicio.
+
 
 \section*{Antecedentes}
-Actualmente todos los sitios web y aplicaciones de La Universidad de La Habana tienen servicios de autenticación individuales que dependen de los dos mencionados directorios que contienen a los usuarios.
+\textcolor{red} {Nota: Qué existe desde el punto de vista actual para autentificarte como usuario UH y sobre que esta soportado? qué problema trae ese soporte? existe en el mundo otros que pueden mejorar esas dificultades? Poner ejemplos. }
 
-\section*{Problemática}
+Actualmente todos los usuarios de la Universidad de La Habana se almacenan en dos Protocolos Ligeros de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas como LDAP). En los dos directorios se guardan las cuentas de correo y los datos de sus usuarios. En uno ellos se registra la información de los estudiantes y en el otro la de los trabajadores. A partir de estos, todos los sitios web y aplicaciones de la universidad, individualmente, verifican la pertenencia del usuario a la institución.
+
+Cada aplicación y servicio tiene un servicio de autenticación individual que dependen de los dos mencionados directorios que contienen a los usuarios.
+
+\textcolor{red}{ \section*{Problemática}}
+El sistema implementado actualmente es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los servicios de autenticación. Esto genera tiempos elevados de respuesta y dificulta el mencionado proceso de transformación digital que está siendo llevado a cabo por nuestra Universidad.
 
 \section*{Objetivo}
 Con el propósito de presentar una propuesta para solucionar la problemática expuesta anteriormente, se plantean los siguientes objetivos:
@@ -27,3 +66,5 @@ Con el propósito de presentar una propuesta para solucionar la problemática ex
 	\item Generar los servicios de autenticación con compatibilidad con todas las tecnologías existentes y previstas en la institución.
 	\item Implementar la gestión de control de acceso a todos los servicios ofrecidos por el Nodo Central de forma extensible a futuros servicios.
 \end{itemize}
+
+\section*{\textcolor{red}{Estructura de la Tesis}}
