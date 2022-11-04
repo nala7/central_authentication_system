@@ -24,7 +24,7 @@
 \RequirePackage[
 	style=ieee,
 	citestyle=numeric,
-  hyperref=true,
+  	hyperref=true,
 	backref=true
 	]{biblatex}
 \RequirePackage[linktocpage,breaklinks,colorlinks,%

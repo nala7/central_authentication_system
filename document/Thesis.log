@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  1 NOV 2022 12:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  4 NOV 2022 10:20
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1264,31 +1264,31 @@ LaTeX Info: Redefining \% on input line 29.
 (./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 79
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 80.
+LaTeX Font Info:    ... okay on input line 80.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 80
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
-Package tocbasic Info: usage of `tocbibind' detected on input line 79.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
+Package tocbasic Info: usage of `tocbibind' detected on input line 80.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1327,10 +1327,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
 
 (./Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 79.
-Package biblatex Info: Reference segment=0 on input line 79.
+Package biblatex Info: Reference section=0 on input line 80.
+Package biblatex Info: Reference segment=0 on input line 80.
 \AtBeginShipoutBox=\box122
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 80.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1344,9 +1344,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count470
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 80.
+LaTeX Info: Redefining \pageref on input line 80.
+LaTeX Info: Redefining \nameref on input line 80.
  (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write6
 \openout6 = `Thesis.out'.
@@ -1357,10 +1357,10 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count471
-<Graphics/uhlogo.pdf, id=91, 375.98297pt x 481.67456pt>
+<Graphics/uhlogo.pdf, id=87, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 82.
+Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 83.
 (pdftex.def)             Requested size: 49.79231pt x 63.7885pt.
 
 [1
@@ -1482,33 +1482,25 @@ LaTeX Info: Redefining \% on input line 2.
 
  (./MainMatter/Background.tex
 Cap\'{\i }tulo 1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
-
- []
-
 [4
 
 
 
 ]
-LaTeX Info: Redefining \. on input line 49.
-LaTeX Info: Redefining \% on input line 49.
+LaTeX Info: Redefining \. on input line 41.
+LaTeX Info: Redefining \% on input line 41.
  [5]
-LaTeX Info: Redefining \. on input line 69.
-LaTeX Info: Redefining \% on input line 69.
+LaTeX Info: Redefining \. on input line 60.
+LaTeX Info: Redefining \% on input line 60.
  [6])
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
  [7]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [8]
 \openout2 = `MainMatter/Proposal.aux'.
 
  (./MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
-) [9
+) [8
 
 
 
@@ -1517,14 +1509,14 @@ Cap\'{\i }tulo 2.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [10
+) [9
 
 
 
 ]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [11
+ (./BackMatter/Conclusions.tex) [10
 
 
 
@@ -1533,7 +1525,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `BackMatter/Recomendations.aux'.
 
  (./BackMatter/Recomendations.tex)
-[12
+[11
 
 
 
@@ -1547,74 +1539,60 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)) [13
+)
+Overfull \hbox (170.41614pt too wide) in paragraph at lines 1--1
+\T1/lmr/m/n/12 rity^^Van eva-lua-tion of ope-nid con-nect,^^T en |   [],
+ []
+
+
+Overfull \hbox (105.80423pt too wide) in paragraph at lines 1--1
+\T1/lmr/m/n/12 goo-gle authen-ti-ca-tion api,^^T en |   [],
+ []
+
+) [12
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (./Thesis.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
-(./FrontMatter/Dedication.aux) (./FrontMatter/Thanks.aux)
+ (./FrontMatter/Dedication.aux) (./FrontMatter/Thanks.aux)
 (./FrontMatter/SupervisorOpinion.aux) (./FrontMatter/Abstract.aux)
 (./FrontMatter/Contents.aux) (./MainMatter/Introduction.aux)
 (./MainMatter/Background.aux) (./MainMatter/Proposal.aux)
 (./MainMatter/Implementation.aux) (./BackMatter/Conclusions.aux)
 (./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
-
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: 5D52E71A55E45BE3952D61A52B3743E4;882
-(rerunfilecheck)             After:  1EF387FA1D2567C7CE44368319BAE323;882.
-
-LaTeX Warning: There were undefined references.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                Thesis
-(biblatex)                and rerun LaTeX afterwards.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 5EBE0ADE37600160301779BD08B37D69;814.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31674 strings out of 480608
- 583732 string characters out of 5903629
- 1310789 words of memory out of 5000000
- 46851 multiletter control sequences out of 15000+600000
+ 31685 strings out of 480608
+ 584110 string characters out of 5903629
+ 1309957 words of memory out of 5000000
+ 46864 multiletter control sequences out of 15000+600000
  593515 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,106p,834b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.1.4.2} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.4.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.2.1} has been referenced but does not 
-exist, replaced by a fixed one
-
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/te
-xlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020
-/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist
-/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type
-1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/
-lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro10.pfb
-></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (22 pages, 303323 bytes).
+ 73i,11n,106p,1541b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
+texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-di
+st/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
+pe1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/l
+m/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro10.p
+fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb>
+Output written on Thesis.pdf (21 pages, 307152 bytes).
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 260 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 269 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

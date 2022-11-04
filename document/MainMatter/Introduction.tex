@@ -1,32 +1,31 @@
 \chapter*{Introducción}\label{chapter:introduction}
 \addcontentsline{toc}{chapter}{Introducción}
-\textcolor{red}{Nowadays people use many different independent software systems and accumulate
-	more and more identities. User identity is considered as a set of permanent or longlived temporal attributes associated with a user entity [Ceccarelli et al. 2015]. In order
-	to access the service most of systems require the user to be registered and logged
-	in. Quite often a user is registered in many web sites under the same user name and
-	with the same or closely related passwords, which is not the best security practice.
-	What is more they often forget their credentials, and the user management system
-	have to send an unencrypted e-mail with these confidential data [Singer, Friedman
-	2013]. \\ 
-	That is why the management of multiple user names and passwords is such an
-	annoying aspect of the current Internet.\\
-	Taking into account all those security issues and the lack of the required
-	competencies needed to fulfil them – more and more administrators of websites
-	decide to outsource those management and authentication services to third parties,
-	external entities specialized in that kind of activity. Such entities can solve those
-	problems using different techniques. They can host, store, manage and secure user data on behalf of a particular service provider. They offer application programming
-	interfaces (API), which can provide an access to user data for external applications.
-	Such solutions enable to share user data among more than one web system, thus
-	providing Single sign on (SSO) property for third party applications. The aim of the
-	paper is to present an example of such a solution based on an internet platform for
-	\sout{ gathering services dedicated to elderly people – ActGo-Gate (AGG).} *Aqui lo relaciono con la UH* \\
-	when users try to log in to any system, they are usually first
-	requested to identify themselves with a user name and a password. Afterwards, the
-	data input is checked against an existing user record to verify if the given combination
-	is authentic. If so, the user becomes authenticated (i.e. the identification data he/she
-	supplied previously is valid). Finally, a set of pre-defined permissions and restrictions
-	for that particular login name is assigned to this user, which completes the final step,
-	authorization. Usually authorization cannot be performed without any kind of authentication a} [\cite{kutera2016single}]
+
+Hoy en día las personas usan muchos sistemas de software independientes con distintas identidades. La identidad del usuario es considerado un conjunto permanente o de larga vida de atributos asociados a la identidad de un usuario. Para obtener acceso a servicios muchos requieren que el usuario esté registrado y haya iniciado sesión.Muchas de las veces los usuarios están registrados en los distintos sitios con el mismo nombre de usuario y con la misma o similar contraseña, lo cual no es la mejor práctica para preservar la seguridad de las cuentas. Por otra parte, es fácil de olvidar las credenciales, lo cual obliga a los gestores del sistema a enviar un correo no encriptado con información confidencial.
+
+Por ello el manejo de múltiples nombres de usuarios y contraseña es una tarea molesta del Internet actual.
+
+Teniendo en cuenta todos esos problemas de seguridad, cada vez más administradores de sitios web deciden subcontratar esos servicios de administración y autenticación a terceros, entidades externas especializadas en ese tipo de actividad. Pueden alojar, almacenar, administrar y proteger los datos de los usuarios de un proveedor de servicios en particular. Ofrecen una interfaz de programación de aplicaciones (conocida también por la sigla API, en inglés, \textit{Application Programming Interface}), que pueden proporcionar acceso a datos de usuario para aplicaciones externas. Estas soluciones permiten compartir datos de usuario entre más de un sistema web, proporcionando así la propiedad de inicio de sesión único (SSO) para aplicaciones de terceros.
+
+ 
+%\textcolor{red}{
+%	Taking into account all those security issues and the lack of the required
+%	competencies needed to fulfil them – more and more administrators of websites
+%	decide to outsource those management and authentication services to third parties,
+%	external entities specialized in that kind of activity. Such entities can solve those
+%	problems using different techniques. They can host, store, manage and secure user data on behalf of a particular service provider. They offer application programming
+%	interfaces (API), which can provide an access to user data for external applications.
+%	Such solutions enable to share user data among more than one web system, thus
+%	providing Single sign on (SSO) property for third party applications. The aim of the
+%	paper is to present an example of such a solution based on an internet platform for
+%	\sout{ gathering services dedicated to elderly people – ActGo-Gate (AGG).} *Aqui lo relaciono con la UH* \\
+%	when users try to log in to any system, they are usually first
+%	requested to identify themselves with a user name and a password. Afterwards, the
+%	data input is checked against an existing user record to verify if the given combination
+%	is authentic. If so, the user becomes authenticated (i.e. the identification data he/she
+%	supplied previously is valid). Finally, a set of pre-defined permissions and restrictions
+%	for that particular login name is assigned to this user, which completes the final step,
+%	authorization. Usually authorization cannot be performed without any kind of authentication a} [\cite{kutera2016single}]
 
 El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar las credenciales digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la institución registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa información es utilizada más adelante para que los usuarios puedan autenticarse en los distintos servicios de la institución, respaldado por sus sistemas de origen.
 
@@ -43,7 +42,7 @@ La creación de una plataforma central de autenticación resolvería muchos de e
 
 
 \section*{Antecedentes}
-\textcolor{red} {Nota: Qué existe desde el punto de vista actual para autentificarte como usuario UH y sobre que esta soportado? qué problema trae ese soporte? existe en el mundo otros que pueden mejorar esas dificultades? Poner ejemplos. }
+%\textcolor{red} {Nota: Qué existe desde el punto de vista actual para autentificarte como usuario UH y sobre que esta soportado? qué problema trae ese soporte? existe en el mundo otros que pueden mejorar esas dificultades? Poner ejemplos. }
 
 Actualmente todos los usuarios de la Universidad de La Habana se almacenan en dos Protocolos Ligeros de Acceso a Directorios (en inglés: Lightweight Directory Access Protocol, también conocido por sus siglas como LDAP). En los dos directorios se guardan las cuentas de correo y los datos de sus usuarios. En uno ellos se registra la información de los estudiantes y en el otro la de los trabajadores. A partir de estos, todos los sitios web y aplicaciones de la universidad, individualmente, verifican la pertenencia del usuario a la institución.
 
