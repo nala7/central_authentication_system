@@ -5,31 +5,18 @@ Hoy en día las personas usan muchos sistemas de software independientes con dis
 
 Por ello el manejo de múltiples nombres de usuarios y contraseña es una tarea molesta del Internet actual.
 
-Teniendo en cuenta todos esos problemas de seguridad, cada vez más administradores de sitios web deciden subcontratar esos servicios de administración y autenticación a terceros, entidades externas especializadas en ese tipo de actividad. Pueden alojar, almacenar, administrar y proteger los datos de los usuarios de un proveedor de servicios en particular. Ofrecen una interfaz de programación de aplicaciones (conocida también por la sigla API, en inglés, \textit{Application Programming Interface}), que pueden proporcionar acceso a datos de usuario para aplicaciones externas. Estas soluciones permiten compartir datos de usuario entre más de un sistema web, proporcionando así la propiedad de inicio de sesión único (SSO) para aplicaciones de terceros.
-
- 
-%\textcolor{red}{
-%	Taking into account all those security issues and the lack of the required
-%	competencies needed to fulfil them – more and more administrators of websites
-%	decide to outsource those management and authentication services to third parties,
-%	external entities specialized in that kind of activity. Such entities can solve those
-%	problems using different techniques. They can host, store, manage and secure user data on behalf of a particular service provider. They offer application programming
-%	interfaces (API), which can provide an access to user data for external applications.
-%	Such solutions enable to share user data among more than one web system, thus
-%	providing Single sign on (SSO) property for third party applications. The aim of the
-%	paper is to present an example of such a solution based on an internet platform for
-%	\sout{ gathering services dedicated to elderly people – ActGo-Gate (AGG).} *Aqui lo relaciono con la UH* \\
-%	when users try to log in to any system, they are usually first
-%	requested to identify themselves with a user name and a password. Afterwards, the
-%	data input is checked against an existing user record to verify if the given combination
-%	is authentic. If so, the user becomes authenticated (i.e. the identification data he/she
-%	supplied previously is valid). Finally, a set of pre-defined permissions and restrictions
-%	for that particular login name is assigned to this user, which completes the final step,
-%	authorization. Usually authorization cannot be performed without any kind of authentication a} [\cite{kutera2016single}]
+Teniendo en cuenta todos esos problemas de seguridad, cada vez más administradores de sitios web deciden delegar esos servicios de administración y autenticación a terceros, entidades externas especializadas en ese tipo de actividad. Pueden alojar, almacenar, administrar y proteger los datos de los usuarios de un proveedor de servicios en particular. Ofrecen una interfaz de programación de aplicaciones (conocida también por la sigla API, en inglés, \textit{Application Programming Interface}), que pueden proporcionar acceso a datos de usuario para aplicaciones externas. Estas soluciones permiten compartir los datos con más de un sistema web, permitiendo así el Inicio de Sesión Único (SSO) para aplicaciones de terceros.[\cite{kutera2016single}
 
 El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar las credenciales digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la institución registran sus datos personales en las bases de datos de recursos humanos y secretaria docente respectivamente. Esa información es utilizada más adelante para que los usuarios puedan autenticarse en los distintos servicios de la institución, respaldado por sus sistemas de origen.
 
+\textcolor{blue}{Wifi, Correo, proxy y el Evea son nuestros principales servicios de cara a los usuarios. Sin embargo, existen también muchos otros, contabilidad, recursos humanos, inventarios y el registro de las notas y el estado de los usuarios. ( sigenu ) Sistema de gestión universitaria. Y SIC. ( sistema de datos de los usuarios ).
+\\
+Todos estos servicios emplean de una forma u otra la autenticación.
+}
+
 \textcolor{red}{La Universidad brinda servicios como correo, WI-FI, , FTP (\textit{File Transfer Protocol}/Transferencia de Archivos) y alojamiento web. . En cada uno de estos el usuario debe autenticarse con una cuenta distinta.}
+
+En este trabajo se presenta una solución a los problemas de autenticación que se ajusta a las necesidades y posibilidades de la Universidad de La Habana.  
 
 \section*{Motivación}
 Actualmente vivimos en un mundo donde la tecnología tiene un papel protagónico. La Universidad de La Habana en los últimos años ha estado inmersa en el proceso de transformación digital que lleva a cabo nuestro país, como continuidad de la estrategia de informatización de la sociedad cubana, que pretende integrar las tecnologías digitales a todos los ámbitos de la sociedad.
@@ -49,6 +36,8 @@ Actualmente todos los usuarios de la Universidad de La Habana se almacenan en do
 Cada aplicación y servicio tiene un servicio de autenticación individual que dependen de los dos mencionados directorios que contienen a los usuarios.
 
 \textcolor{red}{ \section*{Problemática}}
+\textcolor{blue}{Creo que has mencionado un poco en todos los párrafos anteriores. Pero resumiendo, La universidad requiere de una solución de autenticación central, que sea escalable y adaptable a la naturaleza heterogénea de bases de datos existentes}
+
 El sistema implementado actualmente es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los servicios de autenticación. Esto genera tiempos elevados de respuesta y dificulta el mencionado proceso de transformación digital que está siendo llevado a cabo por nuestra Universidad.
 
 \section*{Objetivo}
@@ -63,7 +52,8 @@ Con el propósito de presentar una propuesta para solucionar la problemática ex
 \subsubsection*{Objetivos Específicos}
 \begin{itemize}	
 	\item Generar los servicios de autenticación con compatibilidad con todas las tecnologías existentes y previstas en la institución.
-	\item Implementar la gestión de control de acceso a todos los servicios ofrecidos por el Nodo Central de forma extensible a futuros servicios.
+	\item Implementar la gestión de control de acceso a todos los servicios ofrecidos por el Nodo Central de forma extensible a futuros servicios. \textcolor{blue}{y fuentes de datos}
 \end{itemize}
 
 \section*{\textcolor{red}{Estructura de la Tesis}}
+\textcolor{blue}{Aca realmente toca hablar de como has organizado la tesis. De cada capítulo que tema toca, sus secciones y siempre un poco de información al respecto}

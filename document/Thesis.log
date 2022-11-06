@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  4 NOV 2022 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  6 NOV 2022 10:46
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1481,26 +1481,38 @@ LaTeX Info: Redefining \% on input line 2.
 \openout2 = `MainMatter/Background.aux'.
 
  (./MainMatter/Background.tex
-Cap\'{\i }tulo 1.
+Underfull \hbox (badness 10000) in paragraph at lines 3--5
+
+ []
+
 [4
 
 
+]
+Cap\'{\i }tulo 1.
+[5
 
 ]
-LaTeX Info: Redefining \. on input line 41.
-LaTeX Info: Redefining \% on input line 41.
- [5]
-LaTeX Info: Redefining \. on input line 60.
-LaTeX Info: Redefining \% on input line 60.
- [6])
+LaTeX Info: Redefining \. on input line 46.
+LaTeX Info: Redefining \% on input line 46.
+ [6]
+LaTeX Info: Redefining \. on input line 63.
+LaTeX Info: Redefining \% on input line 63.
+ [7]
+LaTeX Info: Redefining \. on input line 82.
+LaTeX Info: Redefining \% on input line 82.
+ [8])
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
- [7]
+ [9]
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+ [10]
 \openout2 = `MainMatter/Proposal.aux'.
 
  (./MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
-) [8
+) [11
 
 
 
@@ -1509,14 +1521,14 @@ Cap\'{\i }tulo 2.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [9
+) [12
 
 
 
 ]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [10
+ (./BackMatter/Conclusions.tex) [13
 
 
 
@@ -1525,7 +1537,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `BackMatter/Recomendations.aux'.
 
  (./BackMatter/Recomendations.tex)
-[11
+[14
 
 
 
@@ -1549,7 +1561,7 @@ Overfull \hbox (105.80423pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 goo-gle authen-ti-ca-tion api,^^T en |   [],
  []
 
-) [12
+) [15
 
 
 
@@ -1574,13 +1586,13 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31685 strings out of 480608
- 584110 string characters out of 5903629
- 1309957 words of memory out of 5000000
- 46864 multiletter control sequences out of 15000+600000
+ 31698 strings out of 480608
+ 584487 string characters out of 5903629
+ 1311078 words of memory out of 5000000
+ 46872 multiletter control sequences out of 15000+600000
  593515 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 73i,11n,106p,1541b,1998s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 73i,12n,106p,1541b,2001s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-di
@@ -1589,10 +1601,10 @@ pe1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/l
 m/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro10.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (21 pages, 307152 bytes).
+Output written on Thesis.pdf (24 pages, 312667 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 334 PDF objects out of 1000 (max. 8388607)
+ 279 compressed objects within 3 object streams
+ 64 named destinations out of 1000 (max. 500000)
  226 words of extra memory for PDF output out of 10000 (max. 10000000)
 

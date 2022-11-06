@@ -19,6 +19,34 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{kutera2016single}{article}{}
+      \name{author}{2}{}{%
+        {{hash=71d9ce784a0db9a5105a93b83b0cd3d7}{%
+           family={Kutera},
+           familyi={K\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=b4f7c0f3b795506ed09b41229524f5a6}{%
+           family={Gryncewicz},
+           familyi={G\bibinitperiod},
+           given={Wies{ł}awa},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{fullhash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{bibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authorbibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authornamehash}{75b4efaa62f9315d9ad7acda1854c032}
+      \strng{authorfullhash}{75b4efaa62f9315d9ad7acda1854c032}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Informatyka Ekonomiczna}
+      \field{number}{2 (40)}
+      \field{title}{Single sign on as an effective way of managing user identity in distributed web systems. The ActGo-Gate project case study}
+      \field{year}{2016}
+    \endentry
     \entry{microsoft-doc}{online}{}
       \name{author}{1}{}{%
         {{hash=140864078aeca1c7c35b4beb33c53c34}{%
@@ -31,8 +59,8 @@
       \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{What is single sign-on in Azure Active Directory?}
@@ -42,6 +70,31 @@
       \endverb
       \verb{url}
       \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
+      \endverb
+    \endentry
+    \entry{openid-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=10d822cbb5b2266b331cdefd7410c831}{%
+           family={OpenID},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{10d822cbb5b2266b331cdefd7410c831}
+      \strng{fullhash}{10d822cbb5b2266b331cdefd7410c831}
+      \strng{bibnamehash}{10d822cbb5b2266b331cdefd7410c831}
+      \strng{authorbibnamehash}{10d822cbb5b2266b331cdefd7410c831}
+      \strng{authornamehash}{10d822cbb5b2266b331cdefd7410c831}
+      \strng{authorfullhash}{10d822cbb5b2266b331cdefd7410c831}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Welcome to OpenID Connect}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://openid.net/connect/
+      \endverb
+      \verb{url}
+      \verb https://openid.net/connect/
       \endverb
     \endentry
     \entry{mainka2017sok}{inproceedings}{}
@@ -76,8 +129,8 @@
       \strng{authorbibnamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authornamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authorfullhash}{db8f37c4b02f7977bfb70afe41231f3a}
-      \field{sortinit}{2}
-      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE European Symposium on Security and Privacy (EuroS\&P)}
@@ -86,58 +139,115 @@
       \field{pages}{251\bibrangedash 266}
       \range{pages}{16}
     \endentry
-    \entry{openid-doc}{online}{}
-      \name{author}{1}{}{%
-        {{hash=10d822cbb5b2266b331cdefd7410c831}{%
-           family={OpenID},
-           familyi={O\bibinitperiod}}}%
-      }
-      \strng{namehash}{10d822cbb5b2266b331cdefd7410c831}
-      \strng{fullhash}{10d822cbb5b2266b331cdefd7410c831}
-      \strng{bibnamehash}{10d822cbb5b2266b331cdefd7410c831}
-      \strng{authorbibnamehash}{10d822cbb5b2266b331cdefd7410c831}
-      \strng{authornamehash}{10d822cbb5b2266b331cdefd7410c831}
-      \strng{authorfullhash}{10d822cbb5b2266b331cdefd7410c831}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Welcome to OpenID Connect}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://openid.net/connect/
-      \endverb
-      \verb{url}
-      \verb https://openid.net/connect/
-      \endverb
-    \endentry
-    \entry{kutera2016single}{article}{}
-      \name{author}{2}{}{%
-        {{hash=71d9ce784a0db9a5105a93b83b0cd3d7}{%
-           family={Kutera},
-           familyi={K\bibinitperiod},
-           given={Robert},
+    \entry{philpott2015assertions}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=0db8144e3ba6f32d9becd767ea4eb8b2}{%
+           family={Philpott},
+           familyi={P\bibinitperiod},
+           given={Rob},
            giveni={R\bibinitperiod}}}%
-        {{hash=b4f7c0f3b795506ed09b41229524f5a6}{%
-           family={Gryncewicz},
-           familyi={G\bibinitperiod},
-           given={Wies{ł}awa},
-           giveni={W\bibinitperiod}}}%
+        {{hash=2a0ce8566c3f9ea6053db47c2a811ed6}{%
+           family={Ragouzis},
+           familyi={R\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=d61059a0e3f4b4b21545c9f4559eea21}{%
+           family={Wisniewski},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ebdd24f6fef9b11d0bf68d6205075794}{%
+           family={Whitehead},
+           familyi={W\bibinitperiod},
+           given={Entrust\bibnamedelima Greg},
+           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+        {{hash=23bfc39b40602cb6b71bc193dcccf2ca}{%
+           family={Hinton},
+           familyi={H\bibinitperiod},
+           given={HP\bibnamedelima Heather},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=e674370ba2ca88f3e5cbb2a185b97dea}{%
+           family={Cahill},
+           familyi={C\bibinitperiod},
+           given={Connor\bibnamedelima P},
+           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=81e40ae87af997090fa9a9696e364c65}{%
+           family={Bradley},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f5df9417f3a63eda188d5d6c329cbf1f}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={Individual\bibnamedelima Jeff},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=de32e04322f4b7ff1b8c8a81e3f41fca}{%
+           family={Brennan},
+           familyi={B\bibinitperiod},
+           given={Individual\bibnamedelima Joni},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4877246b924630b21884e3015459b6d8}{%
+           family={Alliance},
+           familyi={A\bibinitperiod},
+           given={Liberty},
+           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{75b4efaa62f9315d9ad7acda1854c032}
-      \strng{fullhash}{75b4efaa62f9315d9ad7acda1854c032}
-      \strng{bibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
-      \strng{authorbibnamehash}{75b4efaa62f9315d9ad7acda1854c032}
-      \strng{authornamehash}{75b4efaa62f9315d9ad7acda1854c032}
-      \strng{authorfullhash}{75b4efaa62f9315d9ad7acda1854c032}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \strng{namehash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{fullhash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{bibnamehash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{authorbibnamehash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{authornamehash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{authorfullhash}{836438e4840ba5d2ffb4758710aa44be}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{Informatyka Ekonomiczna}
-      \field{number}{2 (40)}
-      \field{title}{Single sign on as an effective way of managing user identity in distributed web systems. The ActGo-Gate project case study}
-      \field{year}{2016}
+      \field{title}{Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2. 0--Errata Composite}
+      \field{year}{2015}
+    \endentry
+    \entry{wisniewski2005saml}{article}{}
+      \name{author}{5}{}{%
+        {{hash=d61059a0e3f4b4b21545c9f4559eea21}{%
+           family={Wisniewski},
+           familyi={W\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=7cb6307405336537b6b5108229bd518b}{%
+           family={Nadalin},
+           familyi={N\bibinitperiod},
+           given={Entrust\bibnamedelima Tony},
+           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=d81f5333693d3d89741595e3d90230cc}{%
+           family={Cantor},
+           familyi={C\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=85c876fc5b0452a894338dd4e0c23405}{%
+           family={Hodges},
+           familyi={H\bibinitperiod},
+           given={Internet2\bibnamedelima Jeff},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=9c8141672307b35ba8a95797626af68d}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Neustar\bibnamedelima Prateek},
+           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+      }
+      \strng{namehash}{cd150667f878d2013019de2198781f46}
+      \strng{fullhash}{cd150667f878d2013019de2198781f46}
+      \strng{bibnamehash}{cd150667f878d2013019de2198781f46}
+      \strng{authorbibnamehash}{cd150667f878d2013019de2198781f46}
+      \strng{authornamehash}{cd150667f878d2013019de2198781f46}
+      \strng{authorfullhash}{cd150667f878d2013019de2198781f46}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{OASIS}
+      \field{title}{SAML V2. 0 executive overview}
+      \field{year}{2005}
     \endentry
     \entry{ldap-doc}{online}{}
       \name{author}{1}{}{%
@@ -151,8 +261,8 @@
       \strng{authorbibnamehash}{2363dee608bcd9f6ce7f980bfdad5789}
       \strng{authornamehash}{2363dee608bcd9f6ce7f980bfdad5789}
       \strng{authorfullhash}{2363dee608bcd9f6ce7f980bfdad5789}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{LDAP}
@@ -165,8 +275,8 @@
       \endverb
     \endentry
     \entry{KeycloakDoc}{misc}{}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://www.keycloak.org/documentation}}
       \field{title}{Keycloak Documentation}

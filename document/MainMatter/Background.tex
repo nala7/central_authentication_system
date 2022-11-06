@@ -1,41 +1,61 @@
+\textcolor{blue}{Recuerda que tu estado del arte va sobre autenticación. \\
+	Puedes salirte un poco de autenticación central y hablar de otras formas de autenticar ( radius, kerberos, active directory u otros protocolos que te encuentres )\\
+	Es mas, te invito a que lo hagas.}\\\\
+En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticacióna. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
+
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
-En este capítulo se brindan las definiciones de herramientas utilizadas. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
+\textcolor{blue}{Si quieres en lugar de este pequeño parrafo introductorio haz un resumen de todo lo que hablas en el capítulo }
 
 %\textcolor{red}{estas son las unicas dos técnicas que existen?? no hay otras propietarias o no posible de utilzar por nosotros por el equipamiento que poseemos... en fin. \\
 %	Al final debes decirme que tiene esa tecnica que no usas como defecto o como compatiblidad con la estructura existente en nuestra red. \\\\
 %	Aqui en este capitulo debes hablar de la segurirdad que es algo importante para que no entren intrusos que tecnica utilizas para ello-...}
 
 \section{Inicio de Sesión Único}
-El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un conjunto de credenciales en varios sistemas de software independientes. El inicio de sesión único permite que un usuario no tenga que iniciar sesión en cada aplicación que use. Con el inicio de sesión único, los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
+\textcolor{blue}{Tienes una perfecta definición en el párrafo a continuación. Pero como que queda un poco seca no crees ? Quien lo usa, desde cuando se emplea. Que ventajas y desventajas posee. Ejemplos de softwares que lo usan. Son de código abierto ? Son de código cerrado ? \\
+Por ahi tienes bastante tela por donde cortar. Lo mismo aplica para el resto de los protocolos de autenticación.}
+
+El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas de software independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
 
 \section{OpenID Connect}
-\textit{OpenID Connect} es una capa de identidad simple implementada a partir del protocolo \textit{OAuth 2.0}. Permite a los Clientes verificar la identidad del Usuario final en función de la autenticación realizada por un Servidor de autorización, así como obtener información básica del perfil del Usuario final de manera interoperable y similar al protocolo REST. [\cite{openid-doc}]. 
+\textcolor{blue}{Hay una noción o distinción importante a la hora de diferenciar protocolos y que puedes abordar en tu estado del arte. Cada uno de los protocolos diseñados tiene como objetivo una arquitectura de red predeterminada. \\
+Si bien OpenId Connect se diseño para entornos de internet donde no se puede verificar la autenticidad de los dispositivos clientes, también sirve para entornos mas controlados ( como puede ser la universidad )\\
+Sin embargo, kerberos, radius y ldap si son pensados para redes controladas. ( privadas )}
+
+
+\textit{OpenID Connect} es una capa de identidad simple implementada a partir del protocolo \textit{OAuth 2.0}. Permite a los clientes verificar la identidad del usuario final en función de la autenticación realizada por un servidor de autorización, así como obtener información básica del perfil del Usuario final de manera interoperable y similar al protocolo REST. [\cite{openid-doc}]. 
 
 \textit{OpenID Connect }es uno de los protocolos de tipo \textit{Single Sign-On} más utilizados para delegar la autenticación. También tiene un formato simple, por lo que ha ganado popularidad y es soportado por grandes empresas como Google, IBM, Microsoft, Amazon y PayPal [\cite{mainka2017sok}]. La nueva versión es compatible con \textit{API} y puede ser usado por aplicaciones nativas y móviles. También define mecanismos opcionales más robustos para firmas y cifrados. [\cite{openid-doc}]
 
-El protocolo \textit{OpenID Connect} está basado en \textit{OAuth 2.0} por lo que tiene todas las ventajas de este protocolo. Sin embargo, lo extiende ya que ofrece facilidades para obtener más información de la identidad de los usuarios eficientemente. Permite un flujo de información adicional que genera un \textit{id-token} que contiene datos del usuario. De esta forma las aplicaciones no solo tienen acceso a los permisos de los usuarios, sino también obtienen información sobre la identidad de los usuarios.  [\cite{openid-doc}][\cite{kutera2016single}]
-
-
-\textcolor{red}{
-	Ventajas:\\
-	-It resolves the potential security gaps of OAuth 2.0 and enhances the data by including user data (name, address etc.) \\
-	-Management \& Configuration is simple.	\\
-	VS Auth 2.0: \\
-	- tiene las ventajas de OAuth 2.0
-	- Architecture based security gaps have/ had to be solved in the implementations of it.\\
-	- It does not directly contain user information (name, address, etc.).\\
-	- Clients are moving away from OAuth 2.0 for new projects.[\cite{kutera2016single}]}
+Este protocolo está basado en \textit{OAuth 2.0} por lo que tiene todas las ventajas de este protocolo. Sin embargo, lo extiende ya que ofrece facilidades para obtener más información de la identidad de los usuarios eficientemente. Permite un flujo de información adicional que genera un \textit{id-token} que contiene datos del usuario. De esta forma las aplicaciones no solo tienen acceso a los permisos de los usuarios, sino también obtienen información sobre la identidad de los usuarios.  [\cite{openid-doc}][\cite{kutera2016single}]
 
 \section{SAML}
+\textcolor{red}{ The Security Assertion Markup Language (SAML) defines the syntax and processing semantics of
+assertions made about a subject by a system entity. In the course of making, or relying upon such
+assertions, SAML system entities may use other protocols to communicate either regarding an assertion
+itself, or the subject of an assertion. This specification defines both the structure of SAML assertions, and
+an associated set of protocols, in addition to the processing rules involved in managing a SAML system.\\
+SAML assertions and protocol messages are encoded in XML [XML] and use XML namespaces [XMLNS].
+They are typically embedded in other structures for transport, such as HTTP POST requests or XMLencoded SOAP messages. The SAML bindings specification [SAMLBind] provides frameworks for the
+embedding and transport of SAML protocol messages. The SAML profiles specification [SAMLProf]
+provides a baseline set of profiles for the use of SAML assertions and protocols to accomplish specific
+use cases or achieve interoperability when using SAML features.
+[\cite{philpott2015assertions}]
+\\
+SAML, developed by the Security Services Technical Committee of the Organization for the Advancement of Structured Information Standards (OASIS), is an XML-based framework for communicating user authentication, entitlement, and attribute information. As its name suggests, SAML allows business entities to make assertions regarding the identity, attributes, and entitlements of a subject (an entity that is often a human user) to other entities, such as a partner company or another enterprise application. SAML is a flexible and extensible protocol designed to be used – and customized if necessary
+– by other standards. [\cite{wisniewski2005saml}]}
 
 \section{LDAP}
 El Protocolo Ligero de Acceso a Directorios (en inglés: \textit{Lightweight Directory Access Protocol}, también conocido por sus siglas de LDAP) es un conjunto de protocolos de licencia abierta que son utilizados para acceder a la información que está almacenada de forma centralizada en una red. Este protocolo se utiliza a nivel de aplicación para acceder a los servicios de directorio remoto. [\cite{ldap-doc}]
 
-LDAP está basado en estándares implementados sobre TCP/IP. Permite a los clientes interactuar directamente con los servidores de los directorios: almacenar y consultar información, buscar datos filtrados, autenticar usuarios, entre otros.
+LDAP está basado en estándares implementados sobre TCP/IP \textcolor{blue}{Y Open Id Connect ?}. Permite a los clientes interactuar directamente con los servidores de los directorios: almacenar y consultar información, buscar datos filtrados, autenticar usuarios, entre otros.
 
-Este protocolo es utilizado actualmente por muchos sistemas que apuestan por el software libre al utilizar distribuciones de Linux para ejercer las funciones propias de un directorio activo en el que se gestionarán las credenciales y permisos de los usuarios y estaciones de trabajo en redes LAN corporativas en conexiones cliente/servidor.
+Este protocolo es utilizado actualmente por muchos sistemas que apuestan por el software libre al utilizar distribuciones de Linux para ejercer las funciones propias de un directorio activo en el que se gestionarán las credenciales y permisos de los usuarios y estaciones de trabajo en redes LAN corporativas en conexiones cliente/servidor \textcolor{blue}{mientras que open id connect y el flujo de emisión de tokens esta pensado para redes abiertas ( internet )}.
 
 Un directorio remoto es un conjunto de objetos que están organizados de forma jerárquica, tales como: nombre, claves, direcciones, etc. Estos objetos estarán disponibles para una serie de clientes conectados mediante una red, normalmente interna o LAN, y proporcionarán las identidades y permisos para esos usuarios que la utilicen.
+
+\textcolor{blue}{Sería bueno que a cada protocolo le incluyas una url con el rfc que lo define ( cualquiera de ellos, el primero o el último ) ( puede haber mas de un rfc por protocolo )
+\\
+Ahora si esta en tu objetivo de tesis entender un protocolo, su link lo pones en la bibliografía consultada, por el contrario si es adicional, ponlo como un pie de página.}
 
 LDAP está basado en el protocolo X.500 para compartir directorios, y contiene esta información de forma jerarquizada y mediante categorías para proporcionarnos una estructura intuitiva desde el punto de vista de la gestión por parte de los administradores.
 
@@ -49,16 +69,16 @@ El sistema de autenticación vigente en el Nodo Central verifica sus usuarios co
 \section{Keycloak}
 Keycloak es un software de código abierto que permite el \textit{Single Sign-On} o Inicio de Sesión Único con \textit{Identity Management} y \textit{Access Management} para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un Proveedor de identidad (en inglés: \textit{Identity Provider}, también conocido por sus siglas IdP), permite que una aplicación (a menudo llamada \textit{Service Provider} o SP) delegue su autenticación. [\cite{KeycloakDoc}]
 
-Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es compatible con Red Hat. [\cite{KeycloakDoc}]
+Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es compatible \textcolor{blue}{o mantenido?} con Red Hat. [\cite{KeycloakDoc}]
 
 	\subsection{Características}
-	Los usuarios se autentican en Keycloak en lugar de hacerlo en las aplicaciones. Esto significa que no es necesario que cada aplicación tenga un formulario de inicio de sesión, autentique a los usuarios o almacene sus datos. Una vez entren en Keycloak, los usuarios no tendrán que iniciar sesión en las demás aplicaciones conectadas al software. [\cite{KeycloakDoc}]
+	Los usuarios se autentican en Keycloak en lugar de hacerlo en las aplicaciones. Esto significa que no es necesario que cada aplicación tenga un formulario de inicio de sesión, autentique a los usuarios o almacene sus datos. Una vez entren en Keycloak, los usuarios no tendrán que iniciar sesión en las demás aplicaciones conectadas al software.
 	
-	Lo mismo sucede cuando un usuario cierra sesión. Keycloak ofrece cierre de sesión único, lo cual significa que los usuarios solo tienen que desconectarse en una de las aplicaciones para salir de su cuenta en el resto. [\cite{KeycloakDoc}]
+	Lo mismo sucede cuando un usuario cierra sesión. Keycloak ofrece cierre de sesión único, lo cual significa que los usuarios solo tienen que desconectarse en una de las aplicaciones para salir de su cuenta en el resto. 
 	
-	Otra prestación de Keycloak son las federaciones de usuarios, que facilitan la compatibilidad con LDAP y otros servidores de directorios activos. También admite la implementación de servicios propios para usuarios guardados en otros tipos de almacenamientos como en bases de datos relacionales. [\cite{KeycloakDoc}]
+	Otra prestación de Keycloak son las federaciones de usuarios, que facilitan la compatibilidad con LDAP y otros servidores de directorios activos. También admite la implementación de servicios propios para usuarios guardados en otros tipos de almacenamientos como en bases de datos relacionales. 
 	
-	Keycloak ofrece como herramienta una consola de administración de cuentas, a través de la cual los usuarios pueden administrar sus propias cuentas. Pueden actualizar su perfil, cambiar sus contraseñas y configurar la autenticación en dos pasos. También pueden administrar sus sesiones y visualizar el historial de su cuenta. [\cite{KeycloakDoc}]
+	Keycloak ofrece como herramienta una consola de administración de cuentas, a través de la cual los usuarios pueden administrar sus propias cuentas. Pueden actualizar su perfil, cambiar sus contraseñas y configurar la autenticación en dos pasos. También pueden administrar sus sesiones y visualizar el historial de su cuenta. 
 	
 	Otra característica es que es una herramienta extensible porque permite la eliminación, adición y modificación de las bases de datos de usuarios, los métodos de autenticación y los protocolos. Está basada en protocolos estándares y soportan OpenID Connect, OAuth 2.0 y SAML. [\cite{KeycloakDoc}]
 	
@@ -68,8 +88,18 @@ Este software está escrito en Java y es compatible de forma predeterminada con 
 %	\textcolor{red}{Gluu: \\ Free open source access management suite with support for SAML and OpenID Connect SSO, and OAuth2 based web and API access management. The Gluu Server can include multiple components. Each one fulfills a different requirement, and can be included or excluded in individual deployments based on an organization’s unique requirements.}
 %	\textcolor{red}{Gluu vs Keycloak: \\
 %		- The Keycloak system requires 512 Mb of RAM and 1 GB of disk space, whereas the Gluu system requires 8 GB of RAM and 40 GB of disk space. \\ - Gluu is less flexible to extend} [\cite{vassallo2017continuous}]
+	\textcolor{blue}{Que empresa usa KeyCloack, Que empresa usa Gluee ? Desde que año estan en el mercado?}\\
+	\textcolor{red}{Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SMAL}, \textit{OpenID Connect, SSO} y \textit{OAuth 2.0}. Sin embargo Gluu es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello Keycloak se ajusta más a los recursos que se tienen en la Universidad de La Habana.}
 	
-	\textcolor{red}{Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SMAL}, \textit{OpenID Connect SSO} y \textit{OAuth 2.0}. Sin embargo Gluu es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello Keycloak se ajusta más a los recursos que se tienen en la Universidad de La Habana.}
+	
+	\textcolor{blue}{Que otras soluciones de SSO existen en la industria ? ( Google, Facebook, Incluso Telegram permiten integración con SSO )}
+	\\
+	\textcolor{blue}{Otro punto a seguir puede ser que soluciones de autenticación se poseen para redes corporativas  (cerradas )\\
+	poner ejemplos, hablar de ellas y etc ( keycloak y gluee sirven para eso también )}
+	\\
+	\textcolor{blue}{Y finalmente puedes hablar del estado de la autenticación de la Universidad de La Habana, puedo, si quireres por servicio, mencionarte el protoco que se emplea para la autenticación}
+	\\
+	\textcolor{blue}{Recuerda, tu estado del arte va de autenticación. Hay mucha tela por donde cortar aca. No te limites a lo que hay en la uh. Todo lo que se autentique hoy en internet puede estar en tu tesis ( protocolo )}
 	
 	\textcolor{red}{
 	\subsection{Google Authenticator}
