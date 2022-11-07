@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  7 NOV 2022 09:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  7 NOV 2022 15:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1357,7 +1357,7 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count471
-<Graphics/uhlogo.pdf, id=91, 375.98297pt x 481.67456pt>
+<Graphics/uhlogo.pdf, id=99, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 <use Graphics/uhlogo.pdf>
 Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 83.
@@ -1481,38 +1481,54 @@ LaTeX Info: Redefining \% on input line 2.
 \openout2 = `MainMatter/Background.aux'.
 
  (./MainMatter/Background.tex
-Underfull \hbox (badness 10000) in paragraph at lines 3--5
+Cap\'{\i }tulo 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
 [4
 
 
-]
-Cap\'{\i }tulo 1.
-[5
 
 ]
-LaTeX Info: Redefining \. on input line 46.
-LaTeX Info: Redefining \% on input line 46.
- [6]
-LaTeX Info: Redefining \. on input line 63.
-LaTeX Info: Redefining \% on input line 63.
+<Graphics/sso_types.png, id=214, 1068.99374pt x 532.99126pt>
+File: Graphics/sso_types.png Graphic file (type png)
+<use Graphics/sso_types.png>
+Package pdftex.def Info: Graphics/sso_types.png  used on input line 27.
+(pdftex.def)             Requested size: 303.53267pt x 151.3348pt.
+LaTeX Info: Redefining \. on input line 31.
+LaTeX Info: Redefining \% on input line 31.
+ [5]
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+ [6 <./Graphics/sso_types.png>]
+LaTeX Info: Redefining \. on input line 64.
+LaTeX Info: Redefining \% on input line 64.
  [7]
 LaTeX Info: Redefining \. on input line 82.
 LaTeX Info: Redefining \% on input line 82.
  [8]
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
- [9])
+LaTeX Info: Redefining \. on input line 102.
+LaTeX Info: Redefining \% on input line 102.
+ [9]
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+ [10])
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
- [10]
+ [11]
 \openout2 = `MainMatter/Proposal.aux'.
 
- (./MainMatter/Proposal.tex
+
+(./MainMatter/Proposal.tex
 Cap\'{\i }tulo 2.
-) [11
+) [12
 
 
 
@@ -1521,14 +1537,14 @@ Cap\'{\i }tulo 2.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [12
+) [13
 
 
 
 ]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [13
+ (./BackMatter/Conclusions.tex) [14
 
 
 
@@ -1537,7 +1553,7 @@ Cap\'{\i }tulo 3.
 \openout2 = `BackMatter/Recomendations.aux'.
 
  (./BackMatter/Recomendations.tex)
-[14
+[15
 
 
 
@@ -1552,44 +1568,51 @@ LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (170.41614pt too wide) in paragraph at lines 1--1
+Overfull \hbox (39.57417pt too wide) in paragraph at lines 1--1
+[]\T1/lmr/m/n/12 V. Radha y D. H. Reddy, ^^S  A sur-vey on sin-gle sign-on tech
+-ni-ques,^^T |   [],
+ []
+
+
+Overfull \hbox (176.29112pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 rity^^Van eva-lua-tion of ope-nid con-nect,^^T en |   [],
  []
 
 
-Overfull \hbox (105.80423pt too wide) in paragraph at lines 1--1
+Overfull \hbox (111.67921pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 goo-gle authen-ti-ca-tion api,^^T en |   [],
  []
 
-) [15
+[16
 
 
 
-]
+]) [17]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (./Thesis.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
- (./FrontMatter/Dedication.aux) (./FrontMatter/Thanks.aux)
-(./FrontMatter/SupervisorOpinion.aux) (./FrontMatter/Abstract.aux)
-(./FrontMatter/Contents.aux) (./MainMatter/Introduction.aux)
-(./MainMatter/Background.aux) (./MainMatter/Proposal.aux)
-(./MainMatter/Implementation.aux) (./BackMatter/Conclusions.aux)
-(./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
+ (./FrontMatter/Dedication.aux)
+(./FrontMatter/Thanks.aux) (./FrontMatter/SupervisorOpinion.aux)
+(./FrontMatter/Abstract.aux) (./FrontMatter/Contents.aux)
+(./MainMatter/Introduction.aux) (./MainMatter/Background.aux)
+(./MainMatter/Proposal.aux) (./MainMatter/Implementation.aux)
+(./BackMatter/Conclusions.aux) (./BackMatter/Recomendations.aux)
+(./BackMatter/Bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 5C32C142D9C72861F74BA562771D6936;870.
+(rerunfilecheck)             Checksum: EBAB02B12ADF3D2132764926F6530B69;999.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31700 strings out of 480608
- 584511 string characters out of 5903629
- 1311079 words of memory out of 5000000
- 46873 multiletter control sequences out of 15000+600000
+ 31736 strings out of 480608
+ 585319 string characters out of 5903629
+ 1312303 words of memory out of 5000000
+ 46899 multiletter control sequences out of 15000+600000
  593515 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,11n,106p,1541b,2001s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1601,10 +1624,10 @@ pe1/public/lm/lmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/l
 m/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmro10.p
 fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmtt12.pfb></usr/l
 ocal/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (24 pages, 312430 bytes).
+Output written on Thesis.pdf (26 pages, 885053 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 65 named destinations out of 1000 (max. 500000)
- 234 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 326 compressed objects within 4 object streams
+ 73 named destinations out of 1000 (max. 500000)
+ 255 words of extra memory for PDF output out of 10000 (max. 10000000)
 

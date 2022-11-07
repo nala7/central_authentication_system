@@ -72,6 +72,89 @@
       \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
       \endverb
     \endentry
+    \entry{radha2012survey}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2da1267b9ef6adb02b06ccb4214e70a5}{%
+           family={Radha},
+           familyi={R\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d60104f78df9f19a50b2744c10009d85}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={D\bibnamedelima Hitha},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{fullhash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{bibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authorbibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authornamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authorfullhash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Technology}
+      \field{title}{A survey on single sign-on techniques}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{pages}{134\bibrangedash 139}
+      \range{pages}{6}
+    \endentry
+    \entry{google-support}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About SSO}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://support.google.com/
+      \endverb
+      \verb{url}
+      \verb https://support.google.com/
+      \endverb
+    \endentry
+    \entry{sso-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2a723769d08b0732d8563ffe6bdaee7d}{%
+           family={Auth0},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{fullhash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{bibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authorbibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Single Sign-On}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://auth0.com/docs/authenticate/single-sign-on
+      \endverb
+      \verb{url}
+      \verb https://auth0.com/docs/authenticate/single-sign-on
+      \endverb
+    \endentry
     \entry{openid-doc}{online}{}
       \name{author}{1}{}{%
         {{hash=10d822cbb5b2266b331cdefd7410c831}{%
@@ -84,8 +167,8 @@
       \strng{authorbibnamehash}{10d822cbb5b2266b331cdefd7410c831}
       \strng{authornamehash}{10d822cbb5b2266b331cdefd7410c831}
       \strng{authorfullhash}{10d822cbb5b2266b331cdefd7410c831}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Welcome to OpenID Connect}
@@ -129,8 +212,8 @@
       \strng{authorbibnamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authornamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authorfullhash}{db8f37c4b02f7977bfb70afe41231f3a}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE European Symposium on Security and Privacy (EuroS\&P)}
@@ -200,8 +283,8 @@
       \strng{authorbibnamehash}{836438e4840ba5d2ffb4758710aa44be}
       \strng{authornamehash}{836438e4840ba5d2ffb4758710aa44be}
       \strng{authorfullhash}{836438e4840ba5d2ffb4758710aa44be}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2. 0--Errata Composite}
@@ -241,8 +324,8 @@
       \strng{authorbibnamehash}{cd150667f878d2013019de2198781f46}
       \strng{authornamehash}{cd150667f878d2013019de2198781f46}
       \strng{authorfullhash}{cd150667f878d2013019de2198781f46}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{OASIS}

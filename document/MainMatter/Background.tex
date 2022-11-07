@@ -1,20 +1,41 @@
-\textcolor{blue}{Recuerda que tu estado del arte va sobre autenticación. \\
-	Puedes salirte un poco de autenticación central y hablar de otras formas de autenticar ( radius, kerberos, active directory u otros protocolos que te encuentres )\\
-	Es mas, te invito a que lo hagas.}\\\\
-En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticacióna. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
+
+
 
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
+En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticacióna. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.\\
 \textcolor{blue}{Si quieres en lugar de este pequeño parrafo introductorio haz un resumen de todo lo que hablas en el capítulo }
 
-%\textcolor{red}{estas son las unicas dos técnicas que existen?? no hay otras propietarias o no posible de utilzar por nosotros por el equipamiento que poseemos... en fin. \\
-%	Al final debes decirme que tiene esa tecnica que no usas como defecto o como compatiblidad con la estructura existente en nuestra red. \\\\
-%	Aqui en este capitulo debes hablar de la segurirdad que es algo importante para que no entren intrusos que tecnica utilizas para ello-...}
+\textcolor{blue}{Recuerda que tu estado del arte va sobre autenticación. \\
+	Puedes salirte un poco de autenticación central y hablar de otras formas de autenticar ( radius, kerberos, active directory u otros protocolos que te encuentres )}\\\\
+
 
 \section{Inicio de Sesión Único}
 \textcolor{blue}{Tienes una perfecta definición en el párrafo a continuación. Pero como que queda un poco seca no crees ? Quien lo usa, desde cuando se emplea. Que ventajas y desventajas posee. Ejemplos de softwares que lo usan. Son de código abierto ? Son de código cerrado ? \\
 Por ahi tienes bastante tela por donde cortar. Lo mismo aplica para el resto de los protocolos de autenticación.}
 
 El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas de software independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
+
+En el mundo digital actual, los usuarios acceden a múltiples sistemas para llevar a cabo sus quehaceres. A medida que aumenta la cantidad de sistemas, también aumenta la cantidad de credenciales de cada usuario y, por lo tanto, también incrementa la posibilidad de perderlas u olvidarlas. El inicio de sesión único se puede utilizar para resolver muchos problemas relacionados con múltiples credenciales para diferentes aplicaciones. El acceso de inicio de sesión único al centro de autenticación principal permite a los usuarios obtener acceso a todos los demás recursos disponibles. SSO ayuda a mejorar la productividad del usuario y del desarrollador al evitar que el usuario recuerde varias contraseñas y también reduce la cantidad de tiempo que el usuario dedica a escribir varias contraseñas para iniciar sesión. SSO también simplifica la administración mediante la gestión de credenciales únicas en lugar de múltiples credenciales. Facilita la gestión de los derechos de un usuario que llega, cambia de función dentro o sale de la empresa, para integrar rápidamente aplicaciones adicionales, delegar derechos de acceso durante las vacaciones sin aumentar la carga de trabajo de la mesa de ayuda. [\cite{radha2012survey}]
+
+Grandes empresas como Google, Facebook y Microsoft utilizan estos servicios. En particular Google permite a sus usuarios iniciar sesión una única vez para tener acceso a todos los servicios de la empresa que se encuentran en la nube. Cuando se configura SSO, los usuarios pueden iniciar sesión en terceros proveedores de identidad y luego acceder a las aplicaciones de Google directamente sin un segundo inicio de sesión [\cite{google-support}]. Por ejemplo, si se accede a un servicio de Google como Gmail, se autentica automáticamente en YouTube, AdSense, Google Analytics, y otras applicaciones de Google. Del mismo modo, si cierra la sesión de su Gmail u otras aplicaciones de Google, se cerrará automáticamente la sesión de todas las aplicaciones; esto se conoce como Cierre de Sesión Único (en inglés: \textit{Single Logout}) [\cite{sso-doc}]
+
+\subsection{Tipos de SSO}
+The various types of SSO shown in Fig: 1, fall under different categories, based on where they are deployed (Intranet, Extranet, Internet); how they are deployed (architecture – Simple, Complex); the credentials they use (token, certificate..) and the protocols they use (Kerberos, SAML, OpenID..).Following picture shows the types of SSO and their classification: 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Graphics/sso_types}
+	\caption{}
+	\label{fig:Tipos de SSO}
+\end{figure}
+
+Dadas las condiciones de la Universidad, se despliegará en Extranet ya que \textcolor{red}{Multi-domain SSO allows connecting to multiple systems within the same enterprise and all the business partners’ applications. The user can login into one enterprise and access resources of the other, the users need not login again using different credentials.}
+
+Se despliegará con una arquitectura de tipo SSO compleja ya que \textcolor{red}{Complex SSO uses multiple authentication authorities with single or multiple sets of credentials for each user.}
+
+En este caso se utilizarán un único conjunto de credenciales basado en tokens porque \textcolor{red}{In this SSO system, a user submits the credentials to the token-based authentication authority, in which the credentials have been checked with its credential database. If the user credentials match, then the user is returned with a token. When the user wants to access an application server which is governed by second authentication authority, the same token is delivered to get a ticket to access the application server. Success of this process relies on the trust the authentication authorities have among themselves.}
+
+[\cite{radha2012survey}]
 
 \section{OpenID Connect}
 \textcolor{blue}{Hay una noción o distinción importante a la hora de diferenciar protocolos y que puedes abordar en tu estado del arte. Cada uno de los protocolos diseñados tiene como objetivo una arquitectura de red predeterminada. \\
@@ -33,13 +54,7 @@ Este protocolo está basado en \textit{OAuth 2.0} por lo que tiene todas las ven
 assertions made about a subject by a system entity. In the course of making, or relying upon such
 assertions, SAML system entities may use other protocols to communicate either regarding an assertion
 itself, or the subject of an assertion. This specification defines both the structure of SAML assertions, and
-an associated set of protocols, in addition to the processing rules involved in managing a SAML system.\\
-SAML assertions and protocol messages are encoded in XML [XML] and use XML namespaces [XMLNS].
-They are typically embedded in other structures for transport, such as HTTP POST requests or XMLencoded SOAP messages. The SAML bindings specification [SAMLBind] provides frameworks for the
-embedding and transport of SAML protocol messages. The SAML profiles specification [SAMLProf]
-provides a baseline set of profiles for the use of SAML assertions and protocols to accomplish specific
-use cases or achieve interoperability when using SAML features.
-[\cite{philpott2015assertions}]
+an associated set of protocols, in addition to the processing rules involved in managing a SAML system. [\cite{philpott2015assertions}]
 \\
 SAML, developed by the Security Services Technical Committee of the Organization for the Advancement of Structured Information Standards (OASIS), is an XML-based framework for communicating user authentication, entitlement, and attribute information. As its name suggests, SAML allows business entities to make assertions regarding the identity, attributes, and entitlements of a subject (an entity that is often a human user) to other entities, such as a partner company or another enterprise application. SAML is a flexible and extensible protocol designed to be used – and customized if necessary
 – by other standards. [\cite{wisniewski2005saml}]}
@@ -66,10 +81,13 @@ El sistema de autenticación vigente en el Nodo Central verifica sus usuarios co
 	- It is a mature, flexible, and well supported standards-based mechanism for interacting with directory servers. It’s often used for authentication and storing information about users, groups, and applications, but an LDAP directory server is a fairly general-purpose data store and can be used in a wide variety of applications. \\ LDAP is a tool in the User Management and Authentication category of a tech stack.}
 
 
+\section{Active Directory}
+
+
 \section{Keycloak}
 Keycloak es un software de código abierto que permite el \textit{Single Sign-On} o Inicio de Sesión Único con \textit{Identity Management} y \textit{Access Management} para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un Proveedor de identidad (en inglés: \textit{Identity Provider}, también conocido por sus siglas IdP), permite que una aplicación (a menudo llamada \textit{Service Provider} o SP) delegue su autenticación. [\cite{KeycloakDoc}]
 
-Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es compatible \textcolor{blue}{o mantenido?} con Red Hat. [\cite{KeycloakDoc}]
+Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es  mantenido por Red Hat. [\cite{KeycloakDoc}]
 
 	\subsection{Características}
 	Los usuarios se autentican en Keycloak en lugar de hacerlo en las aplicaciones. Esto significa que no es necesario que cada aplicación tenga un formulario de inicio de sesión, autentique a los usuarios o almacene sus datos. Una vez entren en Keycloak, los usuarios no tendrán que iniciar sesión en las demás aplicaciones conectadas al software.

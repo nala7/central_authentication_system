@@ -2185,19 +2185,23 @@
   <bcf:section number="0">
     <bcf:citekey order="1">kutera2016single</bcf:citekey>
     <bcf:citekey order="2">microsoft-doc</bcf:citekey>
-    <bcf:citekey order="3">openid-doc</bcf:citekey>
-    <bcf:citekey order="4">mainka2017sok</bcf:citekey>
-    <bcf:citekey order="5">openid-doc</bcf:citekey>
-    <bcf:citekey order="6">openid-doc</bcf:citekey>
-    <bcf:citekey order="7">kutera2016single</bcf:citekey>
-    <bcf:citekey order="8">philpott2015assertions</bcf:citekey>
-    <bcf:citekey order="9">wisniewski2005saml</bcf:citekey>
-    <bcf:citekey order="10">ldap-doc</bcf:citekey>
-    <bcf:citekey order="11">KeycloakDoc</bcf:citekey>
-    <bcf:citekey order="12">KeycloakDoc</bcf:citekey>
-    <bcf:citekey order="13">KeycloakDoc</bcf:citekey>
-    <bcf:citekey order="14">wijayarathna2019empirical</bcf:citekey>
-    <bcf:citekey order="15">wijayarathna2019empirical</bcf:citekey>
+    <bcf:citekey order="3">radha2012survey</bcf:citekey>
+    <bcf:citekey order="4">google-support</bcf:citekey>
+    <bcf:citekey order="5">sso-doc</bcf:citekey>
+    <bcf:citekey order="6">radha2012survey</bcf:citekey>
+    <bcf:citekey order="7">openid-doc</bcf:citekey>
+    <bcf:citekey order="8">mainka2017sok</bcf:citekey>
+    <bcf:citekey order="9">openid-doc</bcf:citekey>
+    <bcf:citekey order="10">openid-doc</bcf:citekey>
+    <bcf:citekey order="11">kutera2016single</bcf:citekey>
+    <bcf:citekey order="12">philpott2015assertions</bcf:citekey>
+    <bcf:citekey order="13">wisniewski2005saml</bcf:citekey>
+    <bcf:citekey order="14">ldap-doc</bcf:citekey>
+    <bcf:citekey order="15">KeycloakDoc</bcf:citekey>
+    <bcf:citekey order="16">KeycloakDoc</bcf:citekey>
+    <bcf:citekey order="17">KeycloakDoc</bcf:citekey>
+    <bcf:citekey order="18">wijayarathna2019empirical</bcf:citekey>
+    <bcf:citekey order="19">wijayarathna2019empirical</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
