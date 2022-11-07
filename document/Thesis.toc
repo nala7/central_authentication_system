@@ -19,6 +19,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.5.2}Google Authenticator}{9}{subsection.1.5.2}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.6}Seguridad}{10}{section.1.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Propuesta}{11}{chapter.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{12}{chapter.3}%
