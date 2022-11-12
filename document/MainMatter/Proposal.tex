@@ -1,1 +1,40 @@
 \chapter{Propuesta}\label{chapter:proposal}
+\section*{Hipótesis}
+
+El Nodo Central es el responsable de todas las comunicaciones de la Universidad de La Habana. Presta servicios a todas las facultades, desde las que se encuentran en la Colina, hasta facultades externas como Economía, el Jardín Botánico y la Quinta de los Molinos. Servicios como Correo, acceso a Internet y proxy son  imprescindibles para garantizar el correcto funcionamiento de la institución. También es el encargado de proveer acceso a todos los estudiantes y trabajadores a todos los servicios correspondientes. Entre ellos se encuentra EVEA, el registro de notas, el sistema de contabilidad y el de recursos humanos.
+
+Cada uno de estos sistemas se han realizado de forma independiente a lo largo el proceso del digitalización de la Universidad. Todos estos servicios tienen sistemas de acceso diferentes, lo cual significa que los usuarios para consumir los distintos servicios que utiliza diariamente tiene que autenticarse en cada de forma independiente. Esto crea dificultades tanto para los usuarios como para el Nodo Central. 
+
+Mecanismos de autenticación como el clásico usuario/contraseña son poco seguros o inadecuados, y más aún cuando los usuarios deben de acceder a cada aplicación por separado, ya que estas tienen su propio sistema de autenticación. Esto hace más engorroso el proceso de gestión de identidades y permisos a medida que aumenta la cantidad de usuarios en la red y debilitando la seguridad de acceso a las aplicaciones comprometiendo la confidencialidad de los datos.
+
+La necesidad de que el cliente repita el ingreso de la contraseña cada vez que accede a un servicio trae consigo varias dificultades: tiempo prolongado al tener que registrarse en varios sistemas para consultar información, la ubicación del servidor en una máquina remota implica inseguridad. Cuando la red crece mucho porque se encuentran una gran cantidad de usuarios conectados, puede volverse muy complejo el proceso de autenticación, es decir que es afectada la escalabilidad.
+
+Debido a esto se hace necesaria la gestión de la autenticación mediante la utilización de mecanismos que agilicen este proceso, sin que cause perdida de información, seguridad, confidencialidad o disponibilidad y que faciliten la gestión de grandes volúmenes de usuarios reduciendo el riesgo de caída de las aplicaciones y garantizando la gestión de identidades con el aumento de la seguridad, preferentemente con el uso de sistemas de identidad unificados
+
+La Universidad de la Habana cuenta con varios sistemas en la red donde se utiliza el método tradicional de usuario/contraseña como mecanismo de seguridad para acceder a diversas aplicaciones, este proceso de autentificación se hace muy complejo al tener que acceder a cada uno de ellos de forma independiente. Para eliminar estas dificultades la realización de un sistema central de autenticación que se basa en método de Inicio de Sesión Único. Esta propuesta tiene como objetivo un aumento en la productividad, tener mayor facilidad de acceso a los recursos, funciones de autenticación a través de una única plataforma, una administración sencilla de credenciales y sobre todo garantizar un aumento de la seguridad. Mediante este servicio el usuario podrá registrarse en el sistema una sola vez, con lo cual podrá acceder a todos los recursos sin tener que volver a autentificarse.
+
+
+Los usuarios se ven obligados a tener más de unas credenciales lo cual crea confusión. Frecuentemente se olvidan los nombres de usuarios o contraseñas o se utilizan las mismas credenciales en varios sitios, lo cual es una mala práctica desde el punto de vista de la seguridad. 
+
+Para el Nodo Central y los programadores se dificulta el trabajo. Con cada servicio nuevo se debe crear un sistema de autenticación que garantice la seguridad de sus datos y se deben hospedar la información de los usuarios repetidas veces, lo cual utiliza una mayor cantidad de recursos y es más propenso fallas. Por otra parte, el Nodo Central se ve obligado a intervenir en muchos problemas de los usuarios.
+
+Una solución a estos problemas sería crear un servicio de autenticación que sea utilizado por todos los servicios de la Universidad de La Habana. 
+
+Un sistema único que se utilice para autenticarse en todos los servicios brindados por la Universidad resolvería muchos de estos problemas. 
+
+
+Requisitos del Software:
+\begin{itemize}
+	\item Que el usuario inicie sesión y, hasta que cierre sesión, sea capaz de realizar operaciones sin tener que volver a introducir credenciales. 
+	\item El servicio ofrecido al cliente debe permitir que el usuario extienda la sesión una vez pasado un tiempo de expiración de la misma, sin tener que volver a introducir credenciales. 
+	\item Identificar la identidad de los usuarios durante el proceso de autenticación para garantizar un adecuado control de acceso a recursos del sistema.
+	\item Proteger los recursos del sistema, permitiendo que estos sean solamente usados por aquellos usuarios (personas u otro software) a los que se les ha concedido autorización para ello.
+	\item Que el usuario inicie sesión con dos únicos campos: identificador y contraseña. Este requisito será suficiente para garantizar la interoperabilidad del sistema, que debe ser capaz de generar un objeto encriptado con toda la información relativa a dicho usuario y viajar por la red de comunicaciones entre las distintas entidades. 
+	\item  La respuesta obtenida al iniciar sesión de forma exitosa debe ser un objeto que le dé portabilidad y reusabilidad al software
+	\item En caso de obtener un inicio de sesión erróneo, retornar un objeto que (...)
+	\item Garantizar el control de errores y excepciones.
+	\item La evaluación de permisos de acceso
+	\item Expiración del objeto utilizado para autenticar
+	\item  reducir el riesgo de manipulación de datos
+\end{itemize}
+

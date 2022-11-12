@@ -59,6 +59,7 @@
       \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
       \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
       \field{sortinit}{2}
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
@@ -222,115 +223,59 @@
       \field{pages}{251\bibrangedash 266}
       \range{pages}{16}
     \endentry
-    \entry{philpott2015assertions}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{10}{}{%
-        {{hash=0db8144e3ba6f32d9becd767ea4eb8b2}{%
-           family={Philpott},
-           familyi={P\bibinitperiod},
-           given={Rob},
+    \entry{sanchez2009estudio}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=ec7cf41878ba1b72250c6b6514e8297f}{%
+           family={S{á}nchez\bibnamedelima Guerrero},
+           familyi={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Rosa},
            giveni={R\bibinitperiod}}}%
-        {{hash=2a0ce8566c3f9ea6053db47c2a811ed6}{%
-           family={Ragouzis},
-           familyi={R\bibinitperiod},
-           given={Nick},
-           giveni={N\bibinitperiod}}}%
-        {{hash=d61059a0e3f4b4b21545c9f4559eea21}{%
-           family={Wisniewski},
-           familyi={W\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=ebdd24f6fef9b11d0bf68d6205075794}{%
-           family={Whitehead},
-           familyi={W\bibinitperiod},
-           given={Entrust\bibnamedelima Greg},
-           giveni={E\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
-        {{hash=23bfc39b40602cb6b71bc193dcccf2ca}{%
-           family={Hinton},
-           familyi={H\bibinitperiod},
-           given={HP\bibnamedelima Heather},
-           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-        {{hash=e674370ba2ca88f3e5cbb2a185b97dea}{%
-           family={Cahill},
-           familyi={C\bibinitperiod},
-           given={Connor\bibnamedelima P},
-           giveni={C\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
-        {{hash=81e40ae87af997090fa9a9696e364c65}{%
-           family={Bradley},
-           familyi={B\bibinitperiod},
-           given={John},
-           giveni={J\bibinitperiod}}}%
-        {{hash=f5df9417f3a63eda188d5d6c329cbf1f}{%
-           family={Hodges},
-           familyi={H\bibinitperiod},
-           given={Individual\bibnamedelima Jeff},
-           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=de32e04322f4b7ff1b8c8a81e3f41fca}{%
-           family={Brennan},
-           familyi={B\bibinitperiod},
-           given={Individual\bibnamedelima Joni},
-           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=4877246b924630b21884e3015459b6d8}{%
-           family={Alliance},
-           familyi={A\bibinitperiod},
-           given={Liberty},
-           giveni={L\bibinitperiod}}}%
       }
-      \strng{namehash}{836438e4840ba5d2ffb4758710aa44be}
-      \strng{fullhash}{836438e4840ba5d2ffb4758710aa44be}
-      \strng{bibnamehash}{836438e4840ba5d2ffb4758710aa44be}
-      \strng{authorbibnamehash}{836438e4840ba5d2ffb4758710aa44be}
-      \strng{authornamehash}{836438e4840ba5d2ffb4758710aa44be}
-      \strng{authorfullhash}{836438e4840ba5d2ffb4758710aa44be}
+      \strng{namehash}{ec7cf41878ba1b72250c6b6514e8297f}
+      \strng{fullhash}{ec7cf41878ba1b72250c6b6514e8297f}
+      \strng{bibnamehash}{ec7cf41878ba1b72250c6b6514e8297f}
+      \strng{authorbibnamehash}{ec7cf41878ba1b72250c6b6514e8297f}
+      \strng{authornamehash}{ec7cf41878ba1b72250c6b6514e8297f}
+      \strng{authorfullhash}{ec7cf41878ba1b72250c6b6514e8297f}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Assertions and Protocols for the OASIS Security Assertion Markup Language (SAML) V2. 0--Errata Composite}
-      \field{year}{2015}
+      \field{title}{Estudio y puesta en marcha de una infraestructura de gesti{ó}n de identidad federada basada en SAML 2.0}
+      \field{type}{mathesis}
+      \field{year}{2009}
     \endentry
-    \entry{wisniewski2005saml}{article}{}
-      \name{author}{5}{}{%
-        {{hash=d61059a0e3f4b4b21545c9f4559eea21}{%
-           family={Wisniewski},
-           familyi={W\bibinitperiod},
-           given={Thomas},
-           giveni={T\bibinitperiod}}}%
-        {{hash=7cb6307405336537b6b5108229bd518b}{%
-           family={Nadalin},
+    \entry{naik2017securing}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=dc0f194568ffac6e0dabf705c2ac2a04}{%
+           family={Naik},
            familyi={N\bibinitperiod},
-           given={Entrust\bibnamedelima Tony},
-           giveni={E\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
-        {{hash=d81f5333693d3d89741595e3d90230cc}{%
-           family={Cantor},
-           familyi={C\bibinitperiod},
-           given={Scott},
-           giveni={S\bibinitperiod}}}%
-        {{hash=85c876fc5b0452a894338dd4e0c23405}{%
-           family={Hodges},
-           familyi={H\bibinitperiod},
-           given={Internet2\bibnamedelima Jeff},
-           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=9c8141672307b35ba8a95797626af68d}{%
-           family={Mishra},
-           familyi={M\bibinitperiod},
-           given={Neustar\bibnamedelima Prateek},
-           giveni={N\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+           given={Nitin},
+           giveni={N\bibinitperiod}}}%
+        {{hash=007f38666d5704ff23f1e1011f0bdceb}{%
+           family={Jenkins},
+           familyi={J\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
       }
-      \strng{namehash}{cd150667f878d2013019de2198781f46}
-      \strng{fullhash}{cd150667f878d2013019de2198781f46}
-      \strng{bibnamehash}{cd150667f878d2013019de2198781f46}
-      \strng{authorbibnamehash}{cd150667f878d2013019de2198781f46}
-      \strng{authornamehash}{cd150667f878d2013019de2198781f46}
-      \strng{authorfullhash}{cd150667f878d2013019de2198781f46}
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0a44fe42064d24557eefa9112126cc07}
+      \strng{fullhash}{0a44fe42064d24557eefa9112126cc07}
+      \strng{bibnamehash}{0a44fe42064d24557eefa9112126cc07}
+      \strng{authorbibnamehash}{0a44fe42064d24557eefa9112126cc07}
+      \strng{authornamehash}{0a44fe42064d24557eefa9112126cc07}
+      \strng{authorfullhash}{0a44fe42064d24557eefa9112126cc07}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{journaltitle}{OASIS}
-      \field{title}{SAML V2. 0 executive overview}
-      \field{year}{2005}
+      \field{booktitle}{2017 11th International Conference on Research Challenges in Information Science (RCIS)}
+      \field{title}{Securing digital identities in the cloud by selecting an apposite Federated Identity Management from SAML, OAuth and OpenID Connect}
+      \field{year}{2017}
+      \field{pages}{163\bibrangedash 174}
+      \range{pages}{12}
     \endentry
     \entry{ldap-doc}{online}{}
       \name{author}{1}{}{%
@@ -357,6 +302,32 @@
       \verb https://ldap.com/
       \endverb
     \endentry
+    \entry{active-directoy-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Active Directory Domain Services Overview}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
+      \endverb
+    \endentry
     \entry{KeycloakDoc}{misc}{}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
@@ -364,34 +335,77 @@
       \field{howpublished}{\url{https://www.keycloak.org/documentation}}
       \field{title}{Keycloak Documentation}
     \endentry
-    \entry{wijayarathna2019empirical}{incollection}{}
-      \name{author}{2}{}{%
-        {{hash=23448f54b49fb710e51adf7c01820a40}{%
-           family={Wijayarathna},
-           familyi={W\bibinitperiod},
-           given={Chamila},
-           giveni={C\bibinitperiod}}}%
-        {{hash=a1c1655df1e75a438f8f5321d29ebf04}{%
-           family={Arachchilage},
-           familyi={A\bibinitperiod},
-           given={Nalin\bibnamedelima AG},
-           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+    \entry{bradley_sakimura_jones_2015}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=81e40ae87af997090fa9a9696e364c65}{%
+           family={Bradley},
+           familyi={B\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=34e6848475fd66697bfcb80787f2aef0}{%
+           family={Sakimura},
+           familyi={S\bibinitperiod},
+           given={Nat},
+           giveni={N\bibinitperiod}}}%
+        {{hash=2a5ff79bfa0a02f65fb6c0a1aed39a1b}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Micheal\bibnamedelima B},
+           giveni={M\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
       }
-      \strng{namehash}{731fddff7408c74429e5ea7ed2f0ebe2}
-      \strng{fullhash}{731fddff7408c74429e5ea7ed2f0ebe2}
-      \strng{bibnamehash}{731fddff7408c74429e5ea7ed2f0ebe2}
-      \strng{authorbibnamehash}{731fddff7408c74429e5ea7ed2f0ebe2}
-      \strng{authornamehash}{731fddff7408c74429e5ea7ed2f0ebe2}
-      \strng{authorfullhash}{731fddff7408c74429e5ea7ed2f0ebe2}
+      \strng{namehash}{9e98e12c005cb3a7489b018def75dec4}
+      \strng{fullhash}{9e98e12c005cb3a7489b018def75dec4}
+      \strng{bibnamehash}{9e98e12c005cb3a7489b018def75dec4}
+      \strng{authorbibnamehash}{9e98e12c005cb3a7489b018def75dec4}
+      \strng{authornamehash}{9e98e12c005cb3a7489b018def75dec4}
+      \strng{authorfullhash}{9e98e12c005cb3a7489b018def75dec4}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Proceedings of the evaluation and assessment on software engineering}
-      \field{title}{An empirical usability analysis of the google authentication api}
-      \field{year}{2019}
-      \field{pages}{268\bibrangedash 274}
-      \range{pages}{7}
+      \field{journaltitle}{" RFC editor}
+      \field{month}{5}
+      \field{title}{JSON Web Token (JWT)}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://www.rfc-editor.org/rfc/rfc7519.txt
+      \endverb
+      \verb{url}
+      \verb https://www.rfc-editor.org/rfc/rfc7519.txt
+      \endverb
+    \endentry
+    \entry{muyon2020metodos}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5a0d747a65476ef8086bf129bf6cdd4f}{%
+           family={Muy{ó}n},
+           familyi={M\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=ff7bb728539120550d84fc31cc9ea3ed}{%
+           family={Montaluisa},
+           familyi={M\bibinitperiod},
+           given={Franklin},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Associa{ç}{ã}o Ib{é}rica de Sistemas e Tecnologias de Informacao}%
+      }
+      \strng{namehash}{ee4acf150db72823f23e2c89642004bc}
+      \strng{fullhash}{ee4acf150db72823f23e2c89642004bc}
+      \strng{bibnamehash}{ee4acf150db72823f23e2c89642004bc}
+      \strng{authorbibnamehash}{ee4acf150db72823f23e2c89642004bc}
+      \strng{authornamehash}{ee4acf150db72823f23e2c89642004bc}
+      \strng{authorfullhash}{ee4acf150db72823f23e2c89642004bc}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Revista Ib{é}rica de Sistemas e Tecnologias de Informa{ç}{ã}o}
+      \field{number}{E29}
+      \field{title}{M{é}todos de seguridad de la informaci{ó}n para proteger la comunicaci{ó}n y los datos de servicios web REST en peticiones HTTP utilizando JSON Web Token y Keycloak Red Hat Single Sign On}
+      \field{year}{2020}
+      \field{pages}{198\bibrangedash 213}
+      \range{pages}{16}
     \endentry
   \enddatalist
 \endrefsection

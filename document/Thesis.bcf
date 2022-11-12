@@ -2194,14 +2194,16 @@
     <bcf:citekey order="9">openid-doc</bcf:citekey>
     <bcf:citekey order="10">openid-doc</bcf:citekey>
     <bcf:citekey order="11">kutera2016single</bcf:citekey>
-    <bcf:citekey order="12">philpott2015assertions</bcf:citekey>
-    <bcf:citekey order="13">wisniewski2005saml</bcf:citekey>
+    <bcf:citekey order="12">sanchez2009estudio</bcf:citekey>
+    <bcf:citekey order="13">naik2017securing</bcf:citekey>
     <bcf:citekey order="14">ldap-doc</bcf:citekey>
-    <bcf:citekey order="15">KeycloakDoc</bcf:citekey>
+    <bcf:citekey order="15">active-directoy-doc</bcf:citekey>
     <bcf:citekey order="16">KeycloakDoc</bcf:citekey>
     <bcf:citekey order="17">KeycloakDoc</bcf:citekey>
-    <bcf:citekey order="18">wijayarathna2019empirical</bcf:citekey>
-    <bcf:citekey order="19">wijayarathna2019empirical</bcf:citekey>
+    <bcf:citekey order="18">KeycloakDoc</bcf:citekey>
+    <bcf:citekey order="19">bradley_sakimura_jones_2015</bcf:citekey>
+    <bcf:citekey order="20">muyon2020metodos</bcf:citekey>
+    <bcf:citekey order="21">muyon2020metodos</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
