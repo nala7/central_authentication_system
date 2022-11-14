@@ -2,7 +2,7 @@
 
 
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
-En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticacióna. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
+En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticación. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
 
 \section{Inicio de Sesión Único}
 El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas de software independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
@@ -61,13 +61,9 @@ El Protocolo Ligero de Acceso a Directorios (en inglés: \textit{Lightweight Dir
 
 LDAP está basado en estándares implementados sobre TCP/IP. Permite a los clientes interactuar directamente con los servidores de los directorios: almacenar y consultar información, buscar datos filtrados, autenticar usuarios, entre otros.
 
-Este protocolo es utilizado actualmente por muchos sistemas que apuestan por el software libre al utilizar distribuciones de Linux para ejercer las funciones propias de un directorio activo en el que se gestionarán las credenciales y permisos de los usuarios y estaciones de trabajo en redes LAN corporativas en conexiones cliente/servidor \textcolor{blue}{mientras que open id connect y el flujo de emisión de tokens esta pensado para redes abiertas ( internet )}.
+Este protocolo es utilizado actualmente por muchos sistemas que apuestan por el software libre al utilizar distribuciones de Linux para ejercer las funciones propias de un directorio activo en el que se gestionarán las credenciales y permisos de los usuarios y estaciones de trabajo en redes LAN corporativas en conexiones cliente/servidor.
 
 Un directorio remoto es un conjunto de objetos que están organizados de forma jerárquica, tales como: nombre, claves, direcciones, etc. Estos objetos estarán disponibles para una serie de clientes conectados mediante una red, normalmente interna o LAN, y proporcionarán las identidades y permisos para esos usuarios que la utilicen.
-
-\textcolor{blue}{Sería bueno que a cada protocolo le incluyas una url con el rfc que lo define ( cualquiera de ellos, el primero o el último ) ( puede haber mas de un rfc por protocolo )
-\\
-Ahora si esta en tu objetivo de tesis entender un protocolo, su link lo pones en la bibliografía consultada, por el contrario si es adicional, ponlo como un pie de página.}
 
 LDAP está basado en el protocolo X.500 para compartir directorios, y contiene esta información de forma jerarquizada y mediante categorías para proporcionarnos una estructura intuitiva desde el punto de vista de la gestión por parte de los administradores.
 
@@ -87,6 +83,14 @@ La seguridad está integrada con Active Directory a través de la autenticación
 [\cite{active-directoy-doc}]
 
 \input{MainMatter/Tables/LDAPvsAD.tex}
+
+\section{Okta}
+
+\section{Gluu}
+Gluu es una plataforma de código abierto gratuita que proporciona a las organizaciones un servicio de autenticación y autorización para las aplicaciones web y móvil. Permite configurar SSO (Single Sign-On) en aplicaciones que tengan soporte para OpenID Connect, SAML o  CAS para identidades federadas.
+
+\section{Auth0}
+Auth0 es una plataforma en la nube que ofrece la autenticación y la autorización como un servicio. Auth0 dispone de herramientas para simplificar la autenticación de las aplicaciones y APIs ya que hace uso de estándares como OAuth2.0, OpenID Connect, SAML 2.0, JSON Web Token o WS-Federation, ofreciendo SSO (Single Sign-On) a entornos empresariales
 
 \section{Keycloak}
 Keycloak es un software de código abierto que permite el \textit{Single Sign-On} o Inicio de Sesión Único con \textit{Identity Management} y \textit{Access Management} para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un Proveedor de identidad (en inglés: \textit{Identity Provider}, también conocido por sus siglas IdP), permite que una aplicación (a menudo llamada \textit{Service Provider} o SP) delegue su autenticación. [\cite{KeycloakDoc}]

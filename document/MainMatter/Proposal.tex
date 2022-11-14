@@ -1,40 +1,130 @@
-\chapter{Propuesta}\label{chapter:proposal}
+\chapter{Propuesta de Sistema Central de Autenticación}\label{chapter:proposal}
+En el siguiente capítulo (...)
 \section*{Hipótesis}
+La Universidad de la Habana cuenta con varios sistemas en la red donde se utiliza el método tradicional de usuario/contraseña como mecanismo de seguridad para acceder a diversas aplicaciones, este proceso de autenticación se hace muy complejo al tener que acceder a cada uno de ellos de forma independiente. Con cada servicio nuevo se debe crear un sistema de autenticación que garantice la seguridad de sus datos y se deben hospedar la información de los usuarios repetidas veces, lo cual utiliza una mayor cantidad de recursos y es más propenso fallas.
 
-El Nodo Central es el responsable de todas las comunicaciones de la Universidad de La Habana. Presta servicios a todas las facultades, desde las que se encuentran en la Colina, hasta facultades externas como Economía, el Jardín Botánico y la Quinta de los Molinos. Servicios como Correo, acceso a Internet y proxy son  imprescindibles para garantizar el correcto funcionamiento de la institución. También es el encargado de proveer acceso a todos los estudiantes y trabajadores a todos los servicios correspondientes. Entre ellos se encuentra EVEA, el registro de notas, el sistema de contabilidad y el de recursos humanos.
-
-Cada uno de estos sistemas se han realizado de forma independiente a lo largo el proceso del digitalización de la Universidad. Todos estos servicios tienen sistemas de acceso diferentes, lo cual significa que los usuarios para consumir los distintos servicios que utiliza diariamente tiene que autenticarse en cada de forma independiente. Esto crea dificultades tanto para los usuarios como para el Nodo Central. 
-
-Mecanismos de autenticación como el clásico usuario/contraseña son poco seguros o inadecuados, y más aún cuando los usuarios deben de acceder a cada aplicación por separado, ya que estas tienen su propio sistema de autenticación. Esto hace más engorroso el proceso de gestión de identidades y permisos a medida que aumenta la cantidad de usuarios en la red y debilitando la seguridad de acceso a las aplicaciones comprometiendo la confidencialidad de los datos.
-
-La necesidad de que el cliente repita el ingreso de la contraseña cada vez que accede a un servicio trae consigo varias dificultades: tiempo prolongado al tener que registrarse en varios sistemas para consultar información, la ubicación del servidor en una máquina remota implica inseguridad. Cuando la red crece mucho porque se encuentran una gran cantidad de usuarios conectados, puede volverse muy complejo el proceso de autenticación, es decir que es afectada la escalabilidad.
-
-Debido a esto se hace necesaria la gestión de la autenticación mediante la utilización de mecanismos que agilicen este proceso, sin que cause perdida de información, seguridad, confidencialidad o disponibilidad y que faciliten la gestión de grandes volúmenes de usuarios reduciendo el riesgo de caída de las aplicaciones y garantizando la gestión de identidades con el aumento de la seguridad, preferentemente con el uso de sistemas de identidad unificados
-
-La Universidad de la Habana cuenta con varios sistemas en la red donde se utiliza el método tradicional de usuario/contraseña como mecanismo de seguridad para acceder a diversas aplicaciones, este proceso de autentificación se hace muy complejo al tener que acceder a cada uno de ellos de forma independiente. Para eliminar estas dificultades la realización de un sistema central de autenticación que se basa en método de Inicio de Sesión Único. Esta propuesta tiene como objetivo un aumento en la productividad, tener mayor facilidad de acceso a los recursos, funciones de autenticación a través de una única plataforma, una administración sencilla de credenciales y sobre todo garantizar un aumento de la seguridad. Mediante este servicio el usuario podrá registrarse en el sistema una sola vez, con lo cual podrá acceder a todos los recursos sin tener que volver a autentificarse.
+Para eliminar estas dificultades se realiza un sistema central de autenticación que se basa en el método Inicio de Sesión Único. Esta propuesta tiene como objetivo un aumento en la productividad, tener mayor facilidad de acceso a los recursos, funciones de autenticación a través de una única plataforma, una administración sencilla de credenciales y sobre todo garantizar un aumento de la seguridad. Mediante este servicio el usuario podrá registrarse en el sistema una sola vez, con lo cual podrá acceder a todos los recursos sin tener que volver a autenticarse.
 
 
-Los usuarios se ven obligados a tener más de unas credenciales lo cual crea confusión. Frecuentemente se olvidan los nombres de usuarios o contraseñas o se utilizan las mismas credenciales en varios sitios, lo cual es una mala práctica desde el punto de vista de la seguridad. 
-
-Para el Nodo Central y los programadores se dificulta el trabajo. Con cada servicio nuevo se debe crear un sistema de autenticación que garantice la seguridad de sus datos y se deben hospedar la información de los usuarios repetidas veces, lo cual utiliza una mayor cantidad de recursos y es más propenso fallas. Por otra parte, el Nodo Central se ve obligado a intervenir en muchos problemas de los usuarios.
-
-Una solución a estos problemas sería crear un servicio de autenticación que sea utilizado por todos los servicios de la Universidad de La Habana. 
-
-Un sistema único que se utilice para autenticarse en todos los servicios brindados por la Universidad resolvería muchos de estos problemas. 
 
 
-Requisitos del Software:
+\subsection*{Requisitos del Software:}
 \begin{itemize}
+	\item Unificar las distintas fuentes de datos.
 	\item Que el usuario inicie sesión y, hasta que cierre sesión, sea capaz de realizar operaciones sin tener que volver a introducir credenciales. 
-	\item El servicio ofrecido al cliente debe permitir que el usuario extienda la sesión una vez pasado un tiempo de expiración de la misma, sin tener que volver a introducir credenciales. 
-	\item Identificar la identidad de los usuarios durante el proceso de autenticación para garantizar un adecuado control de acceso a recursos del sistema.
-	\item Proteger los recursos del sistema, permitiendo que estos sean solamente usados por aquellos usuarios (personas u otro software) a los que se les ha concedido autorización para ello.
-	\item Que el usuario inicie sesión con dos únicos campos: identificador y contraseña. Este requisito será suficiente para garantizar la interoperabilidad del sistema, que debe ser capaz de generar un objeto encriptado con toda la información relativa a dicho usuario y viajar por la red de comunicaciones entre las distintas entidades. 
-	\item  La respuesta obtenida al iniciar sesión de forma exitosa debe ser un objeto que le dé portabilidad y reusabilidad al software
-	\item En caso de obtener un inicio de sesión erróneo, retornar un objeto que (...)
+	\item El servicio ofrecido al cliente debe permitir que el usuario extienda la sesión una vez pasado el tiempo de expiración de la misma sin que volver a introducir credenciales. 
+	\item Reconocer la identidad de los usuarios durante el proceso de autenticación para garantizar un adecuado control de acceso a recursos del sistema.
+	\item Proteger los recursos del sistema, permitiendo que estos sean solamente usados por aquellos usuarios a los que se les ha concedido autorización.
+	\item Que el usuario inicie sesión con dos únicos campos: nombre de usuario y contraseña. Este requisito será suficiente para garantizar la interoperabilidad del sistema, que debe ser capaz de generar un objeto encriptado con toda la información relativa a dicho usuario y viajar por la red de comunicaciones entre las distintas entidades. 
+	\item  La respuesta obtenida al iniciar sesión de forma exitosa debe ser un objeto que le dé portabilidad y reusabilidad al software.
+	\item En caso de obtener un inicio de sesión erróneo, retornar un error
 	\item Garantizar el control de errores y excepciones.
 	\item La evaluación de permisos de acceso
-	\item Expiración del objeto utilizado para autenticar
-	\item  reducir el riesgo de manipulación de datos
 \end{itemize}
+
+El software consta de varias etapas:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Graphics/Diagrama Tesis"}
+	\caption{}
+	\label{fig:diagrama-tesis}
+\end{figure}
+
+\section*{Bases de Datos}
+
+%que es
+Actualmente los estudiantes de toda la Universidad de La Habana al matricularse se inscriben en secretaría en el Sistema de Gestión de la Nueva Universidad (SIGENU). En este sistema se almacenan todos los datos de los alumnos: datos personales, proveniencia, notas, grados.
+
+Por otra parte, los datos de los profesores y resto de trabajadores de la Universidad son guardados en bases de datos de ASSETS, software contratado. Cada unidad presupuestada de la Universidad tiene su propio ASSET donde almacena los datos de recursos humanos y del inventario.
+
+%problema
+El Nodo Central es el responsable de todas las comunicaciones de la Universidad de La Habana. Presta servicios a todas las facultades, desde las que se encuentran en la Colina, hasta facultades externas como Economía, el Jardín Botánico y la Quinta de los Molinos. Cada facultad tiene su sistema independiente donde gestiona a todo su personal que responde a sus necesidades. 
+
+La información es almacenada en varias bases de datos, lo cual hace difícil la gestión de todos los usuarios de la Universidad. Crear un sistema único al cual todas las facultades pudieran acceder de forma remota simplificaría el trabajo, no solo a los programadores , sino también a los usuarios. Por ejemplo, cada estudiante podría matricularse en su propia facultad y se evitarían las aglomeraciones y la confusión creada todos los años. 
+
+Por otra parte sería complicado cambiar el software utilizado por toda. Como se  la institución. Como mencionó anteriormente, algunas facultades se encuentran alejadas de La Colina, lo cual dificulta la comunicación y la instalación de nuevos sistemas. También se debe tener en cuenta que la experiencia del usuario sería diferente con un nuevo software. El personal trabajador de la Universidad es de diversas edades, por lo que podría ser complejo la adaptación a una nueva interfaz.
+
+% propuesta
+Por lo tanto en el presente trabajo se ha decidido no cambiar los sistemas. La unificación de las bases de datos de usuario de toda la Universidad de La Habana es un proceso complejo que no se encuentra en los objetivos del presente trabajo. 
+
+Por otra parte, se necesita un nombre de usuario único para cada trabajador y estudiante de la institución. Al utilizarse distintas fuentes de datos, no se puede garantizar que todas las bases de datos tengan las mismas estructuras. Sin embargo, todos los usuarios tienen una cuenta de correo que los identifica unívocamente, por lo que utilizar este campo como nombre de usuario garantiza que cada persona es identificado.
+
+\section*{Ingestión de Datos}
+
+\textcolor{red}{Insertar definición aquí}
+
+\textcolor{blue}{qué se hace actualmente (LDAP?)}
+
+Teniendo varias fuentes de datos, para garantizar una ingestión de datos exitosa, la solución debe ser capaz que leer información de distintas fuentes de datos. 
+
+Por otra parte el estado de un usuario puede cambiar y sus permisos de acceso pueden variar. Por ejemplo, a los estudiantes se les puede dar de baja o un trabajador puede terminar su contrato y por lo tanto se les debe quitar sus credenciales de forma inmediata. Un estudiante después de graduarse puede pasar a se trabajador de la institución, por lo que sus permisos de acceso deben ser cambiados. Otro caso sería cuando un estudiante o trabajador sale una licencia, deben suspenderse sus credenciales temporalmente hasta que la persona regrese. 
+
+Se necesita que el sistema de autenticación se actualice constantemente ya que las bases de datos cambian sus datos.
+
+La Universidad  se encuentra en constante cambio. Por ejemplo, en 2017 culminó el proceso de adscripción del Instituto Superior de Diseño (ISDI) a la Universidad de La Habana [\cite{isdi-historia}]. Para ello fue necesario incorporar todos los datos de los usuarios del ISDI al sistema de autenticación vigente para otorgarles las credenciales correspondientes. Por ello, el nuevo sistema debe ser capaz de admitir nuevas fuentes de datos de forma sencilla en un futuro. 
+
+\section*{Capa de Autenticación}
+
+\textcolor{red}{Insertar definición}
+
+% problema
+
+Los usuarios de la institución utilizan diariamente distintos servicios, que van desde acceder a Internet desde la red WI-FI o desde un proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación
+
+\section*{Clientes}
+
+
+\textbf{Estructura del Cap 2}
+
+\begin{itemize}
+	\item Descartar otras opciones
+	\item Describir brevemente por qué Keycloak (despues en mas detalle cada componente)
+	\item Propuesta: Diagrama
+	\\
+	\item
+	-	qué es la etapa/componente
+	-	cuál es problema concreto
+	-	propuesta de solución
+	\\
+	\item \textbf{	Bases de datos: }
+	\\
+	qué es: dónde y en qué formato se almacena la información\\
+	problema: Hay muchas facultades, es dificil cambiar como se introducen los datos. \\
+	propuesta: no cambiar nada, tiene que tener la base de datos una columna con valores únicos que pueda ser usado como nombre de usuario
+	\\
+	\item \textbf{Ingestión de datos}
+	\\
+	Qué es: definición
+	problema:
+	- Aceptar varias fuentes de datos\\
+	- Actualizarse live. por si un estudiante se gradúa, un trabajador culmina su contrato, un trabajador empieza un contrato, un estudiante comienza primer año, estudiante pasa a ser trabajador, estudiante regresa de licencia.\\
+	- Contraseña ?????\\
+	- Añadir fuentes de datos dinámicamente\\
+	propuesta: keycloak, why?
+	\\
+	\item \textbf{Capa de autenticación}\\
+	Qué es: definición\\
+	problema:\\
+	- unificar\\
+	- seguridad, computadoras compartidas en el laboratorio\\
+	- refresh\\
+	- logout, \\
+	propuesta: keycloak (ya se está usando para ingestión de datos mantenimiento, simplicidad, facilidad de aprendizaje, menos recursos)
+	\\
+	\item \textbf{Clientes}\\
+	Qué es: definición, en la UH: correo, evea\\
+	Problema: todos distintos, nada en común, seguridad del sistema de autenticación\\
+	Propuesta: que los servicios utilicen el API de keycloak para autenticar\\
+	tu tesis no modifica los clientes existentes, pero ilustra cómo hacerlo con un cliente de ejemplo desarrollado en Python.\\
+	\\
+	\item \textbf{Usuarios}\\
+	Qué es: personas jóvenes, personas mayores\\
+	Problema: confuso\\
+	\\
+	\textcolor{red}{Los usuarios se ven obligados a tener más de unas credenciales lo cual crea confusión. Frecuentemente se olvidan los nombres de usuarios o contraseñas o se utilizan las mismas credenciales en varios sitios, lo cual es una mala práctica desde el punto de vista de la seguridad.}
+	\\
+	Propuesta: sus servicios no van a cambiar, pero única contraseña, seguridad añadida sin cambiar la experiencia de usuario
+	
+\end{itemize} 
 

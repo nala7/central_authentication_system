@@ -407,6 +407,35 @@
       \field{pages}{198\bibrangedash 213}
       \range{pages}{16}
     \endentry
+    \entry{isdi-historia}{online}{}
+      \name{author}{1}{}{%
+        {{hash=aeca751e5a7ad0cd5bb2952226ad4db0}{%
+           family={Diseño},
+           familyi={D\bibinitperiod},
+           given={Instituto\bibnamedelima Superior},
+           giveni={I\bibinitperiod\bibinitdelim S\bibinitperiod},
+           prefix={de},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \strng{namehash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \strng{fullhash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \strng{bibnamehash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \strng{authorbibnamehash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \strng{authornamehash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \strng{authorfullhash}{aeca751e5a7ad0cd5bb2952226ad4db0}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Historia del Instituto}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.isdi.co.cu/index.php/site/historia/Historia#:~:text=Al%20culminar%20el%20proceso%20de,mes%20de%20enero%20de%202017.
+      \endverb
+      \verb{url}
+      \verb https://www.isdi.co.cu/index.php/site/historia/Historia#:~:text=Al%20culminar%20el%20proceso%20de,mes%20de%20enero%20de%202017.
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

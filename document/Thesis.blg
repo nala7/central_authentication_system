@@ -1,18 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'Thesis.blg'
-[119] biber-darwin:322> INFO - === Wed Nov  9, 2022, 16:05:05
-[146] Biber.pm:415> INFO - Reading 'Thesis.bcf'
-[248] Biber.pm:943> INFO - Found 14 citekeys in bib section 0
-[268] Biber.pm:4256> INFO - Processing section 0
-[268] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
-[269] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
-[284] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
-[293] bibtex.pm:1653> INFO - LaTeX decoding ...
-[319] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
-[398] Utils.pm:304> WARN - month field 'May' in entry 'bradley_sakimura_jones_2015' is not an integer - this will probably not sort properly.
-[426] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[426] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[427] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[448] bbl.pm:652> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
-[456] bbl.pm:755> INFO - Output to Thesis.bbl
-[456] Biber.pm:128> INFO - WARNINGS: 1
+[135] biber-darwin:322> INFO - === Mon Nov 14, 2022, 16:13:30
+[169] Biber.pm:415> INFO - Reading 'Thesis.bcf'
+[341] Biber.pm:943> INFO - Found 15 citekeys in bib section 0
+[360] Biber.pm:4256> INFO - Processing section 0
+[361] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
+[361] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
+[376] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
+[383] bibtex.pm:1653> INFO - LaTeX decoding ...
+[418] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
+[420] Utils.pm:304> WARN - Duplicate entry key: 'muyon2020metodos' in file 'Bibliography.bib', skipping ...
+[543] Utils.pm:304> WARN - month field 'May' in entry 'bradley_sakimura_jones_2015' is not an integer - this will probably not sort properly.
+[577] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[577] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[577] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[599] bbl.pm:652> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[616] bbl.pm:755> INFO - Output to Thesis.bbl
+[617] Biber.pm:128> INFO - WARNINGS: 2

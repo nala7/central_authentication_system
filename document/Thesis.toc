@@ -19,22 +19,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.5}Active Directory}{8}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Keycloak}{9}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Okta}{9}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.1}Características}{9}{subsection.1.6.1}%
+\contentsline {section}{\numberline {1.7}Gluu}{9}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.2}JSON Web Token}{10}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.8}Auth0}{9}{section.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.6.3}REST API}{11}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.9}Keycloak}{9}{section.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {2}Propuesta}{13}{chapter.2}%
+\contentsline {subsection}{\numberline {1.9.1}Características}{10}{subsection.1.9.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{16}{chapter.3}%
+\contentsline {subsection}{\numberline {1.9.2}JSON Web Token}{11}{subsection.1.9.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.1}Keycloak}{16}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {1.9.3}REST API}{11}{subsection.1.9.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{17}{section*.19}%
+\contentsline {chapter}{\numberline {2}Propuesta de Sistema Central de Autenticación}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{18}{section*.21}%
+\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{19}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliograf\'{\i }a}{19}{chapter*.23}%
+\contentsline {subsection}{\numberline {3.0.1}Keycloak}{19}{subsection.3.0.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusiones}{20}{section*.25}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Recomendaciones}{21}{section*.27}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliograf\'{\i }a}{22}{chapter*.29}%
