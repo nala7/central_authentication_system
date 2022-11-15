@@ -7,40 +7,42 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Inicio de Sesión Único}{4}{section.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.2}OpenID Connect}{5}{section.1.2}%
+\contentsline {section}{\numberline {1.2}Autenticación basada en tokens}{5}{section.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.3}Otros protocolos de autenticación}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.3}OpenID Connect}{6}{section.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.1}SAML}{6}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Otros protocolos de autenticación}{6}{section.1.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.3.2}Kerberos}{7}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.4.1}SAML}{6}{subsection.1.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.4}LDAP}{7}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.2}Kerberos}{7}{subsection.1.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.5}Active Directory}{8}{section.1.5}%
+\contentsline {section}{\numberline {1.5}LDAP}{8}{section.1.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.6}Okta}{9}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Active Directory}{9}{section.1.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.7}Gluu}{9}{section.1.7}%
+\contentsline {section}{\numberline {1.7}Okta}{9}{section.1.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.8}Auth0}{9}{section.1.8}%
+\contentsline {section}{\numberline {1.8}Gluu}{9}{section.1.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {1.9}Keycloak}{9}{section.1.9}%
+\contentsline {section}{\numberline {1.9}Auth0}{10}{section.1.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.9.1}Características}{10}{subsection.1.9.1}%
+\contentsline {section}{\numberline {1.10}Keycloak}{10}{section.1.10}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.9.2}JSON Web Token}{11}{subsection.1.9.2}%
+\contentsline {subsection}{\numberline {1.10.1}Características}{10}{subsection.1.10.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {1.9.3}REST API}{11}{subsection.1.9.3}%
+\contentsline {subsection}{\numberline {1.10.2}JSON Web Token}{11}{subsection.1.10.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.10.3}REST API}{11}{subsection.1.10.3}%
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Propuesta de Sistema Central de Autenticación}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{19}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{20}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.1}Keycloak}{19}{subsection.3.0.1}%
+\contentsline {subsection}{\numberline {3.0.1}Keycloak}{20}{subsection.3.0.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{20}{section*.25}%
+\contentsline {chapter}{Conclusiones}{21}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{21}{section*.27}%
+\contentsline {chapter}{Recomendaciones}{22}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliograf\'{\i }a}{22}{chapter*.29}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{23}{chapter*.31}%

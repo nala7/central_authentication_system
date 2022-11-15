@@ -51,10 +51,9 @@ Por lo tanto en el presente trabajo se ha decidido no cambiar los sistemas. La u
 Por otra parte, se necesita un nombre de usuario único para cada trabajador y estudiante de la institución. Al utilizarse distintas fuentes de datos, no se puede garantizar que todas las bases de datos tengan las mismas estructuras. Sin embargo, todos los usuarios tienen una cuenta de correo que los identifica unívocamente, por lo que utilizar este campo como nombre de usuario garantiza que cada persona es identificado.
 
 \section*{Ingestión de Datos}
-
-\textcolor{red}{Insertar definición aquí}
-
-\textcolor{blue}{qué se hace actualmente (LDAP?)}
+La ingesta de datos es el proceso mediante el cual se introducen datos, de diferentes fuentes,
+estructura o características dentro de otros sistemas de almacenamiento o procesamiento de
+datos.  [\cite{fernandez2020aplicacion}]
 
 Teniendo varias fuentes de datos, para garantizar una ingestión de datos exitosa, la solución debe ser capaz que leer información de distintas fuentes de datos. 
 
@@ -64,15 +63,46 @@ Se necesita que el sistema de autenticación se actualice constantemente ya que 
 
 La Universidad  se encuentra en constante cambio. Por ejemplo, en 2017 culminó el proceso de adscripción del Instituto Superior de Diseño (ISDI) a la Universidad de La Habana [\cite{isdi-historia}]. Para ello fue necesario incorporar todos los datos de los usuarios del ISDI al sistema de autenticación vigente para otorgarles las credenciales correspondientes. Por ello, el nuevo sistema debe ser capaz de admitir nuevas fuentes de datos de forma sencilla en un futuro. 
 
+En el nodo central, la ingesta de datos se hace a través de LDAP. \textcolor{red}{(explicar brevemente para qué se usa LDAP en el nodo y cómo ingesta los datos)}
+
 \section*{Capa de Autenticación}
+La autenticación es un área clave en la seguridad de la información. En la modernidad los usuarios necesitan acceder a muchos servicios digitales imprescindibles para su vida cotidiana. Las contraseñas basadas en caracteres alfanuméricos han sido las más comunes en todo tipo de sistemas por su fácil implementación. [\cite{rodriguez2018seguridad}]
 
-\textcolor{red}{Insertar definición}
 
-% problema
+El proceso de autenticación consiste en la verificación de la identidad de un usuario o una entidad  [\cite{teheran2014mecanismo}]. Los usuarios de la institución utilizan diariamente distintos servicios, que van desde acceder a Internet por la red WI-FI o por proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación.
 
-Los usuarios de la institución utilizan diariamente distintos servicios, que van desde acceder a Internet desde la red WI-FI o desde un proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación
+Resulta engorroso crearse una cuenta en cada uno de los sistemas y autenticarse cada vez que uno acceda a un sitio nuevo. La creación de un sistema en el cual todos los usuarios de la Universidad puedan autenticarse con su correo de la institución y su contraseña facilitaría la interacción diaria con los servicios ofrecidos por el Nodo Central.
+
+Para ello se debe garantizar la seguridad de las cuentas. Por ejemplo, los estudiantes utilizan la máquinas de los laboratorios y se autentican con su cuenta personal. Es común que las personas olviden cerrar sus sesiones, por lo que la cuenta debe expirar al pasar de un tiempo prudencial, de lo contrario, su información puede ser utilizada por otra persona.
+
+
+
+Se utilizará la autenticación basada en tokens ya que permite 
+
+En este caso la capa de autenticación es la encargada de recibir las peticiones de los distintos clientes y verificar la identidad de un usuario a partir de la información recopilada por la Ingestión de datos.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/token-based-auth}
+	\caption{}
+	\label{fig:token-based-auth}
+\end{figure}
+
+
 
 \section*{Clientes}
+El Nodo Central brinda infraestructura a los servicios de la Universidad vitales para el correcto funcionamiento de la institución. Entre responsabilidades se encuentran la gestión de correo, el acceso a Internet, las cuentas de usuarios y en el caso de los profesores gestión de cuentas de VPN. También tiene como clientes todos los servicios web de la casa de altos estudios, \textcolor{red}{entres ellos el sitio oficial de la Universidad https://www.uh.cu/, los sistemas utilizados en recursos humanos, en los departamentos de contabilidad}
+
+Cada cliente tiene su propio sistema de autenticación, lo cual no es eficiente ya que utiliza una mayor cantidad de recursos porque cada uno tiene su registro de usuario en bases de datos individuales. También crea brechas de seguridad ya que no todos cumplen los estándares que deberían y existe más información en la red expuesta a ataques externos. 
+
+El software debe ser capaz de admitir nuevos clientes fácilmente. 
+Uno de los clientes más importantes es el Entorno Virtual de Enseñanza y Aprendizaje, más conocido como EVEA, creado en 2018. Este es una plataforma informática encargada de orientar la comunicación pedagógica entre los universitarios que intervienen en el proceso educativo. También, tiene la misión de crear espacios o comunidades organizadas en torno al estudio. [\cite{evea-cd}] 
+
+Este entorno virtual representó un apoyo para el sistema universitario cuando los estudiantes no podían asistir a sus facultades debido a la pandemia provocada por la covid-19 en diciembre del 2019 [\cite{ferrer2020pandemia}] . En la primera mitad del año 2020 la cantidad de usuario aumentó considerablemente en poco tiempo. El sistema era lento y tenía muchas fallas. Uno de los mayores retos fue lograr registrar a todos sus usuarios y que estos se pudiera autenticar. De haber existido un sistema que ya autenticara a todos los estudiantes y profesores de la Universidad, los programadores habrían tenido un problema menos a la hora de modificar la plataforma para adaptarla al nuevo uso que se le daría.
+
+
+
+\section*{Usuarios}
 
 
 \textbf{Estructura del Cap 2}

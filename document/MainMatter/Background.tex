@@ -1,4 +1,5 @@
-
+%AUTORIZACIÓN BASADA EN ROLES
+%La autorización o el control de acceso basado en roles permite establecer y hacer cumplir los permisos que tienen un conjunto de usuarios pertenecientes a un rol, de acceder a un recurso del sistema. Cuando se habla de acceso a un recurso, se refiere a acciones de lectura, escritura, ejecución, modificación. A diferencia de establecer listas de control de acceso para cada recurso del sistema, se define una lista de privilegios o permisos para los diferentes roles. Los roles son definidos, a través de la agrupación de características de los usuarios del sistema.
 
 
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
@@ -27,7 +28,19 @@ Grandes empresas como Google, Facebook y Microsoft utilizan estos servicios. En 
 %
 %En este caso se utilizarán un único conjunto de credenciales basado en tokens porque \textcolor{red}{In this SSO system, a user submits the credentials to the token-based authentication authority, in which the credentials have been checked with its credential database. If the user credentials match, then the user is returned with a token. When the user wants to access an application server which is governed by second authentication authority, the same token is delivered to get a ticket to access the application server. Success of this process relies on the trust the authentication authorities have among themselves.}
 
-[\cite{radha2012survey}]
+%[\cite{radha2012survey}]
+
+\section{Autenticación basada en tokens}
+
+Los tokens de acceso se utilizan en la autenticación basada en tokens para permitir que una aplicación acceda a una API. Cuando un usuario se autentica y es autorizado correctamente, la aplicación recibe un token de acceso que luego utiliza como credencial cuando llama a la API. El token pasado informa a la API que el portador del token ha sido autorizado para acceder y realizar un grupo de acciones. [\cite{auth0AccessTokens}]
+
+tipos de tokens: https://auth0.com/docs/secure/tokens/access-tokens
+
+un token consiste en datos relacionados con la identidad de un usuario particular. Los usuarios pueden obtener dichos tokens a través de una combinación de nombre de usuario/contra- seña, lo que les permite acceder a los recursos solicitados por un periodo específico de tiempo. Durante este periodo no se requieren métodos adicionales de autenticación. Una caracte- rística importante de los tokens es que permiten ser heredados a otros usuarios, por ello, la autenticación basada en tokens es adecuada cuando un token puede proveer acceso a múltiples servicios. [\cite{banerjee2018token}] %esta bib tiene más info: banerjee2018token, tecnicas
+
+Existen diversos protocolos de autenticación basados en token populares los más populares entre ellos son: SMAL 2.0 [\cite{cantor2005assertions}]; OpenID [\cite{recordon2006openid}] [\cite{mainka2017sok}] y OAuth [\cite{hardt2012oauth}] [\cite{richer2017oauth}]. 
+
+Tokens are system generated arbitrary construct that asserts the identity of what it claims to be [\cite{zheng2014token}]Token-based authentication embodies the exchange of client authentication credentials for a server generated authentication token; and for subsequent client requests to access SaaS resources, the tokens are sent as part of the request in the HTTP header to the server. This reuse of the same user access token for accessing protected resources governed by certain policies can be a challenge, especially when a resource access policy is updated and the user access token is still valid. In fact, this can introduce a Time- Based vulnerability (timing attack) on the protected resources; and with multiple users accessing the resource, the vulnerability index can increase exponentially. Hence, an authentication and authorization model that limits such vulnerabilities and enhances secure resource access have been proposed and evaluated. [\cite{ethelbert2017json}]
 
 \section{OpenID Connect}
 \textit{OpenID Connect}  (también OIDC)es una capa de identidad simple implementada a partir del protocolo \textit{OAuth 2.0}. Permite a los clientes verificar la identidad del usuario final en función de la autenticación realizada por un servidor de autorización, así como obtener información básica del perfil del Usuario final de manera interoperable y similar al protocolo REST. [\cite{openid-doc}]. 
@@ -122,6 +135,8 @@ Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a 
 Esta tecnología define una forma compacta y autónoma para transmitir de forma segura información entre las partes como un objeto JSON. Esta información es verificada y confiable ya que se encuentra firmada digitalmente. Los JWT se pueden firmar usando un secreto (con el algoritmo HMAC) o un par de claves públicas / privadas usando RSA.
 
 JSON Web Token es un método compacto y autónomo para transmitir información, se basa en una cadena de texto que tiene 3 partes (Header, payload, signature) codificadas en Base64, separadas por un punto que es estregado a los clientes de una API como llave de acceso. Keycloak utiliza JWT para transmitir una llave secreta de acceso a usuarios con privilegios. [\cite{muyon2020metodos}]
+
+%refresh token
 
 \subsection{REST API}
 Se utiliza API REST como medio de prueba para ejecutar peticiones HTTP que posteriormente serán aseguradas con un Json Web Token emitido por Keycloak. La arquitectura REST enfoca a todo lo que lo conforma como un recurso. Los servicios web REST son livianos, altamente escalables y mantenibles. Se usan muy comúnmente para el intercambio de información, es el estándar más lógico, eficiente y generalizado en la creación de API para servicios de internet.
