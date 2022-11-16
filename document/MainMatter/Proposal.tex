@@ -71,15 +71,17 @@ La autenticación es un área clave en la seguridad de la información. En la mo
 
 El proceso de autenticación consiste en la verificación de la identidad de un usuario o una entidad  [\cite{teheran2014mecanismo}]. Los usuarios de la institución utilizan diariamente distintos servicios, que van desde acceder a Internet por la red WI-FI o por proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación.
 
+La autenticación de usuarios debe ser simple y no afectar al normal uso de las plataformas  [\cite{morales2016autenticacion}].
+
 Resulta engorroso crearse una cuenta en cada uno de los sistemas y autenticarse cada vez que uno acceda a un sitio nuevo. La creación de un sistema en el cual todos los usuarios de la Universidad puedan autenticarse con su correo de la institución y su contraseña facilitaría la interacción diaria con los servicios ofrecidos por el Nodo Central.
 
 Para ello se debe garantizar la seguridad de las cuentas. Por ejemplo, los estudiantes utilizan la máquinas de los laboratorios y se autentican con su cuenta personal. Es común que las personas olviden cerrar sus sesiones, por lo que la cuenta debe expirar al pasar de un tiempo prudencial, de lo contrario, su información puede ser utilizada por otra persona.
 
-
-
 Se utilizará la autenticación basada en tokens ya que permite 
 
 En este caso la capa de autenticación es la encargada de recibir las peticiones de los distintos clientes y verificar la identidad de un usuario a partir de la información recopilada por la Ingestión de datos.
+
+debe ser fácil para el cliente comunicarse
 
 \begin{figure}[H]
 	\centering
@@ -91,70 +93,73 @@ En este caso la capa de autenticación es la encargada de recibir las peticiones
 
 
 \section*{Clientes}
-El Nodo Central brinda infraestructura a los servicios de la Universidad vitales para el correcto funcionamiento de la institución. Entre responsabilidades se encuentran la gestión de correo, el acceso a Internet, las cuentas de usuarios y en el caso de los profesores gestión de cuentas de VPN. También tiene como clientes todos los servicios web de la casa de altos estudios, \textcolor{red}{entres ellos el sitio oficial de la Universidad https://www.uh.cu/, los sistemas utilizados en recursos humanos, en los departamentos de contabilidad}
+El cliente es un programa ejecutable que participa activamente en el establecimiento de las conexiones. Envía una petición al servidor y se queda esperando por una respuesta. [\cite{lizama2016redes}]
 
-Cada cliente tiene su propio sistema de autenticación, lo cual no es eficiente ya que utiliza una mayor cantidad de recursos porque cada uno tiene su registro de usuario en bases de datos individuales. También crea brechas de seguridad ya que no todos cumplen los estándares que deberían y existe más información en la red expuesta a ataques externos. 
+El Nodo Central brinda infraestructura a los clientes de la Universidad vitales para el correcto funcionamiento de la institución. Entre responsabilidades se encuentran la gestión de correo, el acceso a Internet, las cuentas de usuarios y en el caso de los profesores gestión de cuentas de VPN. También tiene como clientes todos los servicios web de la casa de altos estudios, \textcolor{red}{entres ellos el sitio oficial de la Universidad https://www.uh.cu/, los sistemas utilizados en recursos humanos, en los departamentos de contabilidad}
 
-El software debe ser capaz de admitir nuevos clientes fácilmente. 
-Uno de los clientes más importantes es el Entorno Virtual de Enseñanza y Aprendizaje, más conocido como EVEA, creado en 2018. Este es una plataforma informática encargada de orientar la comunicación pedagógica entre los universitarios que intervienen en el proceso educativo. También, tiene la misión de crear espacios o comunidades organizadas en torno al estudio. [\cite{evea-cd}] 
+La creación de un sistema central de autenticación facilitaría el trabajo de los programadores que se ven obligados a crear un nuevo servicio de autenticación para cada aplicación. Sería más eficiente respecto a los recursos utilizados porque se unificarían todas las bases de datos utilizadas por cada programa para mantener los registros de sus usuarios. El tráfico de información se minimizaría ya que los usuarios solo tendrían que autenticarse una única vez para tener acceso a todos los servicios de la Universidad, por lo que se reducen las congestiones en los servidores y el tiempo de respuesta. También disminuirían las brechas de seguridad que existen actualmente ya que se minimizaría el volumen de información sensible en la red expuesta a ataques externos.
 
-Este entorno virtual representó un apoyo para el sistema universitario cuando los estudiantes no podían asistir a sus facultades debido a la pandemia provocada por la covid-19 en diciembre del 2019 [\cite{ferrer2020pandemia}] . En la primera mitad del año 2020 la cantidad de usuario aumentó considerablemente en poco tiempo. El sistema era lento y tenía muchas fallas. Uno de los mayores retos fue lograr registrar a todos sus usuarios y que estos se pudiera autenticar. De haber existido un sistema que ya autenticara a todos los estudiantes y profesores de la Universidad, los programadores habrían tenido un problema menos a la hora de modificar la plataforma para adaptarla al nuevo uso que se le daría.
+El software debe ser capaz de admitir un alto número de clientes y debe facilitar la adición de uno nuevo.
+
+Uno de los clientes más importantes es el Entorno Virtual de Enseñanza y Aprendizaje, más conocido como EVEA, creado en 2018. El sitio es una plataforma informática encargada de orientar la comunicación pedagógica entre los universitarios que intervienen en el proceso educativo. También, tiene la misión de crear espacios o comunidades organizadas en torno al estudio. [\cite{evea-cd}] 
+
+Este entorno virtual representó un apoyo para el sistema universitario cuando los estudiantes no podían asistir a sus facultades debido a la pandemia provocada por la covid-19 en diciembre del 2019 [\cite{ferrer2020pandemia}] . En la primera mitad del año 2020 la cantidad de usuario aumentó considerablemente en poco tiempo. El sistema era lento y tenía muchas fallas. Uno de los mayores retos fue lograr registrar a todos sus usuarios y que estos se pudieran autenticar. De haber existido un sistema que ya autenticara a todos los estudiantes y profesores de la Universidad, los programadores habrían tenido un problema menos a la hora de modificar la plataforma para adaptarla al nuevo uso que se le daría.
 
 
 
 \section*{Usuarios}
 
 
-\textbf{Estructura del Cap 2}
-
-\begin{itemize}
-	\item Descartar otras opciones
-	\item Describir brevemente por qué Keycloak (despues en mas detalle cada componente)
-	\item Propuesta: Diagrama
-	\\
-	\item
-	-	qué es la etapa/componente
-	-	cuál es problema concreto
-	-	propuesta de solución
-	\\
-	\item \textbf{	Bases de datos: }
-	\\
-	qué es: dónde y en qué formato se almacena la información\\
-	problema: Hay muchas facultades, es dificil cambiar como se introducen los datos. \\
-	propuesta: no cambiar nada, tiene que tener la base de datos una columna con valores únicos que pueda ser usado como nombre de usuario
-	\\
-	\item \textbf{Ingestión de datos}
-	\\
-	Qué es: definición
-	problema:
-	- Aceptar varias fuentes de datos\\
-	- Actualizarse live. por si un estudiante se gradúa, un trabajador culmina su contrato, un trabajador empieza un contrato, un estudiante comienza primer año, estudiante pasa a ser trabajador, estudiante regresa de licencia.\\
-	- Contraseña ?????\\
-	- Añadir fuentes de datos dinámicamente\\
-	propuesta: keycloak, why?
-	\\
-	\item \textbf{Capa de autenticación}\\
-	Qué es: definición\\
-	problema:\\
-	- unificar\\
-	- seguridad, computadoras compartidas en el laboratorio\\
-	- refresh\\
-	- logout, \\
-	propuesta: keycloak (ya se está usando para ingestión de datos mantenimiento, simplicidad, facilidad de aprendizaje, menos recursos)
-	\\
-	\item \textbf{Clientes}\\
-	Qué es: definición, en la UH: correo, evea\\
-	Problema: todos distintos, nada en común, seguridad del sistema de autenticación\\
-	Propuesta: que los servicios utilicen el API de keycloak para autenticar\\
-	tu tesis no modifica los clientes existentes, pero ilustra cómo hacerlo con un cliente de ejemplo desarrollado en Python.\\
-	\\
-	\item \textbf{Usuarios}\\
-	Qué es: personas jóvenes, personas mayores\\
-	Problema: confuso\\
-	\\
-	\textcolor{red}{Los usuarios se ven obligados a tener más de unas credenciales lo cual crea confusión. Frecuentemente se olvidan los nombres de usuarios o contraseñas o se utilizan las mismas credenciales en varios sitios, lo cual es una mala práctica desde el punto de vista de la seguridad.}
-	\\
-	Propuesta: sus servicios no van a cambiar, pero única contraseña, seguridad añadida sin cambiar la experiencia de usuario
+%\textbf{Estructura del Cap 2}
+%
+%\begin{itemize}
+%	\item Descartar otras opciones
+%	\item Describir brevemente por qué Keycloak (despues en mas detalle cada componente)
+%	\item Propuesta: Diagrama
+%	\\
+%	\item
+%	-	qué es la etapa/componente
+%	-	cuál es problema concreto
+%	-	propuesta de solución
+%	\\
+%	\item \textbf{	Bases de datos: }
+%	\\
+%	qué es: dónde y en qué formato se almacena la información\\
+%	problema: Hay muchas facultades, es dificil cambiar como se introducen los datos. \\
+%	propuesta: no cambiar nada, tiene que tener la base de datos una columna con valores únicos que pueda ser usado como nombre de usuario
+%	\\
+%	\item \textbf{Ingestión de datos}
+%	\\
+%	Qué es: definición
+%	problema:
+%	- Aceptar varias fuentes de datos\\
+%	- Actualizarse live. por si un estudiante se gradúa, un trabajador culmina su contrato, un trabajador empieza un contrato, un estudiante comienza primer año, estudiante pasa a ser trabajador, estudiante regresa de licencia.\\
+%	- Contraseña ?????\\
+%	- Añadir fuentes de datos dinámicamente\\
+%	propuesta: keycloak, why?
+%	\\
+%	\item \textbf{Capa de autenticación}\\
+%	Qué es: definición\\
+%	problema:\\
+%	- unificar\\
+%	- seguridad, computadoras compartidas en el laboratorio\\
+%	- refresh\\
+%	- logout, \\
+%	propuesta: keycloak (ya se está usando para ingestión de datos mantenimiento, simplicidad, facilidad de aprendizaje, menos recursos)
+%	\\
+%	\item \textbf{Clientes}\\
+%	Qué es: definición, en la UH: correo, evea\\
+%	Problema: todos distintos, nada en común, seguridad del sistema de autenticación\\
+%	Propuesta: que los servicios utilicen el API de keycloak para autenticar\\
+%	tu tesis no modifica los clientes existentes, pero ilustra cómo hacerlo con un cliente de ejemplo desarrollado en Python.\\
+%	\\
+%	\item \textbf{Usuarios}\\
+%	Qué es: personas jóvenes, personas mayores\\
+%	Problema: confuso\\
+%	\\
+%	\textcolor{red}{Los usuarios se ven obligados a tener más de unas credenciales lo cual crea confusión. Frecuentemente se olvidan los nombres de usuarios o contraseñas o se utilizan las mismas credenciales en varios sitios, lo cual es una mala práctica desde el punto de vista de la seguridad.}
+%	\\
+%	Propuesta: sus servicios no van a cambiar, pero única contraseña, seguridad añadida sin cambiar la experiencia de usuario
 	
-\end{itemize} 
+%\end{itemize} 
 

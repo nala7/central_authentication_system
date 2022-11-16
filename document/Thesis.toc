@@ -37,12 +37,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Propuesta de Sistema Central de Autenticación}{13}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{20}{chapter.3}%
+\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{19}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.0.1}Keycloak}{20}{subsection.3.0.1}%
+\contentsline {chapter}{Conclusiones}{20}{section*.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{21}{section*.27}%
+\contentsline {chapter}{Recomendaciones}{21}{section*.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{22}{section*.29}%
-\defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliograf\'{\i }a}{23}{chapter*.31}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{22}{chapter*.31}%
