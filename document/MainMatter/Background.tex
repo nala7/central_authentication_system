@@ -4,7 +4,29 @@
 \chapter{Estado del Arte}\label{chapter:state-of-the-art}
 En este capítulo se brindan las definiciones de herramientas utilizadas para la autenticación. También se realiza un estudio sobre el estado del arte de las mismas. Además, se brindan razones para incluir su utilización como parte de la solución propuesta.
 
-La autenticación y la autorización son los primeros parámetros de seguridad que las aplicaciones web consideran para protegerse de accesos no autorizados [\cite{deitel2014como}]. Se han definido métodos generales de autenticación web que han sido desarrollados a lo largo del tiempo: Autenticación de factor único [\cite{mendoza2020importancia}], Autenticación de doble factor [\cite{lopez2019herramienta}], Autenticación gráfica [\cite{rodriguez2018seguridad}], Autenticación por token [\cite{rodriguez2018seguridad}], Autenticación biométrica [\cite{mantovani2019autenticacion}].
+\section{Autenticación y Autorización}
+La autenticación y la autorización son los primeros parámetros de seguridad que las aplicaciones web consideran para protegerse de accesos no autorizados [\cite{deitel2014como}].  Aunque los dos términos aparecen a menudo en el mismo contexto, los dos son conceptualmente muy diferentes. Autenticar es confirmar una identidad, mientras autorizar significa dar acceso a un sistema. En pocas palabras, la autenticación es el proceso de verificar una identidad y la autorización es el proceso de verificar que tiene acceso [\cite{ye2022diseno}].
+
+\subsection{Autenticación}
+La autenticación consiste en validar credenciales, como nombre de usuario/correo electrónico y contraseña, para verificar la identidad del visitante. El sistema determina si el usuario está usando las credenciales correctas. Tanto en redes públicas como privadas, el sistema autentica al usuario a través del inicio de sesión y generalmente se realiza mediante un nombre de usuario y
+una contraseña. Sin embargo, la autenticación puede realizarse  también a través de otros factores como el código de verificación de teléfonos móviles o datos biométricos.
+
+En algunos sistemas de aplicaciones, para lograr una mayor seguridad, requieren el uso conjunto de múltiples factores de autenticación, a menudo llamado \textit{Multifactor Authentication}.
+
+\subsection{Autorización}
+La autorización ocurre después de que el sistema completa la autenticación. Es el proceso de determinar si un usuario autenticado puede acceder a un recurso en particular. Verifica que está autorizado para otorgarle acceso a recursos tales como información, bases de datos, archivos, etc.
+
+\input{MainMatter/Tables/AutenticacionVsAutorizacion.tex}
+
+hablar de los tipos de autenticacion
+
+explicar autenticacion basada en tokens 
+
+explicar JWT
+
+
+%hay más info en  [\cite{ye2022diseno}].
+%Se han definido métodos generales de autenticación web que han sido desarrollados a lo largo del tiempo: Autenticación de factor único [\cite{mendoza2020importancia}], Autenticación de doble factor [\cite{lopez2019herramienta}], Autenticación gráfica [\cite{rodriguez2018seguridad}], Autenticación por token [\cite{rodriguez2018seguridad}], Autenticación biométrica [\cite{mantovani2019autenticacion}].
 
 \section{Inicio de Sesión Único}
 El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas de software independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
@@ -35,9 +57,9 @@ Grandes empresas como Google, Facebook y Microsoft utilizan estos servicios. En 
 
 Los tokens de acceso se utilizan en la autenticación basada en tokens para permitir que una aplicación acceda a una API. Cuando un usuario se autentica y es autorizado correctamente, la aplicación recibe un token de acceso que luego utiliza como credencial cuando llama a la API. El token pasado informa a la API que el portador del token ha sido autorizado para acceder y realizar un grupo de acciones. [\cite{auth0AccessTokens}]
 
-tipos de tokens: https://auth0.com/docs/secure/tokens/access-tokens
+\textcolor{red}{tipos de tokens: https://auth0.com/docs/secure/tokens/access-tokens}
 
-un token consiste en datos relacionados con la identidad de un usuario particular. Los usuarios pueden obtener dichos tokens a través de una combinación de nombre de usuario/contra- seña, lo que les permite acceder a los recursos solicitados por un periodo específico de tiempo. Durante este periodo no se requieren métodos adicionales de autenticación. Una caracte- rística importante de los tokens es que permiten ser heredados a otros usuarios, por ello, la autenticación basada en tokens es adecuada cuando un token puede proveer acceso a múltiples servicios. [\cite{banerjee2018token}] %esta bib tiene más info: banerjee2018token, tecnicas
+Un token consiste en datos relacionados con la identidad de un usuario particular. Los usuarios pueden obtener dichos tokens a través de una combinación de nombre de usuario/contraseña, lo que les permite acceder a los recursos solicitados por un periodo específico de tiempo. Durante este periodo no se requieren métodos adicionales de autenticación. Una característica importante de los tokens es que permiten ser heredados a otros usuarios, por ello, la autenticación basada en tokens es adecuada cuando un token puede proveer acceso a múltiples servicios. [\cite{banerjee2018token}] %esta bib tiene más info: banerjee2018token, tecnicas
 
 Existen diversos protocolos de autenticación basados en token populares los más populares entre ellos son: SMAL 2.0 [\cite{cantor2005assertions}]; OpenID [\cite{recordon2006openid}] [\cite{mainka2017sok}] y OAuth [\cite{hardt2012oauth}] [\cite{richer2017oauth}]. 
 
@@ -100,6 +122,10 @@ La seguridad está integrada con Active Directory a través de la autenticación
 
 \section{Okta}
 
+\section{STYTCH}
+
+\section{Ory}
+
 \section{Gluu}
 Gluu es una plataforma de código abierto gratuita que proporciona a las organizaciones un servicio de autenticación y autorización para las aplicaciones web y móvil. Permite configurar SSO (Single Sign-On) en aplicaciones que tengan soporte para OpenID Connect, SAML o  CAS para identidades federadas.
 
@@ -108,6 +134,16 @@ Auth0 es una plataforma en la nube que ofrece la autenticación y la autorizaci�
 
 \section{Keycloak}
 Keycloak es un software de código abierto que permite el \textit{Single Sign-On} o Inicio de Sesión Único con \textit{Identity Management} y \textit{Access Management} para aplicaciones y servicios modernos. Esta herramienta facilita la protección de aplicaciones y servicios con poca o ninguna codificación. Un Proveedor de identidad (en inglés: \textit{Identity Provider}, también conocido por sus siglas IdP), permite que una aplicación (a menudo llamada \textit{Service Provider} o SP) delegue su autenticación. [\cite{KeycloakDoc}]
+
+\begin{itemize}
+	\item \textbf{OAuth2}: se trata de un estándar de código abierto que se ha diseñado como protocolo de comunicación entre servicios con la ventaja de que permite compartir información sin exponer la identidad de los usuarios en las peticiones. Esto es una utilidad bastante relevante y es el motivo principal por el que el protocolo de comunicaciones OAuth ha sido adoptado cada vez por más empresas en la industria del desarrollo de aplicaciones y servicios web. La versión actual de este protocolo es 2.0, de ahí su nombre.
+	
+	\item \textbf{IdP}: proveedor de identidad usado por el protocolo OAuth2 que almacena y gestiona las entidades digitales que re refieren a los usuarios.
+	
+	\item \textbf{Identity Management o IAM: }se refiere al sistema integrado que proporciona las herramientas para gestionar el ciclo de vida de los usuarios y sus accesos dentro de la organización, automatizando las altas, bajas y modificaciones de las cuentas de los usuarios y sus privilegios, atributos, roles, permisos, etc.
+	
+	\item \textbf{Access Management}: se refiere a la configuración del intercambio de comunicación y apertura de medios de comunicación entre servicios. Esta configuración garantiza el control y monitorización de los accesos a un servicio. Por ejemplo, se garantiza que un administrador o desarrollador el cual posee mayores privilegios no conozca las contraseñas o credenciales de cuentas con privilegios inferiores, y viceversa. 
+\end{itemize}
 
 Este software está escrito en Java y es compatible de forma predeterminada con los protocolos de federación de identidad SAML v2 y OpenID Connect (OIDC) / OAuth2. Está bajo licencia de Apache y es  mantenido por Red Hat. [\cite{KeycloakDoc}]
 
@@ -127,15 +163,42 @@ Este software está escrito en Java y es compatible de forma predeterminada con 
 %	\textcolor{red}{\textbf{Comparación}}
 %	\textcolor{red}{Gluu: \\ Free open source access management suite with support for SAML and OpenID Connect SSO, and OAuth2 based web and API access management. The Gluu Server can include multiple components. Each one fulfills a different requirement, and can be included or excluded in individual deployments based on an organization’s unique requirements.}
 %	\textcolor{red}{Gluu vs Keycloak: \\
-%		- The Keycloak system requires 512 Mb of RAM and 1 GB of disk space, whereas the Gluu system requires 8 GB of RAM and 40 GB of disk space. \\ - Gluu is less flexible to extend} [\cite{vassallo2017continuous}]
-Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect, SSO} y \textit{OAuth 2.0}. Sin embargo Gluu es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello Keycloak se ajusta más a los recursos que se tienen en la Universidad de La Habana.
+%		- The Keycloak system requires 512 Mb of RAM and 1 GB of disk space, whereas the Gluu system requires 8 GB of RAM and 40 GB of disk space. \\ - Gluu is less flexible to extend} 
+
 
 \subsection{JSON Web Token}
 \textit{JSON Web Token }(abreviado JWT) es un estándar abierto basado en JSON propuesto por IETF (RFC 7519) para la creación de tokens de acceso que permiten la propagación de identidad y privilegios [\cite{bradley_sakimura_jones_2015}].
 
 Esta tecnología define una forma compacta y autónoma para transmitir de forma segura información entre las partes como un objeto JSON. Esta información es verificada y confiable ya que se encuentra firmada digitalmente. Los JWT se pueden firmar usando un secreto (con el algoritmo HMAC) o un par de claves públicas / privadas usando RSA.
 
-JSON Web Token es un método compacto y autónomo para transmitir información, se basa en una cadena de texto que tiene 3 partes (Header, payload, signature) codificadas en Base64, separadas por un punto que es estregado a los clientes de una API como llave de acceso. Keycloak utiliza JWT para transmitir una llave secreta de acceso a usuarios con privilegios. [\cite{muyon2020metodos}]
+JSON Web Token es un método compacto y autónomo para transmitir información, se basa en una cadena de texto que tiene 3 partes (\textit{Header}, \textit{payload}, \textit{signature}) codificadas en Base64, separadas por un punto que es estregado a los clientes de una API como llave de acceso.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{"Graphics/estructura de un objeto JWS"}
+	\caption{}
+	\label{fig:estructura-de-un-objeto-jws}
+\end{figure}
+
+\begin{itemize}
+	\item El \textit{\textbf{header}} contiene la cabezera del objeto, con la información del tipo de objeto y el sistema criptográfico que lleva aplicado. En nuestro caso coincide con RS256 asimétrico, como principal aceptado en el sistema aunque no es el único contemplado, junto al HS256 simétrico. 
+	\item El \textit{\textbf{payload}} contiene la información que le concierne al usuario, así como os permisos y scopes* de este mismo, fechas de expiración del token*, étc. 
+	\item La \textit{\textbf{signature}} se refiere a la firma del objeto JWT: contiene la información del emisor de dicho objeto apra identificarlo y asegurar que dicho mensaje y su contenido no ha sido modificado durante el envío. 
+\end{itemize}
+
+Existen diversas herramientas de cifrado y descifrado objetos JWT y cualquier modificación de los mismos en el transcurso de la comunicación los convertiría en un objeto no válido. Se consideran elementos atómicos que solo comparten emisor y receptor mediante una clave pública y privada, únicas y situadas una en cada polo de la comunicación. [\cite{lobato2022regulacion}]
+
+\textcolor{red}{sistema de encriptación q se usa?}
+
+%El sistema de encriptación que del que se hace uso en nuestra lógica, se trata
+%del RS256 principalmente.
+%x El método RS256 coonsiste en la creación de una clave privada que se
+%situaría en el emisor, y se usa para generar la firma o signature; y una
+%clave pública que estaría situada en el receptor para validar dicha firma.
+%De esta forma, se asegura que emisor y receptor son los únicos
+%participantes en la comunicación. 
+
+ Keycloak utiliza JWT para transmitir una llave secreta de acceso a usuarios con privilegios. [\cite{muyon2020metodos}]
 
 %refresh token
 

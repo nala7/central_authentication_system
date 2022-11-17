@@ -6,8 +6,6 @@ La Universidad de la Habana cuenta con varios sistemas en la red donde se utiliz
 Para eliminar estas dificultades se realiza un sistema central de autenticación que se basa en el método Inicio de Sesión Único. Esta propuesta tiene como objetivo un aumento en la productividad, tener mayor facilidad de acceso a los recursos, funciones de autenticación a través de una única plataforma, una administración sencilla de credenciales y sobre todo garantizar un aumento de la seguridad. Mediante este servicio el usuario podrá registrarse en el sistema una sola vez, con lo cual podrá acceder a todos los recursos sin tener que volver a autenticarse.
 
 
-
-
 \subsection*{Requisitos del Software:}
 \begin{itemize}
 	\item Unificar las distintas fuentes de datos.
@@ -66,22 +64,77 @@ La Universidad  se encuentra en constante cambio. Por ejemplo, en 2017 culminó 
 En el nodo central, la ingesta de datos se hace a través de LDAP. \textcolor{red}{(explicar brevemente para qué se usa LDAP en el nodo y cómo ingesta los datos)}
 
 \section*{Capa de Autenticación}
-La autenticación es un área clave en la seguridad de la información. En la modernidad los usuarios necesitan acceder a muchos servicios digitales imprescindibles para su vida cotidiana. Las contraseñas basadas en caracteres alfanuméricos han sido las más comunes en todo tipo de sistemas por su fácil implementación. [\cite{rodriguez2018seguridad}]
-
-
-El proceso de autenticación consiste en la verificación de la identidad de un usuario o una entidad  [\cite{teheran2014mecanismo}]. Los usuarios de la institución utilizan diariamente distintos servicios, que van desde acceder a Internet por la red WI-FI o por proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación.
-
-La autenticación de usuarios debe ser simple y no afectar al normal uso de las plataformas  [\cite{morales2016autenticacion}].
-
-Resulta engorroso crearse una cuenta en cada uno de los sistemas y autenticarse cada vez que uno acceda a un sitio nuevo. La creación de un sistema en el cual todos los usuarios de la Universidad puedan autenticarse con su correo de la institución y su contraseña facilitaría la interacción diaria con los servicios ofrecidos por el Nodo Central.
-
-Para ello se debe garantizar la seguridad de las cuentas. Por ejemplo, los estudiantes utilizan la máquinas de los laboratorios y se autentican con su cuenta personal. Es común que las personas olviden cerrar sus sesiones, por lo que la cuenta debe expirar al pasar de un tiempo prudencial, de lo contrario, su información puede ser utilizada por otra persona.
-
-Se utilizará la autenticación basada en tokens ya que permite 
+El proceso de autenticación consiste en la verificación de la identidad de un usuario o una entidad  [\cite{teheran2014mecanismo}]. La certificación de credenciales es un área clave en la seguridad de la información. En la modernidad los usuarios necesitan acceder a muchos servicios digitales imprescindibles para su vida cotidiana. Las contraseñas basadas en caracteres alfanuméricos han sido las más comunes en todo tipo de sistemas por su fácil implementación [\cite{rodriguez2018seguridad}].
 
 En este caso la capa de autenticación es la encargada de recibir las peticiones de los distintos clientes y verificar la identidad de un usuario a partir de la información recopilada por la Ingestión de datos.
 
-debe ser fácil para el cliente comunicarse
+Los usuarios de la Universidad de La Habana  utilizan diariamente distintos servicios, que van desde acceder a Internet por la red WI-FI o por proxy, hasta servicios web como EVEA y correo. Cada servicio tiene su propio sistema de autenticación lo cual causa molestias y dificultades en la interacción con las plataformas de los usuarios y complejiza el trabajo de los programadores.
+
+Resulta engorroso crearse una cuenta en cada uno de los sistemas y autenticarse cada vez que uno acceda a un sitio nuevo. La creación de un sistema en el cual todos los usuarios de la Universidad puedan autenticarse con su correo de la institución y su contraseña facilitaría la interacción diaria con los servicios ofrecidos por el Nodo Central.
+
+El nuevo sistema unificará la autenticación de todos los servicios prestados por la Universidad. Para ello se utilizará el método \textit{Single Sign-On}, mecanismo que permite a un usuario acceder a múltiples servicios utilizando una sola credencial. Esto significaría que si se tiene una cuenta de correo con la que se puede acceder a un sitio, no será necesario registrarse en el resto de los servicios.
+
+
+El programa también debe garantizar la seguridad de las cuentas. Por ejemplo, los estudiantes utilizan la máquinas de los laboratorios y se autentican con su cuenta personal. Es común que las personas olviden cerrar sus sesiones, por lo que la cuenta debe expirar al pasar de un tiempo prudencial, de lo contrario, su información puede ser utilizada por otra persona. La utilización de la autenticación basada en tokens facilita el cierre de sesión luego de un tiempo prudencial de forma automática.
+
+Este sistema permitirá a todos sus clientes conectarse de forma segura y sencilla para que verifiquen las credenciales de sus usuarios. La Universidad actualmente ofrece muchos servicios, por lo que se debe encontrar la forma óptima de migrar los clientes a la nueva forma de autenticar.
+
+Keycloak es una herramienta se encarga de abstraer la parte de autenticación de usuarios y almacenamiento de información privada de estos fuera del flujo de comunicación entre cliente y servidor. Ofrece \textit{Single Sign-On} a través de una autenticación basada en tokens y está diseñada para que sea sencillo añadir nuevos servidores de usuarios y clientes.
+
+Keycloak contiene una alta elegibilidad de configuración en sí mismo. Su papel
+es meramente intermediario entre servicios externos, por lo que cuando un
+usuario quiere iniciar sesión en una aplicación, la autenticación se le transfiere
+directamente al servicio Keycloak, que se encarga de generar los objetos JWT
+que se envían necesariamente entre servicios para transmitir los datos de dicho
+usuario
+
+Este servicio que ofrece un amplio abanico de posibilidades en la configuración del acceso entre servicios. Se ha elegido frente a otras soluciones de código abierto como STYTCH, Ory, Okta o Auth0 porque Keycloak ofrece un nivel más alto en cuanto a rendimiento, escalabilidad, y disponibilidad [\cite{lobato2022regulacion}]. 
+
+Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos que se tienen en la Universidad de La Habana [\cite{vassallo2017continuous}].
+
+\begin{figure}[H]
+	\centering
+	\hspace*{-1.1in}
+	\includegraphics[width=1.3\linewidth]{"Graphics/diagrama de flujo del prototipo del servicio"}
+	\caption{}
+	\label{fig:diagrama-de-flujo-del-prototipo-del-servicio}
+\end{figure}
+
+Cada paso descrito en el diagrama de flujo se explica detalladamente a continuación: 
+
+\begin{itemize}
+	\item La primera acción (1) consiste en que el cliente haga login en el sistema por medio de unas credenciales básicas que son su identificador y contraseña. Esta petición se redirigirá automáticamente al servidor Keycloak, el único que contiene la información almacenada de los clientes del sistema, así como sus credenciales. 
+	
+	\item El segundo paso (2), viene con la validación de dichas credenciales en la aplicación de autenticación Keycloak, y la generación de un \textit{Access Token}.
+	
+	\item El tercer paso (3) es el envío de dicho token a través de JWT hacia el usuario o aplicación cliente. Sin embargo, en caso de que las credenciales hayan resultado erróneas, se enviará el mensaje de error correspondiente. 
+	
+	\item En el cuarto paso (4), la aplicación cliente ya iniciada sesión, dispone del \textit{Access Token} para realizar consultas, por lo que genera la primera petición de algún recurso cualquiera al servidor del Nodo.
+	
+	\item El paso denominado X es la validación instantánea del token que contiene la petición del cliente. Antes de entrar en la lógica de interfaz que ofrece la API del servidor, cabe mencionar aquí que se ha insertado un denominado “Interceptor”. Este, procesa el JWT que le llega en la petición al servidor y valida toda la información del mismo. Este paso se repite por lo tanto en varias ocasiones, para cada petición de recurso ya que cada recurso requiere unos permisos o scopes específicos. 
+	
+	\item El quinto (5) paso consiste en la generación de la respuesta que envía el servidor a la aplicación cliente en caso de validación de token correcta. 
+	
+	\item El sexto paso (6) esta vez corresponde a otra petición de recurso distinta, que será seguida de una errónea validación de token en el paso X.
+	
+	\item El séptimo paso (7) corresponde con el envío del mensaje de error a la aplicación cliente, que será tratado como expiración del token, y le pedirá una extensión o actualización de la sesión. 
+	
+	\item El octavo paso (8) corresponde con el consecuente envío del \textit{refresh token}, que sirve para extender la sesión actual. Es el mecanismo que se lleva a cabo a bajo nivel en cualquier sesión abierta de un servicio web.
+	
+	\item En el noveno paso (9) se produce una validación de este \textit{refresh token}, y la obtención de un nuevo \textit{Access Token} que se obtiene de forma similar pero no igual al mencionado en el segundo paso (2). 
+	
+	\item En el décimo paso (10) se envía este último token generado a la aplicación cliente de manera que este podrá realizar nuevas peticiones. 
+	
+	\item En los pasos undécimo (11), duodécimo (12) el escenario se repite de forma
+	iterativa hasta que el cliente decidiese acabar en el último paso: 
+	
+	\item El paso N consiste en el cierre de sesión por parte del cliente y por lo tanto la comunicación se cierra en este ciclo. 
+	
+\end{itemize}
+
+
+\section*{Clientes}
+El cliente es un programa ejecutable que participa activamente en el establecimiento de las conexiones. Envía una petición al servidor y se queda esperando por una respuesta. [\cite{lizama2016redes}]
 
 \begin{figure}[H]
 	\centering
@@ -90,20 +143,17 @@ debe ser fácil para el cliente comunicarse
 	\label{fig:token-based-auth}
 \end{figure}
 
+El Nodo Central brinda infraestructura a los clientes de la Universidad vitales para el correcto funcionamiento de la institución. Entre sus responsabilidades se encuentran la gestión de correo, el acceso a Internet, las cuentas de usuarios y en el caso de los profesores gestión de cuentas de VPN. También tiene como clientes todos los servicios web de la casa de altos estudios, \textcolor{red}{entres ellos el sitio oficial de la Universidad https://www.uh.cu/, los sistemas utilizados en recursos humanos, en los departamentos de contabilidad}.
 
-
-\section*{Clientes}
-El cliente es un programa ejecutable que participa activamente en el establecimiento de las conexiones. Envía una petición al servidor y se queda esperando por una respuesta. [\cite{lizama2016redes}]
-
-El Nodo Central brinda infraestructura a los clientes de la Universidad vitales para el correcto funcionamiento de la institución. Entre responsabilidades se encuentran la gestión de correo, el acceso a Internet, las cuentas de usuarios y en el caso de los profesores gestión de cuentas de VPN. También tiene como clientes todos los servicios web de la casa de altos estudios, \textcolor{red}{entres ellos el sitio oficial de la Universidad https://www.uh.cu/, los sistemas utilizados en recursos humanos, en los departamentos de contabilidad}
-
-La creación de un sistema central de autenticación facilitaría el trabajo de los programadores que se ven obligados a crear un nuevo servicio de autenticación para cada aplicación. Sería más eficiente respecto a los recursos utilizados porque se unificarían todas las bases de datos utilizadas por cada programa para mantener los registros de sus usuarios. El tráfico de información se minimizaría ya que los usuarios solo tendrían que autenticarse una única vez para tener acceso a todos los servicios de la Universidad, por lo que se reducen las congestiones en los servidores y el tiempo de respuesta. También disminuirían las brechas de seguridad que existen actualmente ya que se minimizaría el volumen de información sensible en la red expuesta a ataques externos.
+La creación de un sistema central de autenticación facilitaría el trabajo de los programadores que se ven obligados a crear un nuevo servicio de autenticación para cada aplicación. Sería más eficiente respecto a los recursos utilizados porque se unificarían todas las bases de datos utilizadas por cada programa para mantener los registros de sus usuarios. El tráfico de información se minimizaría ya que los usuarios solo tendrían que autenticarse una única vez para tener acceso a todos los servicios de la Universidad, por lo que se reducen las congestiones en los servidores y el tiempo de respuesta. También disminuirían las brechas de seguridad que existen actualmente por tanto se minimizaría el volumen de información sensible en la red expuesta a ataques externos.
 
 El software debe ser capaz de admitir un alto número de clientes y debe facilitar la adición de uno nuevo.
 
 Uno de los clientes más importantes es el Entorno Virtual de Enseñanza y Aprendizaje, más conocido como EVEA, creado en 2018. El sitio es una plataforma informática encargada de orientar la comunicación pedagógica entre los universitarios que intervienen en el proceso educativo. También, tiene la misión de crear espacios o comunidades organizadas en torno al estudio. [\cite{evea-cd}] 
 
 Este entorno virtual representó un apoyo para el sistema universitario cuando los estudiantes no podían asistir a sus facultades debido a la pandemia provocada por la covid-19 en diciembre del 2019 [\cite{ferrer2020pandemia}] . En la primera mitad del año 2020 la cantidad de usuario aumentó considerablemente en poco tiempo. El sistema era lento y tenía muchas fallas. Uno de los mayores retos fue lograr registrar a todos sus usuarios y que estos se pudieran autenticar. De haber existido un sistema que ya autenticara a todos los estudiantes y profesores de la Universidad, los programadores habrían tenido un problema menos a la hora de modificar la plataforma para adaptarla al nuevo uso que se le daría.
+
+\textcolor{red}{A través de Keycloak es sencillo adicionar nuevos clientes }
 
 
 

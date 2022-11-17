@@ -1,21 +1,21 @@
 [0] Config.pm:304> INFO - This is Biber 2.14
 [0] Config.pm:307> INFO - Logfile is 'Thesis.blg'
-[136] biber-darwin:322> INFO - === Wed Nov 16, 2022, 09:33:13
-[177] Biber.pm:415> INFO - Reading 'Thesis.bcf'
-[281] Biber.pm:943> INFO - Found 34 citekeys in bib section 0
-[300] Biber.pm:4256> INFO - Processing section 0
-[301] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
-[301] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
-[318] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
-[328] bibtex.pm:1653> INFO - LaTeX decoding ...
-[400] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
-[403] Utils.pm:304> WARN - Duplicate entry key: 'muyon2020metodos' in file 'Bibliography.bib', skipping ...
-[404] Utils.pm:304> WARN - Duplicate entry key: 'mainka2017sok' in file 'Bibliography.bib', skipping ...
-[564] Utils.pm:304> WARN - month field 'May' in entry 'bradley_sakimura_jones_2015' is not an integer - this will probably not sort properly.
-[608] Utils.pm:304> WARN - month field 'Apr' in entry 'evea-cd' is not an integer - this will probably not sort properly.
-[655] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[655] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
-[656] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
-[690] bbl.pm:652> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
-[711] bbl.pm:755> INFO - Output to Thesis.bbl
-[711] Biber.pm:128> INFO - WARNINGS: 4
+[109] biber-darwin:322> INFO - === Wed Nov 16, 2022, 22:59:18
+[136] Biber.pm:415> INFO - Reading 'Thesis.bcf'
+[253] Biber.pm:943> INFO - Found 33 citekeys in bib section 0
+[275] Biber.pm:4256> INFO - Processing section 0
+[276] Utils.pm:75> INFO - Globbing data source 'Bibliography.bib'
+[276] Utils.pm:91> INFO - Globbed data source 'Bibliography.bib' to Bibliography.bib
+[294] Biber.pm:4455> INFO - Looking for bibtex format file 'Bibliography.bib' for section 0
+[313] bibtex.pm:1653> INFO - LaTeX decoding ...
+[386] bibtex.pm:1471> INFO - Found BibTeX data source 'Bibliography.bib'
+[389] Utils.pm:304> WARN - Duplicate entry key: 'muyon2020metodos' in file 'Bibliography.bib', skipping ...
+[390] Utils.pm:304> WARN - Duplicate entry key: 'mainka2017sok' in file 'Bibliography.bib', skipping ...
+[535] Utils.pm:304> WARN - month field 'May' in entry 'bradley_sakimura_jones_2015' is not an integer - this will probably not sort properly.
+[592] Utils.pm:304> WARN - month field 'Apr' in entry 'evea-cd' is not an integer - this will probably not sort properly.
+[640] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[641] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[641] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'es-ES'
+[677] bbl.pm:652> INFO - Writing 'Thesis.bbl' with encoding 'UTF-8'
+[706] bbl.pm:755> INFO - Output to Thesis.bbl
+[706] Biber.pm:128> INFO - WARNINGS: 4
