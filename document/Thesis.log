@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  16 NOV 2022 23:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  17 NOV 2022 19:26
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1499,29 +1499,29 @@ Underfull \hbox (badness 1484) in paragraph at lines 14--15
 LaTeX Info: Redefining \. on input line 35.
 LaTeX Info: Redefining \% on input line 35.
  [5]
-LaTeX Info: Redefining \. on input line 64.
-LaTeX Info: Redefining \% on input line 64.
+LaTeX Info: Redefining \. on input line 65.
+LaTeX Info: Redefining \% on input line 65.
  [6]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 77.
+(Font)              <10> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.4> on input line 77.
+(Font)              <7.4> on input line 79.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 77.
+(Font)              <6> on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 77.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 77.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 77.
-LaTeX Info: Redefining \. on input line 78.
-LaTeX Info: Redefining \% on input line 78.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 79.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
  [7]
-LaTeX Info: Redefining \. on input line 93.
-LaTeX Info: Redefining \% on input line 93.
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
  [8]
-LaTeX Info: Redefining \. on input line 105.
-LaTeX Info: Redefining \% on input line 105.
+LaTeX Info: Redefining \. on input line 107.
+LaTeX Info: Redefining \% on input line 107.
  [9] (./MainMatter/Tables/LDAPvsAD.tex
 Underfull \hbox (badness 3354) in paragraph at lines 7--7
 []\T1/lmr/m/n/12 Protocolo Li-ge-ro de
@@ -1543,41 +1543,40 @@ Underfull \hbox (badness 1648) in paragraph at lines 15--16
  []
 
 )
-LaTeX Info: Redefining \. on input line 122.
-LaTeX Info: Redefining \% on input line 122.
+LaTeX Info: Redefining \. on input line 124.
+LaTeX Info: Redefining \% on input line 124.
  [10]
 LaTeX Info: Redefining \. on input line 137.
 LaTeX Info: Redefining \% on input line 137.
  [11]
-LaTeX Info: Redefining \. on input line 154.
-LaTeX Info: Redefining \% on input line 154.
+LaTeX Info: Redefining \. on input line 153.
+LaTeX Info: Redefining \% on input line 153.
  [12]
-<Graphics/estructura de un objeto JWS.png, id=386, 873.2625pt x 562.1pt>
+LaTeX Info: Redefining \. on input line 177.
+LaTeX Info: Redefining \% on input line 177.
+ [13]
+<Graphics/estructura de un objeto JWS.png, id=392, 873.2625pt x 562.1pt>
 File: Graphics/estructura de un objeto JWS.png Graphic file (type png)
 <use Graphics/estructura de un objeto JWS.png>
 Package pdftex.def Info: Graphics/estructura de un objeto JWS.png  used on inpu
-t line 178.
+t line 181.
 (pdftex.def)             Requested size: 390.25534pt x 251.20154pt.
-LaTeX Info: Redefining \. on input line 182.
-LaTeX Info: Redefining \% on input line 182.
- [13]
-LaTeX Info: Redefining \. on input line 207.
-LaTeX Info: Redefining \% on input line 207.
+LaTeX Info: Redefining \. on input line 193.
+LaTeX Info: Redefining \% on input line 193.
  [14 <./Graphics/estructura de un objeto JWS.png>]
-<Graphics/keycloak_info_flux.png, id=405, 594.22pt x 688.5725pt>
+<Graphics/keycloak_info_flux.png, id=404, 594.22pt x 688.5725pt>
 File: Graphics/keycloak_info_flux.png Graphic file (type png)
 <use Graphics/keycloak_info_flux.png>
 Package pdftex.def Info: Graphics/keycloak_info_flux.png  used on input line 21
-2.
+5.
 (pdftex.def)             Requested size: 303.53267pt x 351.7452pt.
-)
-LaTeX Info: Redefining \. on input line 95.
-LaTeX Info: Redefining \% on input line 95.
+LaTeX Info: Redefining \. on input line 219.
+LaTeX Info: Redefining \% on input line 219.
 
-[15 <./Graphics/keycloak_info_flux.png>]
+[15])
 LaTeX Info: Redefining \. on input line 95.
 LaTeX Info: Redefining \% on input line 95.
- [16]
+ [16 <./Graphics/keycloak_info_flux.png>]
 \openout2 = `MainMatter/Proposal.aux'.
 
  (./MainMatter/Proposal.tex
@@ -1587,52 +1586,82 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<Graphics/Diagrama Tesis.png, id=424, 939.51pt x 346.29375pt>
+<Graphics/Diagrama Tesis.png, id=425, 939.51pt x 346.29375pt>
 File: Graphics/Diagrama Tesis.png Graphic file (type png)
 <use Graphics/Diagrama Tesis.png>
-Package pdftex.def Info: Graphics/Diagrama Tesis.png  used on input line 27.
-(pdftex.def)             Requested size: 390.25534pt x 143.84132pt.
-LaTeX Info: Redefining \. on input line 36.
-LaTeX Info: Redefining \% on input line 36.
- [18 <./Graphics/Diagrama Tesis.png (PNG copy)>]
-LaTeX Info: Redefining \. on input line 55.
-LaTeX Info: Redefining \% on input line 55.
- [19]
-LaTeX Info: Redefining \. on input line 73.
-LaTeX Info: Redefining \% on input line 73.
- [20]
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
- [21]
-<Graphics/diagrama de flujo del prototipo del servicio.png, id=462, 966.61125pt
- x 720.6925pt>
-File: Graphics/diagrama de flujo del prototipo del servicio.png Graphic file (t
-ype png)
-<use Graphics/diagrama de flujo del prototipo del servicio.png>
-Package pdftex.def Info: Graphics/diagrama de flujo del prototipo del servicio.
-png  used on input line 98.
-(pdftex.def)             Requested size: 563.7073pt x 420.3113pt.
+Package pdftex.def Info: Graphics/Diagrama Tesis.png  used on input line 28.
+(pdftex.def)             Requested size: 520.34267pt x 191.79372pt.
 
-Overfull \hbox (53.20094pt too wide) in paragraph at lines 97--99
+Overfull \hbox (53.19875pt too wide) in paragraph at lines 27--29
  []|  [] 
  []
 
-LaTeX Info: Redefining \. on input line 107.
-LaTeX Info: Redefining \% on input line 107.
-[22 <./Graphics/diagrama de flujo del prototipo del servicio.png>]
-LaTeX Info: Redefining \. on input line 132.
-LaTeX Info: Redefining \% on input line 132.
- [23]
-<Graphics/token-based-auth.jpeg, id=475, 803.0pt x 389.455pt>
+LaTeX Info: Redefining \. on input line 37.
+LaTeX Info: Redefining \% on input line 37.
+[18 <./Graphics/Diagrama Tesis.png (PNG copy)>]
+LaTeX Info: Redefining \. on input line 56.
+LaTeX Info: Redefining \% on input line 56.
+ [19]
+LaTeX Info: Redefining \. on input line 74.
+LaTeX Info: Redefining \% on input line 74.
+ [20]
+LaTeX Info: Redefining \. on input line 95.
+LaTeX Info: Redefining \% on input line 95.
+ [21]
+<Graphics/token-based-auth.jpeg, id=465, 803.0pt x 389.455pt>
 File: Graphics/token-based-auth.jpeg Graphic file (type jpg)
 <use Graphics/token-based-auth.jpeg>
-Package pdftex.def Info: Graphics/token-based-auth.jpeg  used on input line 141
+Package pdftex.def Info: Graphics/token-based-auth.jpeg  used on input line 102
 .
 (pdftex.def)             Requested size: 390.25534pt x 189.27765pt.
-LaTeX Info: Redefining \. on input line 149.
-LaTeX Info: Redefining \% on input line 149.
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
+ [22 <./Graphics/token-based-auth.jpeg>]
+LaTeX Info: Redefining \. on input line 134.
+LaTeX Info: Redefining \% on input line 134.
+ [23]
+Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
-[24 <./Graphics/token-based-auth.jpeg>])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 137--141
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 141--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--157
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--172
+
+ []
+
+LaTeX Info: Redefining \. on input line 172.
+LaTeX Info: Redefining \% on input line 172.
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 172--179
+
+ []
+
+)
 LaTeX Info: Redefining \. on input line 96.
 LaTeX Info: Redefining \% on input line 96.
  [25]
@@ -1640,14 +1669,37 @@ LaTeX Info: Redefining \% on input line 96.
 
  (./MainMatter/Implementation.tex
 Cap\'{\i }tulo 3.
-) [26
+<Graphics/diagrama de flujo del prototipo del servicio.png, id=494, 966.61125pt
+ x 720.6925pt>
+File: Graphics/diagrama de flujo del prototipo del servicio.png Graphic file (t
+ype png)
+<use Graphics/diagrama de flujo del prototipo del servicio.png>
+Package pdftex.def Info: Graphics/diagrama de flujo del prototipo del servicio.
+png  used on input line 15.
+(pdftex.def)             Requested size: 476.98463pt x 355.6387pt.
+
+Overfull \hbox (24.2945pt too wide) in paragraph at lines 14--16
+ []|  [] 
+ []
+
+[26
 
 
 
 ]
+LaTeX Info: Redefining \. on input line 28.
+LaTeX Info: Redefining \% on input line 28.
+ [27 <./Graphics/diagrama de flujo del prototipo del servicio.png>])
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+
+[28]
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+ [29]
 \openout2 = `BackMatter/Conclusions.aux'.
 
- (./BackMatter/Conclusions.tex) [27
+ (./BackMatter/Conclusions.tex) [30
 
 
 
@@ -1655,8 +1707,7 @@ Cap\'{\i }tulo 3.
 ]
 \openout2 = `BackMatter/Recomendations.aux'.
 
- (./BackMatter/Recomendations.tex)
-[28
+ (./BackMatter/Recomendations.tex) [31
 
 
 
@@ -1695,7 +1746,7 @@ Overfull \hbox (176.29112pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 rity^^Van eva-lua-tion of ope-nid con-nect,^^T en |   [],
  []
 
-[29
+[32
 
 
 
@@ -1719,7 +1770,7 @@ Overfull \hbox (6.73158pt too wide) in paragraph at lines 1--1
 |   []\T1/lmr/m/n/12 , n.[] E29, págs. 198[]213,
  []
 
-[30]
+[33]
 Overfull \hbox (80.08032pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 de los es-que-mas y téc-ni-cas de au-ten-ti-ca-ción grá-fi-ca.,^
 ^T |   [],
@@ -1730,7 +1781,7 @@ Overfull \hbox (31.44662pt too wide) in paragraph at lines 1--1
 \T1/lmr/m/n/12 Ar-qui-tec-tu-ra Cliente-Servidor,^^T |   [], págs. 1[]8,
  []
 
-) [31]
+) [34]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 105.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 105.
  (./Thesis.aux
@@ -1744,39 +1795,62 @@ LaTeX Info: Redefining \% on input line 29.
 (./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 105.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 105.
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 57211C71C32749BEB529FE1B6C7B28D5;1691.
 
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: 86701F1EE3372041684313E33C49BA46;1691
+(rerunfilecheck)             After:  6B628162CFF927D3CB560449224E674B;1691.
 
 LaTeX Warning: There were multiply-defined labels.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 31974 strings out of 480608
- 591699 string characters out of 5903629
- 1316079 words of memory out of 5000000
+ 31985 strings out of 480608
+ 591820 string characters out of 5903629
+ 1316112 words of memory out of 5000000
  47054 multiletter control sequences out of 15000+600000
  618989 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,106p,1541b,2263s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
-texlive/2020/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/lm/lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/publi
-c/lm/lmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.p
-fb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/loc
-al/texlive/2020/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive
-/2020/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/urw/ncntrsbk/uncb8a.pfb>
-Output written on Thesis.pdf (41 pages, 2626213 bytes).
+pdfTeX warning (dest): name{figure.caption.27} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter*.39} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.37} has been referenced but does not exist
+, replaced by a fixed one
+
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/te
+xlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}</usr/local/texlive/2020/tex
+mf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2020/texmf-dist/fo
+nts/type1/public/lm/lmbxi10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1
+/public/lm/lmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/
+lmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr17.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/t
+exlive/2020/texmf-dist/fonts/type1/public/lm/lmr9.pfb></usr/local/texlive/2020/
+texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2020/texmf-dist
+/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2020/texmf-dist/fonts/typ
+e1/public/lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ncn
+trsbk/uncb8a.pfb>
+Output written on Thesis.pdf (44 pages, 2631335 bytes).
 PDF statistics:
- 647 PDF objects out of 1000 (max. 8388607)
- 561 compressed objects within 6 object streams
- 134 named destinations out of 1000 (max. 500000)
+ 674 PDF objects out of 1000 (max. 8388607)
+ 585 compressed objects within 6 object streams
+ 145 named destinations out of 1000 (max. 500000)
  355 words of extra memory for PDF output out of 10000 (max. 10000000)
 

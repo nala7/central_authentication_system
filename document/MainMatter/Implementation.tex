@@ -3,12 +3,59 @@
 \section*{Elección de herramientas}
 En este capítulo se toman decisiones claves respecto a qué herramientas utilizar para lidiar con problemas claves que surgen al autenticarse
 
-%\item ingestión de datos
-%
-%\item capa de autenticación
-%
-%\item cliente
+\section*{Ingestión de Datos}
+
+Cómo se instala LDAP?
+Cómo se configura Keycloak con dos LDAPs?
+Cómo se configuran los permisos por grupo de usuarios?
+
+\section*{Capa de autenticación}
+
+\begin{figure}[H]
+	\centering	
+	\hspace*{-0.3in}
+	\includegraphics[width=1.1\linewidth]{"Graphics/diagrama de flujo del prototipo del servicio"}
+	\caption{Diagrama de flujo de información}
+	\label{fig:diagrama-de-flujo-del-prototipo-del-servicio}
+\end{figure}
+
+Cada paso descrito en el diagrama de flujo se explica detalladamente a continuación: 
+
+\begin{itemize}
+	\item La primera acción (1) consiste en que el cliente haga login en el sistema por medio de unas credenciales básicas que son su identificador y contraseña. Esta petición se redirigirá automáticamente al servidor Keycloak, el único que contiene la información almacenada de los clientes del sistema, así como sus credenciales. 
+	
+	\item El segundo paso (2), viene con la validación de dichas credenciales en la aplicación de autenticación Keycloak, y la generación de un \textit{Access Token}.
+	
+	\item El tercer paso (3) es el envío de dicho token a través de JWT hacia el usuario o aplicación cliente. Sin embargo, en caso de que las credenciales hayan resultado erróneas, se enviará el mensaje de error correspondiente. 
+	
+	\item En el cuarto paso (4), la aplicación cliente ya iniciada sesión, dispone del \textit{Access Token} para realizar consultas, por lo que genera la primera petición de algún recurso cualquiera al servidor del Nodo.
+	
+	\item El paso denominado X es la validación instantánea del token que contiene la petición del cliente. Antes de entrar en la lógica de interfaz que ofrece la API del servidor, cabe mencionar aquí que se ha insertado un denominado “Interceptor”. Este, procesa el JWT que le llega en la petición al servidor y valida toda la información del mismo. Este paso se repite por lo tanto en varias ocasiones, para cada petición de recurso ya que cada recurso requiere unos permisos o scopes específicos. 
+	
+	\item El quinto (5) paso consiste en la generación de la respuesta que envía el servidor a la aplicación cliente en caso de validación de token correcta. 
+	
+	\item El sexto paso (6) esta vez corresponde a otra petición de recurso distinta, que será seguida de una errónea validación de token en el paso X.
+	
+	\item El séptimo paso (7) corresponde con el envío del mensaje de error a la aplicación cliente, que será tratado como expiración del token, y le pedirá una extensión o actualización de la sesión. 
+	
+	\item El octavo paso (8) corresponde con el consecuente envío del \textit{refresh token}, que sirve para extender la sesión actual. Es el mecanismo que se lleva a cabo a bajo nivel en cualquier sesión abierta de un servicio web.
+	
+	\item En el noveno paso (9) se produce una validación de este \textit{refresh token}, y la obtención de un nuevo \textit{Access Token} que se obtiene de forma similar pero no igual al mencionado en el segundo paso (2). 
+	
+	\item En el décimo paso (10) se envía este último token generado a la aplicación cliente de manera que este podrá realizar nuevas peticiones. 
+	
+	\item En los pasos undécimo (11), duodécimo (12) el escenario se repite de forma
+	iterativa hasta que el cliente decidiese acabar en el último paso: 
+	
+	\item El paso N consiste en el cierre de sesión por parte del cliente y por lo tanto la comunicación se cierra en este ciclo. 
+	
+\end{itemize}
 
 
-%\subsection{Keycloak}
+\section*{Clientes}
+
+cømo se configura un cliente en keycloak?
+Qué endpoints expone la API de keycloak?
+Hablar sobre la biblioteca de python
+Poner el ejemplo de cómo se autentica
 
