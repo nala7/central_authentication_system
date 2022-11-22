@@ -49,8 +49,8 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{24}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{33}{section*.44}%
+\contentsline {chapter}{Conclusiones}{40}{section*.51}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{34}{section*.46}%
+\contentsline {chapter}{Recomendaciones}{41}{section*.53}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliograf\'{\i }a}{35}{chapter*.48}%
+\contentsline {chapter}{Bibliograf\'{\i }a}{42}{chapter*.55}%

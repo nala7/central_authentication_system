@@ -15,16 +15,26 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Usuario Administrador\relax }}{26}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Usuario Administrador\relax }}{27}{figure.caption.35}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Relación de entidades en Keycloak\relax }}{27}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Keycloak: \textit {User Federation}\relax }}{27}{figure.caption.37}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Keycloak: \textit {User Federation}\relax }}{28}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{28}{figure.caption.38}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{29}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{29}{figure.caption.39}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{30}{figure.caption.39}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Usuarios en LDAP vistos desde \textit {Apache Directory Studio}\relax }}{30}{figure.caption.40}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Usuarios en LDAP vistos desde \textit {Apache Directory Studio}\relax }}{31}{figure.caption.40}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de flujo de información\relax }}{31}{figure.caption.42}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de flujo de información\relax }}{32}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Nuevo cliente en Keycloak\relax }}{34}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Nuevo cliente en Keycloak\relax }}{35}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.10}{\ignorespaces \relax }}{36}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Cliente nodo\relax }}{37}{figure.caption.48}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Credenciales del cliente nodo\relax }}{37}{figure.caption.49}%

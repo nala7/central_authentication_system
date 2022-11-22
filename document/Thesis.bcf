@@ -2225,8 +2225,10 @@
     <bcf:citekey order="40">evea-cd</bcf:citekey>
     <bcf:citekey order="41">ferrer2020pandemia</bcf:citekey>
     <bcf:citekey order="42">muyon2020metodos</bcf:citekey>
-    <bcf:citekey order="43">gonzalez2010implementacion</bcf:citekey>
-    <bcf:citekey order="44">keycloak_2022</bcf:citekey>
+    <bcf:citekey order="43">secure_apps_2022</bcf:citekey>
+    <bcf:citekey order="44">python_2022</bcf:citekey>
+    <bcf:citekey order="45">gonzalez2010implementacion</bcf:citekey>
+    <bcf:citekey order="46">keycloak_2022</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

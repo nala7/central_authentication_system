@@ -991,6 +991,37 @@
       \field{pages}{323}
       \range{pages}{1}
     \endentry
+    \entry{secure_apps_2022}{misc}{}
+      \list{publisher}{1}{%
+        {Keycloak}%
+      }
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{title}{Securing Applications and Services Guide}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.keycloak.org/docs/latest/securing_apps/
+      \endverb
+      \verb{url}
+      \verb https://www.keycloak.org/docs/latest/securing_apps/
+      \endverb
+    \endentry
+    \entry{python_2022}{misc}{}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Python.org}
+      \field{title}{Welcome to Python.org}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.python.org/
+      \endverb
+      \verb{url}
+      \verb https://www.python.org/
+      \endverb
+    \endentry
     \entry{gonzalez2010implementacion}{article}{}
       \name{author}{1}{}{%
         {{hash=8e838ef657869b4f53d9b98bb369cac5}{%

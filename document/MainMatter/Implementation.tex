@@ -7,6 +7,12 @@ En la siguiente propuesta se utiliza LDAP como herramienta para ingerir datos. C
 
 También se utilizará Keycloak, una solución de gestión de acceso e identidad de código abierto dirigida a aplicaciones y servicios modernos. Esta facilita la protección de aplicaciones y servicios con poco o ningún código [\cite{muyon2020metodos}]. Keycloak se empleará para la autenticación de todos los usuarios y para añadir distintas fuentes de datos y clientes de forma intuitiva y sencilla.
 
+Para la experimentación se creará un cliente capaz de interactuar con el sistema implementado para autenticar usuarios. Keycloak permite proteger aplicaciones que se ejecutan en diversas plataformas y tecnologías que usan los protocolos \textit{OpenID Connect } y SAML [\cite{secure_apps_2022}]. 
+
+Entre los soportes ofrecidos, se ha escogido la biblioteca de Python \href{https://pypi.org/project/python-keycloak/}{\textcolor{blue}{\textbf{Python Keycloak}}}, que provee fácil acceso a la API de Keycloak. Python es un lenguaje de programación que permite trabajar rápido e integrar sistemas eficientemente [\cite{python_2022}]. Podría decirse que durante la última década Python se ha convertido en uno de los lenguajes de código abierto más utilizados.
+
+Para la visualización de la solución se utiliza Flask, un \textit{micro framework} de Python que proporciona las funcionalidades básicas de\textit{ web frameworks}.
+
 \section*{Ingestión de Datos}
 
 \subsection*{Herramientas para el uso de LDAP}
@@ -104,13 +110,8 @@ Se realizan las siguientes configuraciones:
 
 	En la siguiente imagen se puede comprobar que Keycloak sincroniza todos los usuarios de LDAP:
 	
-		
-	
-	\item \textbf{Configuración de cliente keycloak}
-	
-	\item \textbf{Creación de usuario para obtención de token}
-	
-	\item \textbf{Creación de cliente keycloak para obtención de token}
+		\textcolor{red}{*Insertar imagen*}
+
 \end{enumerate}
 
 
@@ -124,7 +125,9 @@ Cómo se configuran los permisos por grupo de usuarios?
 \section*{Capa de autenticación}
 
 
-Por otra parte, se necesita un nombre de usuario único para cada trabajador y estudiante de la institución. Al utilizarse distintas fuentes de datos, no se puede garantizar que todas las bases de datos tengan las mismas estructuras. Sin embargo, todos los usuarios tienen una cuenta de correo que los identifica unívocamente, por lo que utilizar este campo como nombre de usuario garantiza que cada persona es identificada.
+Para la autenticación se necesita un nombre de usuario único para cada trabajador y estudiante de la institución. Al utilizarse distintas fuentes de datos, no se puede garantizar que todas las bases de datos tengan las mismas estructuras. Sin embargo, todos los usuarios tienen una cuenta de correo que los identifica unívocamente, por lo que utilizar este campo como nombre de usuario garantiza que cada persona es identificada.
+
+En el siguiente diagrama se muestra el flujo de información que se realiza para el correcto funcionamiento de la autenticación:
 
 \begin{figure}[H]
 	\centering	
@@ -169,8 +172,58 @@ Cada paso descrito en el diagrama de flujo se explica detalladamente a continuac
 
 \section*{Clientes}
 
-\textcolor{red}{cómo se configura un cliente en keycloak?
+\subsection*{Configuración de cliente Keycloak}
+
+Keycloak permite añadir clientes de forma sencilla. En las siguientes imágenes se muestra paso a paso como se agrega un nuevo cliente al sistema:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/client_new1}
+	\caption{Nuevo cliente en Keycloak}
+	\label{fig:clientnew1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/client_new2}
+	\caption{Nuevo cliente en Keycloak}
+	\label{fig:clientnew2}
+\end{figure}
+
+Luego se puede ver el nuevo cliente nodo en la lista de clientes:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_list}
+	\caption{}
+	\label{fig:clientlist}
+\end{figure}
+
+Luego de crear el cliente, se puede este conectar a los servicios de Keycloak con la correcta configuración. Para ello será necesario utilizar las credenciales del cliente:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo}
+	\caption{Cliente nodo}
+	\label{fig:clientnodo}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo_credentials}
+	\caption{Credenciales del cliente nodo}
+	\label{fig:clientnodocredentials}
+\end{figure}
+
+\textcolor{red} {cómo se configura un cliente en keycloak?
 Qué endpoints expone la API de keycloak?
 Hablar sobre la biblioteca de python
 Poner el ejemplo de cómo se autentica}
+
+\subsection*{Creación de cliente Keycloak para obtención de token}
+
+En el siguiente código se muestra cómo se puede conectar el cliente a Keycloak a través de la biblioteca \textbf{python-keycloak}. También se crea una interfaz básica con Flask para visualizar los resultados.
+
+
+\input{MainMatter/Code/client_app.tex}
 
