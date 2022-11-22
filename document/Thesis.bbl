@@ -991,6 +991,55 @@
       \field{pages}{323}
       \range{pages}{1}
     \endentry
+    \entry{gonzalez2010implementacion}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8e838ef657869b4f53d9b98bb369cac5}{%
+           family={Gonz{á}lez\bibnamedelima D{í}az},
+           familyi={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Sebasti{á}n},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Universidad Tecnol{ó}gica de Bol{í}var}%
+      }
+      \strng{namehash}{8e838ef657869b4f53d9b98bb369cac5}
+      \strng{fullhash}{8e838ef657869b4f53d9b98bb369cac5}
+      \strng{bibnamehash}{8e838ef657869b4f53d9b98bb369cac5}
+      \strng{authorbibnamehash}{8e838ef657869b4f53d9b98bb369cac5}
+      \strng{authornamehash}{8e838ef657869b4f53d9b98bb369cac5}
+      \strng{authorfullhash}{8e838ef657869b4f53d9b98bb369cac5}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Implementaci{ó}n de un sistema unificado de autenticaci{ó}n de usuarios aplicado a los diferentes servicios de la Universidad Tecnol{ó}gica de Bol{í}var}
+      \field{year}{2010}
+    \endentry
+    \entry{keycloak_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=90f8372d933d4fd1fd311f0b8cd36a3d}{%
+           family={keycloak},
+           familyi={k\bibinitperiod}}}%
+      }
+      \strng{namehash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \strng{fullhash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \strng{bibnamehash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \strng{authorbibnamehash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \strng{authornamehash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \strng{authorfullhash}{90f8372d933d4fd1fd311f0b8cd36a3d}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{journaltitle}{Server administration guide}
+      \field{month}{11}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://www.keycloak.org/docs/latest/server_admin/
+      \endverb
+      \verb{url}
+      \verb https://www.keycloak.org/docs/latest/server_admin/
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput

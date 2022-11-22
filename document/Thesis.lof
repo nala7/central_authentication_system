@@ -3,16 +3,28 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces \relax }}{14}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Estructura de JWT\relax }}{14}{figure.caption.19}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \relax }}{16}{figure.caption.18}%
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces \relax }}{18}{figure.caption.21}%
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces \relax }}{22}{figure.caption.26}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Flujo de Información en Keycloak\relax }}{16}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagrama de flujo de información\relax }}{27}{figure.caption.31}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Etapas de implementación del software\relax }}{18}{figure.caption.23}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Flujo de información desde el cliente hasta la base de datos\relax }}{22}{figure.caption.28}%
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Usuario Administrador\relax }}{26}{figure.caption.35}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Relación de entidades en Keycloak\relax }}{27}{figure.caption.36}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Keycloak: \textit {User Federation}\relax }}{27}{figure.caption.37}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{28}{figure.caption.38}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{29}{figure.caption.39}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Usuarios en LDAP vistos desde \textit {Apache Directory Studio}\relax }}{30}{figure.caption.40}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Diagrama de flujo de información\relax }}{31}{figure.caption.42}%

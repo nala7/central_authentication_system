@@ -29,13 +29,13 @@ explicar JWT
 %Se han definido métodos generales de autenticación web que han sido desarrollados a lo largo del tiempo: Autenticación de factor único [\cite{mendoza2020importancia}], Autenticación de doble factor [\cite{lopez2019herramienta}], Autenticación gráfica [\cite{rodriguez2018seguridad}], Autenticación por token [\cite{rodriguez2018seguridad}], Autenticación biométrica [\cite{mantovani2019autenticacion}].
 
 \section{Inicio de Sesión Único}
-El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
+El Inicio de Sesión Único ( en inglés \textit{Single Sign-On} o también conocido por sus siglas SSO) ha sido ampliamente adoptado para la autenticación en línea debido a su utilidad y la seguridad que ofrece. Este es un método de autenticación que permite a los usuarios iniciar sesión con un único conjunto de credenciales en varios sistemas independientes. El inicio de sesión único facilita que un usuario no tenga que iniciar sesión en cada aplicación que use. Con este servicio los usuarios pueden acceder a todas las aplicaciones necesarias sin tener que autenticarse con otras credenciales.[\cite{microsoft-doc}]
 
-En el mundo digital actual, los usuarios acceden a múltiples sistemas para llevar a cabo sus quehaceres. A medida que aumenta la cantidad de sistemas, también aumenta la cantidad de credenciales de cada usuario y, por lo tanto, también incrementa la posibilidad de perderlas u olvidarlas. El inicio de sesión único se puede utilizar para resolver muchos problemas relacionados con múltiples credenciales para diferentes aplicaciones. 
+En el mundo digital actual, los usuarios acceden a múltiples sistemas para llevar a cabo sus quehaceres. A medida que aumenta la cantidad de sistemas, también aumenta la cantidad de credenciales de cada usuario y, por lo tanto, también crece la posibilidad de perderlas u olvidarlas. El inicio de sesión único se puede utilizar para resolver muchos problemas relacionados con múltiples credenciales para diferentes aplicaciones. 
 
-El acceso de inicio de sesión único al centro de autenticación principal permite a los usuarios obtener acceso a todos los demás recursos disponibles. SSO ayuda a mejorar la productividad del usuario y del desarrollador al evitar que el usuario recuerde varias contraseñas y también reduce la cantidad de tiempo que el usuario dedica a escribir varias contraseñas para iniciar sesión. SSO también simplifica la administración mediante la gestión de credenciales únicas en lugar de múltiples credenciales. Facilita la gestión de los derechos de un usuario que llega, cambia de función dentro o sale de la empresa, para integrar rápidamente aplicaciones adicionales, delegar derechos de acceso durante las vacaciones sin aumentar la carga de trabajo de la mesa de ayuda. [\cite{radha2012survey}]
+El acceso de inicio de sesión único al centro de autenticación principal permite a los usuarios obtener acceso a todos los demás recursos disponibles. SSO ayuda a mejorar la productividad del usuario y del desarrollador, al evitar que el usuario recuerde varias contraseñas y también reduce la cantidad de tiempo que este dedica a escribir varias contraseñas para iniciar sesión. SSO también simplifica la administración mediante la gestión de credenciales únicas en lugar de múltiples credenciales. Facilita la gestión de los derechos de un usuario que llega, cambia de función dentro o sale de la empresa, para integrar rápidamente aplicaciones adicionales, delegar derechos de acceso durante las vacaciones sin aumentar la carga de trabajo del equipo de soporte. [\cite{radha2012survey}]
 
-Grandes empresas como Google, Facebook y Microsoft utilizan estos servicios. En particular Google permite a sus usuarios iniciar sesión una única vez para tener acceso a todos los servicios de la empresa que se encuentran en la nube. Cuando se configura SSO, los usuarios pueden iniciar sesión en terceros proveedores de identidad y luego acceder a las aplicaciones de Google directamente sin un segundo inicio de sesión [\cite{google-support}]. Por ejemplo, si se accede a un servicio de Google como Gmail, se autentica automáticamente en YouTube, AdSense, Google Analytics, y otras applicaciones de Google. Del mismo modo, si cierra la sesión de su Gmail u otras aplicaciones de Google, se cerrará automáticamente la sesión de todas las aplicaciones; esto se conoce como Cierre de Sesión Único (en inglés: \textit{Single Logout}) [\cite{sso-doc}]
+Grandes empresas como Google, Facebook y Microsoft utilizan estos servicios. En particular Google permite a sus usuarios iniciar sesión una única vez para tener acceso a todos los servicios de la empresa que se encuentran en la nube. Cuando se configura SSO, los usuarios pueden iniciar sesión en terceros proveedores de identidad y luego acceder a las aplicaciones de Google directamente sin un segundo inicio de sesión [\cite{google-support}]. Por ejemplo, si se accede a un servicio de Google como Gmail, se autentica automáticamente en YouTube, AdSense, Google Analytics, y otras aplicaciones de Google. Del mismo modo, si cierra la sesión de su Gmail u otras aplicaciones de Google, se cerrará automáticamente la sesión de todas las otras aplicaciones; esto se conoce como Cierre de Sesión Único (en inglés: \textit{Single Logout}) [\cite{sso-doc}]
 
 %\subsection{Tipos de Inicio de Sesión Único}
 %The various types of SSO shown in Fig: 1, fall under different categories, based on where they are deployed (Intranet, Extranet, Internet); how they are deployed (architecture – Simple, Complex); the credentials they use (token, certificate..) and the protocols they use (Kerberos, SAML, OpenID..).Following picture shows the types of SSO and their classification: 
@@ -63,14 +63,14 @@ Los tokens de acceso se utilizan en la autenticación basada en tokens para perm
 
 Un token consiste en datos relacionados con la identidad de un usuario particular. Los usuarios pueden obtener dichos tokens a través de una combinación de nombre de usuario/contraseña, lo que les permite acceder a los recursos solicitados por un periodo específico de tiempo. Durante este periodo no se requieren métodos adicionales de autenticación. Una característica importante de los tokens es que permiten ser heredados a otros usuarios, por ello, la autenticación basada en tokens es adecuada cuando un token puede proveer acceso a múltiples servicios. [\cite{banerjee2018token}] %esta bib tiene más info: banerjee2018token, tecnicas
 
-Existen diversos protocolos de autenticación basados en token populares los más populares entre ellos son: SMAL 2.0 [\cite{cantor2005assertions}]; OpenID [\cite{recordon2006openid}] [\cite{mainka2017sok}] y OAuth [\cite{hardt2012oauth}] [\cite{richer2017oauth}]. 
+Existen diversos protocolos de autenticación basados en tokens, los más populares son: SMAL 2.0 [\cite{cantor2005assertions}]; OpenID [\cite{recordon2006openid}] [\cite{mainka2017sok}] y OAuth [\cite{hardt2012oauth}] [\cite{richer2017oauth}]. 
 
 Tokens are system generated arbitrary construct that asserts the identity of what it claims to be [\cite{zheng2014token}]Token-based authentication embodies the exchange of client authentication credentials for a server generated authentication token; and for subsequent client requests to access SaaS resources, the tokens are sent as part of the request in the HTTP header to the server. This reuse of the same user access token for accessing protected resources governed by certain policies can be a challenge, especially when a resource access policy is updated and the user access token is still valid. In fact, this can introduce a Time- Based vulnerability (timing attack) on the protected resources; and with multiple users accessing the resource, the vulnerability index can increase exponentially. Hence, an authentication and authorization model that limits such vulnerabilities and enhances secure resource access have been proposed and evaluated. [\cite{ethelbert2017json}]
 
 \section{OpenID Connect}
-\textit{OpenID Connect}  (también OIDC)es una capa de identidad simple implementada a partir del protocolo \textit{OAuth 2.0}. Permite a los clientes verificar la identidad del usuario final en función de la autenticación realizada por un servidor de autorización, así como obtener información básica del perfil del usuario final de manera interoperable y similar al protocolo REST. [\cite{openid-doc}]. 
+\textit{OpenID Connect}  (también OIDC) es una capa de identidad simple implementada a partir del protocolo \textit{OAuth 2.0}. Permite a los clientes verificar la identidad del usuario final en función de la autenticación realizada por un servidor de autorización, así como obtener información básica del perfil del usuario final de manera interoperable y similar al protocolo REST. [\cite{openid-doc}]. 
 
-\textit{OpenID Connect }es uno de los protocolos de tipo \textit{Single Sign-On} más utilizados para delegar la autenticación. También tiene un formato simple, por lo que ha ganado popularidad y es soportado por grandes empresas como Google, IBM, Microsoft, Amazon y PayPal [\cite{mainka2017sok}]. La nueva versión es compatible con \textit{API} y puede ser usado por aplicaciones nativas y móviles. También define mecanismos opcionales más robustos para firmas y cifrados. [\cite{openid-doc}]
+\textit{OpenID Connect }es uno de los protocolos de tipo \textit{Single Sign-On} más utilizados para delegar la autenticación. También tiene un formato simple, por lo que ha ganado popularidad y es soportado por grandes empresas como Google, IBM, Microsoft, Amazon y PayPal [\cite{mainka2017sok}]. La nueva versión es compatible con \textit{API} y puede ser usada por aplicaciones nativas y móviles. También define mecanismos opcionales más robustos para firmas y cifrados. [\cite{openid-doc}]
 
 Este protocolo está basado en \textit{OAuth 2.0} por lo que tiene todas las ventajas de este protocolo. Sin embargo, lo extiende ya que ofrece facilidades para obtener más información de la identidad de los usuarios eficientemente. Permite un flujo de información adicional que genera un \textit{id-token} que contiene datos del usuario. De esta forma, las aplicaciones no solo tienen acceso a los permisos de los usuarios, sino también obtienen información sobre su identidad.  [\cite{openid-doc}][\cite{kutera2016single}]
 
@@ -83,15 +83,15 @@ SAML y OpenID Connect son protocolos de identificación, diseñados para autenti
 SAML durante muchos años ha proporcionado un medio seguro de intercambio de datos de identidad, por lo que muchas organizaciones confían en él. También es muy rico en funciones y cubre una amplia gama de requisitos de identidad.
 
 
-OIDC, al ser más nuevo y en se encuentra desarrollo, todavía está rezagado con respecto a SAML en términos de características. Sin embargo, para muchas aplicaciones donde solo se necesita un requisito simple para los datos de identidad básicos, particularmente en el espacio del consumidor, OIDC es muy útil.
+OIDC, al ser más nuevo y encontrarse en desarrollo, todavía está rezagado con respecto a SAML en términos de características. Sin embargo, para muchas aplicaciones donde solo se necesita un requisito simple para los datos de identidad básicos, particularmente en el espacio del consumidor, OIDC es muy útil.
 
-Actualmente, SAML se usa prinipalmente para la identificacion de ciudadanos del gobierno y la autenticación empresarial. Sin embargo, esto está comenzando a cambiar, con sistemas más modernos que utilizan OIDC en lugar de SAML. Esto se debe a que OIDC permite un procesamiento de datos más liviano que SAML, utilizando tokens JSON (token de ID) en lugar de XML. OIDC es ideal para usar con aplicaciones móviles y aplicaciones web de una sola página, donde el uso de SAML sería complicado. [\cite{naik2017securing}]
+Actualmente, SAML se usa principalmente para la identificación de ciudadanos del gobierno y la autenticación empresarial. Sin embargo, esto está comenzando a cambiar, con sistemas más modernos que utilizan OIDC en lugar de SAML. Esto se debe a que OIDC permite un procesamiento de datos más liviano que SAML, utilizando tokens JSON (token de ID) en lugar de XML. OIDC es ideal para usar con aplicaciones móviles y aplicaciones web de una sola página, donde el uso de SAML sería complicado. [\cite{naik2017securing}]
 
-OIDC se adapta a las condiciones del Nodo Central de la Universidad de La Habana ya que se cuentan con pocos recursos, por lo que es necesario un procesamiento ligero de información. 
+OIDC se adapta a las condiciones del Nodo Central de la Universidad de La Habana ya que se cuenta con pocos recursos, por lo que es necesario un procesamiento ligero de información. 
 
 \subsection{Kerberos}
-Kerberos es una conexión de software que se emplea en una red grande para establecer la identidad declarada de un usuario. Utiliza una combinación de encriptación y Bases de Datos distribuidas de tal forma que un usuario pueda registrarse y comenzar una sesión desde cualquier computadora localizada en la red mediante la obtención de tickets para servicios de un servidor especial conocido como TGS (servidor despachador de tickets); cada ticket contiene información para identificar al usuario o servicio encriptada con la clave privada para el servicio. Como sólo Kerberos y el servicio conocen dicha clave, se considera que el mensaje está genuinamente originado en la fuente y que no fue adulterado en el transporte del mismo. El ticket otorgado por el TGS contiene una nueva clave de sesión que solo conoce el cliente y el servicio afectado. Esta clave será utilizada para encriptar las transacciones que ocurren durante la sesión.
-Una de las ventajas es que el ticket tiene un tiempo de vida específico, y una vez que éste expira, debe solicitarse un nuevo ticket al TGS para poder seguir utilizando el servicio. Para cada servicio se requiere un ticket distinto. Otra ventaja es que el usuario no debe reingresar la password cada vez que requiere un servicio, porque si el ticket TGS no expiró puede reusarlo para pedir otro ticket de servicio deseado. Por este motivo, el tiempo de vida del ticket TGS deberá ser mayor que el tiempo de vida del ticket de servicio.
+Kerberos es una conexión de software que se emplea en una red grande para establecer la identidad declarada de un usuario. Utiliza una combinación de encriptación y bases de datos distribuidas de tal forma que un usuario pueda registrarse y comenzar una sesión desde cualquier computadora localizada en la red mediante la obtención de tickets para servicios de un servidor especial conocido como TGS (servidor despachador de tickets); cada ticket contiene información para identificar al usuario o servicio encriptada con la clave privada para el servicio. Como sólo Kerberos y el servicio conocen dicha clave, se considera que el mensaje está genuinamente originado en la fuente y que no fue adulterado en el transporte del mismo. El ticket otorgado por el TGS contiene una nueva clave de sesión que solo conoce el cliente y el servicio afectado. Esta clave será utilizada para encriptar las transacciones que ocurren durante la sesión.
+Una de las ventajas es que el ticket tiene un tiempo de vida específico, y una vez que éste expira, debe solicitarse un nuevo ticket al TGS para poder seguir utilizando el servicio. Para cada servicio se requiere un ticket distinto. Otra ventaja es que el usuario no debe reingresar la contraseña cada vez que requiere un servicio, porque si el ticket TGS no expiró puede reusarlo para pedir otro ticket de servicio deseado. Por este motivo, el tiempo de vida del ticket TGS deberá ser mayor que el tiempo de vida del ticket de servicio.
 
 
 \section{LDAP}
@@ -107,17 +107,17 @@ LDAP está basado en el protocolo X.500 para compartir directorios, y contiene e
 
 Estos directorios se utilizan generalmente para contener información virtual de usuarios, para que otros usuarios accedan y dispongan de información acerca de los contactos que están aquí almacenados. Además es capaz de comunicarse de forma remota con otros directorios LDAP situados en servidores que pueden estar en el otro lado del mundo para acceder a la información disponible. De esta forma se crea una base de datos de información descentralizada y completamente accesible.
  
-El sistema de autenticación vigente en el Nodo Central verifica sus usuarios con dos sistemas implementados con LDAP. Este protocolo se adapta a las necesidades y condiciones actuales de la Universidad ya que es \textit{Open Source} (OSS o código abierto).
+El sistema de autenticación vigente en el Nodo Central verifica sus usuarios con dos sistemas implementados con LDAP. Este protocolo se adapta a las necesidades y condiciones actuales de la Universidad con la ventaja importante de que es \textit{Open Source} (OSS o código abierto).
 %\textcolor{red}{
 %	- It is a mature, flexible, and well supported standards-based mechanism for interacting with directory servers. It’s often used for authentication and storing information about users, groups, and applications, but an LDAP directory server is a fairly general-purpose data store and can be used in a wide variety of applications. \\ LDAP is a tool in the User Management and Authentication category of a tech stack.}
 
 
 \section{Active Directory}
-Directorio Activo (en inglés: \textit{Active Directory,} conocido también por sus siglas AD) es un servicio de directorios desarrolado por Microsoft que permite almacenar información como usuarios y dispositivos en una base de datos centralizada y jerárquica. AD brinda servicios como autenticación, políticas de acceso y administración de grupos.
+Directorio Activo (en inglés: \textit{Active Directory,} conocido también por sus siglas AD) es un servicio de directorios desarrollado por Microsoft que permite almacenar información como usuarios y dispositivos en una base de datos centralizada y jerárquica. AD brinda servicios como autenticación, políticas de acceso y administración de grupos.
 
 \textit{Active Directory} almacena información sobre objetos en la red y hace que esta información sea fácil de encontrar y usar para administradores y usuarios. Utiliza un almacén de datos estructurados como base para una organización lógica y jerárquica de la información del directorio.
 
-La seguridad está integrada con \textit{Active Directory }a través de la autenticación de inicio de sesión y el control de acceso a los objetos del directorio. Con un solo inicio de sesión en la red, los administradores pueden administrar los datos del directorio y la organización en toda su red, y los usuarios autorizados de la red pueden acceder a los recursos en cualquier lugar de la red. La administración basada en políticas facilita la gestión incluso de la red más compleja.
+La seguridad está integrada con \textit{Active Directory }a través de la autenticación de inicio de sesión y el control de acceso a los objetos del directorio. Con un solo inicio de sesión en la red, los administradores pueden gestionar los datos del directorio y la organización en toda su red, y los usuarios autorizados de la red pueden acceder a los recursos en cualquier lugar de la red. La administración basada en políticas facilita la gestión incluso de la red más compleja.
 [\cite{active-directoy-doc}]
 
 \input{MainMatter/Tables/LDAPvsAD.tex}
@@ -141,7 +141,7 @@ Keycloak es un software de código abierto que permite el \textit{Single Sign-On
 \begin{itemize}
 	\item \textbf{OAuth2}: se trata de un estándar de código abierto que se ha diseñado como protocolo de comunicación entre servicios con la ventaja de que permite compartir información sin exponer la identidad de los usuarios en las peticiones. Esto es una utilidad bastante relevante y es el motivo principal por el que el protocolo de comunicaciones OAuth ha sido adoptado cada vez por más empresas en la industria del desarrollo de aplicaciones y servicios web. La versión actual de este protocolo es 2.0, de ahí su nombre.
 	
-	\item \textbf{IdP}: proveedor de identidad usado por el protocolo OAuth2 que almacena y gestiona las entidades digitales que re refieren a los usuarios.
+	\item \textbf{IdP}: proveedor de identidad usado por el protocolo OAuth2 que almacena y gestiona las entidades digitales que refieren a los usuarios.
 	
 	\item \textbf{Identity Management o IAM: }se refiere al sistema integrado que proporciona las herramientas para gestionar el ciclo de vida de los usuarios y sus accesos dentro de la organización, automatizando las altas, bajas y modificaciones de las cuentas de los usuarios y sus privilegios, atributos, roles, permisos, etc.
 	
@@ -174,46 +174,38 @@ Este software está escrito en Java y es compatible de forma predeterminada con 
 
 Esta tecnología define una forma compacta y autónoma para transmitir de forma segura información entre las partes como un objeto JSON. Esta información es verificada y confiable ya que se encuentra firmada digitalmente. Los JWT se pueden firmar usando un secreto (con el algoritmo HMAC) o un par de claves públicas / privadas usando RSA.
 
-JSON Web Token es un método compacto y autónomo para transmitir información, se basa en una cadena de texto que tiene 3 partes (\textit{Header}, \textit{payload}, \textit{signature}) codificadas en Base64, separadas por un punto que es estregado a los clientes de una API como llave de acceso.
+JSON Web Token es un método compacto y autónomo para transmitir información, se basa en una cadena de texto que tiene 3 partes (\textit{Header}, \textit{payload}, \textit{signature}) codificadas en Base64, separadas por un punto que es entregado a los clientes de una API como llave de acceso.
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\linewidth]{"Graphics/estructura de un objeto JWS"}
-	\caption{}
+	\caption{Estructura de JWT}
 	\label{fig:estructura-de-un-objeto-jws}
 \end{figure}
 
 \begin{itemize}
-	\item El \textit{\textbf{header}} contiene la cabezera del objeto, con la información del tipo de objeto y el sistema criptográfico que lleva aplicado. En nuestro caso coincide con RS256 asimétrico, como principal aceptado en el sistema aunque no es el único contemplado, junto al HS256 simétrico. 
-	\item El \textit{\textbf{payload}} contiene la información que le concierne al usuario, así como os permisos y scopes* de este mismo, fechas de expiración del token*, étc. 
-	\item La \textit{\textbf{signature}} se refiere a la firma del objeto JWT: contiene la información del emisor de dicho objeto apra identificarlo y asegurar que dicho mensaje y su contenido no ha sido modificado durante el envío. 
+	\item El \textit{\textbf{header}} contiene la cabecera del objeto, con la información del tipo de objeto y el sistema criptográfico que lleva aplicado. En nuestro caso coincide con RS256 asimétrico, como principal algoritmo aceptado en el sistema aunque no es el único contemplado, junto al HS256 simétrico. 
+	\item El \textit{\textbf{payload}} contiene la información que le concierne al usuario, así como los permisos y ámbito del mismo, fechas de expiración del token, etcétera. 
+	\item La \textit{\textbf{signature}} se refiere a la firma del objeto JWT: contiene la información del emisor de dicho objeto para identificarlo y asegurar que dicho mensaje y su contenido no ha sido modificado durante el envío. 
 \end{itemize}
 
-Existen diversas herramientas de cifrado y descifrado objetos JWT y cualquier modificación de los mismos en el transcurso de la comunicación los convertiría en un objeto no válido. Se consideran elementos atómicos que solo comparten emisor y receptor mediante una clave pública y privada, únicas y situadas una en cada polo de la comunicación. [\cite{lobato2022regulacion}]
+Existen diversas herramientas de cifrado y descifrado objetos JWT y cualquier modificación de los mismos en el transcurso de la comunicación los convertiría en un objeto no válido. Se consideran elementos atómicos que solo comparten emisor y receptor mediante una clave pública y privada, únicas y situadas una en cada polo de la comunicación. 
 
-\textcolor{red}{sistema de encriptación q se usa?}
-
-%El sistema de encriptación que del que se hace uso en nuestra lógica, se trata
-%del RS256 principalmente.
-%x El método RS256 coonsiste en la creación de una clave privada que se
-%situaría en el emisor, y se usa para generar la firma o signature; y una
-%clave pública que estaría situada en el receptor para validar dicha firma.
-%De esta forma, se asegura que emisor y receptor son los únicos
-%participantes en la comunicación. 
+El sistema de encriptación que del que se hace uso es RS256 principalmente. Este método consiste en la creación de una clave privada que se situaría en el emisor, y se usa para generar la firma o \textit{signature}; y una clave pública que estaría situada en el receptor para validar dicha firma. De esta forma, se asegura que emisor y receptor son los únicos participantes en la comunicación. [\cite{lobato2022regulacion}]
 
  Keycloak utiliza JWT para transmitir una llave secreta de acceso a usuarios con privilegios. [\cite{muyon2020metodos}]
 
-%refresh token
+\textcolor{red}{refresh token}
 
 \subsection{REST API}
-Se utiliza API REST como medio de prueba para ejecutar peticiones HTTP que posteriormente serán aseguradas con un Json Web Token emitido por Keycloak. La arquitectura REST enfoca a todo lo que lo conforma como un recurso. Los servicios web REST son livianos, altamente escalables y mantenibles. Se usan muy comúnmente para el intercambio de información, es el estándar más lógico, eficiente y generalizado en la creación de API para servicios de internet.
+Se utiliza API REST como medio de prueba para ejecutar peticiones HTTP que posteriormente serán aseguradas con un Json Web Token emitido por Keycloak. La arquitectura REST enfoca a todo lo que lo conforma como un recurso. Los servicios web REST son livianos, altamente escalables y fáciles de mantener. Se usan muy comúnmente para el intercambio de información, es el estándar más lógico, eficiente y generalizado en la creación de API para servicios de internet.
 
-El siguiente esquema muestra como se realiza el flujo de información para autenticarse a través de Keycloak:
+El siguiente esquema muestra cómo se realiza el flujo de información para autenticarse a través de Keycloak:
 
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\linewidth]{Graphics/keycloak_info_flux}
-	\caption{}
+	\caption{Flujo de Información en Keycloak}
 	\label{fig:Flujo de Información en Keycloak}
 \end{figure}
 
