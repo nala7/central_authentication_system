@@ -1,16 +1,25 @@
-{% extends "bootstrap/base.html" %}
-{% block title %}This is an example page{% endblock %}
+<html>
 
-{% block navbar %}
-<div class="navbar navbar-fixed-top">
-  <!-- ... -->
-</div>
-{% endblock %}
+<link href="static/style.css" rel="stylesheet">
 
-{% block content %}
-<h1>User {{ username }} successfully logged in</h1>
-<h2>Token</h2>
-{{ token }}
-<h2>Refresh token</h2>
-{{ refresh_token }}
-{% endblock %}
+<body>
+  <div class="parent clearfix">
+    <div class="bg-illustration"></div>
+
+    <div class="login">
+      <div class="container">
+        <h1>Login to access to<br />your account</h1>
+        <div class="login-form">
+
+          <form action="" method="post">
+            <h2>Token</h2>
+            <p>{{ token }}</p>
+            <h2>Refresh token</h2>
+            <p>{{ refresh_token }}</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

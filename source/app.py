@@ -1,13 +1,13 @@
 from flask import Flask
 from flask import Flask, render_template, request
-from flask_bootstrap import Bootstrap
+from flask_bootstrap import Bootstrap5
 from keycloak.keycloak_openid import KeycloakOpenID
 from keycloak.exceptions import KeycloakAuthenticationError, KeycloakGetError
 
 import json
 
 app = Flask(__name__)
-Bootstrap(app)
+Bootstrap5(app)
 
 keycloak_open_id = KeycloakOpenID(server_url="http://localhost:8080/",
                                  client_id="nodo",
@@ -20,6 +20,8 @@ def login():
     error = None
     if request.method == 'POST':
         username = request.form['username']
+        success = True
+        result = { "access_token": "token", "refresh_token": "refresh", "error_description": "incorrect username" }
         success, result = valid_login(username, request.form['password'])
         if success:
             return log_the_user_in(username, result["access_token"], result["refresh_token"])
