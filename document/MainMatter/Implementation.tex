@@ -5,7 +5,15 @@ En este capítulo se toman decisiones claves respecto a qué herramientas utiliz
 \section*{Elección de herramientas}
 En la siguiente propuesta se utiliza LDAP como herramienta para ingerir datos. Como ya se ha explicado anteriormente, LDAP es el programa que se utiliza actualmente para unificar las distintas bases de datos de usuarios de toda la Universidad de La Habana. Para el manejo de LDAP se utilizará \textit{Apache Directory Studio} (ApacheDS), un software libre que permite la gestión de directorios.
 
-También se utilizará Keycloak, una solución de gestión de acceso e identidad de código abierto dirigida a aplicaciones y servicios modernos. Esta facilita la protección de aplicaciones y servicios con poco o ningún código [\cite{muyon2020metodos}]. Keycloak se empleará para la autenticación de todos los usuarios y para añadir distintas fuentes de datos y clientes de forma intuitiva y sencilla.
+También se utilizará Keycloak, una solución de gestión de acceso e identidad de código abierto dirigida a aplicaciones y servicios modernos. Esta facilita la protección de aplicaciones y servicios con poco o ningún código [\cite{muyon2020metodos}]. 
+
+Esta es una herramienta que se encarga de abstraer la parte de autenticación de usuarios y almacenamiento de información privada de estos, del flujo de comunicación entre cliente y servidor. Ofrece \textit{Single Sign-On} a través de una autenticación basada en tokens y está diseñada para que sea sencillo añadir nuevos servidores de usuarios y clientes.
+
+Keycloak contiene una alta elegibilidad de configuración en sí mismo. Su papel es meramente intermediario entre servicios externos, por lo que cuando un usuario quiere iniciar sesión en una aplicación, la autenticación se le transfiere directamente al servicio Keycloak, que se encarga de generar los objetos JWT que se envían necesariamente entre servicios para transmitir los datos de dicho usuario.
+
+Este servicio ofrece un amplio abanico de posibilidades en la configuración del acceso entre servicios. Se ha elegido frente a otras soluciones de código abierto como STYTCH, Ory, Okta o Auth0 porque Keycloak ofrece un nivel más alto en cuanto a rendimiento, escalabilidad y disponibilidad [\cite{lobato2022regulacion}]. 
+
+Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
 
 Para la experimentación se creará un cliente capaz de interactuar con el sistema implementado para autenticar usuarios. Keycloak permite proteger aplicaciones que se ejecutan en diversas plataformas y tecnologías que usan los protocolos \textit{OpenID Connect } y SAML [\cite{secure_apps_2022}]. 
 
@@ -215,10 +223,10 @@ Luego de crear el cliente, se puede este conectar a los servicios de Keycloak co
 	\label{fig:clientnodocredentials}
 \end{figure}
 
-\textcolor{red} {cómo se configura un cliente en keycloak?
-Qué endpoints expone la API de keycloak?
-Hablar sobre la biblioteca de python
-Poner el ejemplo de cómo se autentica}
+%\textcolor{red} {cómo se configura un cliente en keycloak?
+%Qué endpoints expone la API de keycloak?
+%Hablar sobre la biblioteca de python
+%Poner el ejemplo de cómo se autentica}
 
 \subsection*{Creación de cliente Keycloak para obtención de token}
 

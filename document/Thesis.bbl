@@ -369,7 +369,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2017 IEEE European Symposium on Security and Privacy (EuroS\&P)}
+      \field{booktitle}{2017 IEEE European Symposium on Security and Privacy}
       \field{title}{Sok: Single sign-on security—an evaluation of openid connect}
       \field{year}{2017}
       \field{pages}{251\bibrangedash 266}
@@ -453,7 +453,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2014 International Conference on Data Science and Advanced Analytics (DSAA)}
+      \field{booktitle}{International Conference on Data Science and Advanced Analytics}
       \field{title}{A token authentication solution for hadoop based on kerberos pre-authentication}
       \field{year}{2014}
       \field{pages}{354\bibrangedash 360}
@@ -495,7 +495,7 @@
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2017 IEEE 5th International Conference on Future Internet of Things and Cloud (FiCloud)}
+      \field{booktitle}{IEEE International Conference on Future Internet of Things and Cloud}
       \field{title}{A JSON token-based authentication and access management schema for cloud SaaS applications}
       \field{year}{2017}
       \field{pages}{47\bibrangedash 53}
@@ -574,7 +574,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{2017 11th International Conference on Research Challenges in Information Science (RCIS)}
+      \field{booktitle}{2017 11th RCIS}
       \field{title}{Securing digital identities in the cloud by selecting an apposite Federated Identity Management from SAML, OAuth and OpenID Connect}
       \field{year}{2017}
       \field{pages}{163\bibrangedash 174}
@@ -778,10 +778,10 @@
       \field{title}{Historia del Instituto}
       \field{year}{2022}
       \verb{urlraw}
-      \verb https://www.isdi.co.cu/index.php/site/historia/Historia#:~:text=Al%20culminar%20el%20proceso%20de,mes%20de%20enero%20de%202017.
+      \verb https://www.isdi.co.cu/index.php/site/historia/Historia.
       \endverb
       \verb{url}
-      \verb https://www.isdi.co.cu/index.php/site/historia/Historia#:~:text=Al%20culminar%20el%20proceso%20de,mes%20de%20enero%20de%202017.
+      \verb https://www.isdi.co.cu/index.php/site/historia/Historia.
       \endverb
     \endentry
     \entry{teheran2014mecanismo}{article}{}
@@ -1070,6 +1070,49 @@
       \verb{url}
       \verb https://www.keycloak.org/docs/latest/server_admin/
       \endverb
+    \endentry
+    \entry{gallegos2015aplicacion}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ebbac9ce915edcb1d79e2f0bebe2c325}{%
+           family={Gallegos\bibnamedelima Jim{é}nez},
+           familyi={G\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Pablo},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \strng{fullhash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \strng{bibnamehash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \strng{authorbibnamehash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \strng{authornamehash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \strng{authorfullhash}{ebbac9ce915edcb1d79e2f0bebe2c325}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aplicaci{ó}n de gesti{ó}n de entrenamiento con notificaciones de eventos mediante cola kafka}
+      \field{year}{2015}
+    \endentry
+    \entry{apacheApacheKafka}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=eb1472a1dd93ea5972fb047e03c718e0}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={The\bibnamedelimb Apache\bibnamedelima Software},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \strng{fullhash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \strng{bibnamehash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \strng{authorbibnamehash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \strng{authornamehash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \strng{authorfullhash}{eb1472a1dd93ea5972fb047e03c718e0}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://kafka.apache.org/powered-by}}
+      \field{title}{{A}pache {K}afka --- kafka.apache.org}
+      \field{year}{2022}
     \endentry
   \enddatalist
 \endrefsection

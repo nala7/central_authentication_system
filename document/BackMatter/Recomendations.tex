@@ -1,5 +1,14 @@
 \begin{recomendations}
-    Recomendaciones
+	Esta tesis se concentró en la capa de autenticación y solucionó los problemas que existían  en esta área. Sin embargo, para un mejor funcionamiento del sistema completo, podría ser mejorado el mecanismo utilizado para el almacenamiento de los usuarios. El sistema de autenticación central trabaja sobre un sistema implementado en LDAP que es el encargado del manejo de las diversas bases de datos que existen en la Universidad de La Habana. Este tiene problemas estructurales y funcionales, por lo que es propenso a errores. 
     
-    - Utilizar Kafka para unificar las bases de datos
+     Como solución a este problema se propone la utilización de Apache Kafka, un sistema de almacenamiento publicador/subscriptor distribuido, particionado y replicado [\cite{gallegos2015aplicacion}]. Esta es una herramienta probada y utilizada por grandes empresas como \textit{Netflix}, \textit{Pintrest}, \textit{Adidas} y \textit{aribnb}, capaz de actualizar la información de las bases de datos en tiempo real. [\cite{apacheApacheKafka}]
+     
+     Por otra parte Keycloak brinda facilidades para crear roles y la administración de permisos de los usuarios. Se propone indagar sobre este tema para que el sistema propuesto además autenticar, sea capaz de dar acceso a recursos más específicos según el role del usuario. Por ejemplo, dar un role a los estudiantes distinto al de los trabajadores de forma automática.
+     
+     También se sugiere crear un manual de usuario para que los administradores de los servicios clientes que utilizarán la implementación presentada. Este documento facilitaría la migración al nuevo servicio y ayudaría a acelerar el proceso. Además sería una fuente permanente de información sobre el trabajo a ejecutar, lo cual aseguran la continuidad y coherencia de los procedimientos a través del tiempo y facilita el cambio de personal en el Nodo Central.
+     
+     
+     
+     
+%     Además brinda lecturas y escrituras rápidas, lo que lo convierten a esta tecnología en una herramienta excelente para comunicar \textit{streams} de información que se generan a gran velocidad y que deben ser gestionados por una o varias aplicaciones.
 \end{recomendations}

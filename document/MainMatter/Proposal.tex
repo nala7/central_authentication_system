@@ -60,7 +60,9 @@ Se necesita que el sistema de autenticación se actualice constantemente ya que 
 
 La Universidad  se encuentra en constante cambio. Por ejemplo, en 2017 culminó el proceso de adscripción del Instituto Superior de Diseño (ISDI) a la Universidad de La Habana [\cite{isdi-historia}]. Para ello fue necesario incorporar todos los datos de los usuarios del ISDI al sistema de autenticación vigente para otorgarles las credenciales correspondientes. Por ello, el nuevo sistema debe ser capaz de admitir nuevas fuentes de datos de forma sencilla en un futuro. 
 
-En el nodo central, la ingesta de datos se hace a través de LDAP. \textcolor{red}{(explicar brevemente para qué se usa LDAP en el nodo y cómo ingesta los datos)}
+En el nodo central, la ingesta de datos se hace a través de LDAP.
+
+% \textcolor{red}{(explicar brevemente para qué se usa LDAP en el nodo y cómo ingesta los datos)}
 
 \section*{Capa de Autenticación}
 El proceso de autenticación consiste en la verificación de la identidad de un usuario o una entidad  [\cite{teheran2014mecanismo}]. La certificación de credenciales es un área clave en la seguridad de la información. En la modernidad los usuarios necesitan acceder a muchos servicios digitales imprescindibles para su vida cotidiana. Las contraseñas basadas en caracteres alfanuméricos han sido las más comunes en todo tipo de sistemas por su fácil implementación [\cite{rodriguez2018seguridad}].
@@ -77,14 +79,6 @@ Como se ha explicado, el nuevo sistema unificará la autenticación de todos los
 El programa también debe garantizar la seguridad de las cuentas. Por ejemplo, los estudiantes utilizan las máquinas de los laboratorios y se autentican con su cuenta personal. Es común que las personas olviden cerrar sus sesiones, por lo que la cuenta debe expirar al pasar un tiempo prudencial, de lo contrario, su información puede ser utilizada por otra persona. La utilización de la autenticación basada en tokens facilita el cierre de sesión de forma automática luego de un determinado tiempo.
 
 Este sistema permitirá a todos sus clientes conectarse de forma segura y sencilla para que verifiquen las credenciales de sus usuarios. La universidad actualmente ofrece muchos servicios, por lo que se debe encontrar la forma óptima de migrar los clientes a la nueva forma de autenticar.
-
-Keycloak es una herramienta que se encarga de abstraer la parte de autenticación de usuarios y almacenamiento de información privada de estos, del flujo de comunicación entre cliente y servidor. Ofrece \textit{Single Sign-On} a través de una autenticación basada en tokens y está diseñada para que sea sencillo añadir nuevos servidores de usuarios y clientes.
-
-Keycloak contiene una alta elegibilidad de configuración en sí mismo. Su papel es meramente intermediario entre servicios externos, por lo que cuando un usuario quiere iniciar sesión en una aplicación, la autenticación se le transfiere directamente al servicio Keycloak, que se encarga de generar los objetos JWT que se envían necesariamente entre servicios para transmitir los datos de dicho usuario.
-
-Este servicio ofrece un amplio abanico de posibilidades en la configuración del acceso entre servicios. Se ha elegido frente a otras soluciones de código abierto como STYTCH, Ory, Okta o Auth0 porque Keycloak ofrece un nivel más alto en cuanto a rendimiento, escalabilidad y disponibilidad [\cite{lobato2022regulacion}]. 
-
-Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
 
 
 \section*{Clientes}
