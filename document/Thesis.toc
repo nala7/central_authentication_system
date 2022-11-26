@@ -5,12 +5,82 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Métodos para la autenticación central}{4}{chapter.1}%
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Autenticación y Autorización}{4}{section.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.1}Autenticación}{4}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Autenticación basada en tokens}{5}{section*.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.1.2}Autorización}{5}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Inicio de Sesión Único}{6}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.3}Protocolos de autenticación}{7}{section.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.1}OpenID Connect}{7}{subsection.1.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.2}SAML}{8}{subsection.1.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.3.3}Kerberos}{8}{subsection.1.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.4}Gestores de usuarios}{9}{section.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.1}LDAP}{9}{subsection.1.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.4.2}Active Directory}{10}{subsection.1.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.5}Servicios administradores de identidad}{11}{section.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.1}Okta}{11}{subsection.1.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.2}Gluu}{11}{subsection.1.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.3}Auth0}{11}{subsection.1.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.4}Keycloak}{12}{subsection.1.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{Características}{13}{section*.19}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.5}JSON Web Token}{13}{subsection.1.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.5.6}REST API}{15}{subsection.1.5.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Propuesta de Sistema Central de Autenticación}{17}{chapter.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Detalles de Implementación y Experimentos}{24}{chapter.3}%
+\contentsline {section}{\numberline {2.1}Hipótesis}{17}{section.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Conclusiones}{43}{section*.75}%
+\contentsline {subsection}{\numberline {2.1.1}Requisitos del Software:}{18}{subsection.2.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Recomendaciones}{44}{section*.77}%
+\contentsline {section}{\numberline {2.2}Bases de Datos}{19}{section.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliograf\'{\i }a}{45}{chapter*.79}%
+\contentsline {section}{\numberline {2.3}Ingestión de Datos}{20}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Capa de Autenticación}{20}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Clientes}{21}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Usuarios}{23}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Elección de herramientas y detalles de implementación}{24}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Elección de herramientas}{24}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Ingestión de Datos}{25}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Herramientas para el uso de LDAP}{25}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Keycloak como herramienta para la ingestión de datos}{27}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Capa de autenticación}{34}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Experimentación y resultados}{37}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Configuración de cliente Keycloak}{37}{section.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Creación de cliente Keycloak para obtención de token}{41}{section.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Conclusiones}{44}{section*.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Recomendaciones}{45}{section*.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliograf\'{\i }a}{46}{chapter*.47}%

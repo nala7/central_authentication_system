@@ -1,0 +1,91 @@
+\chapter{Experimentación y resultados}\label{chapter:experimentation}
+
+En este capítulo se procede al cumplimiento de los objetivos principales de este trabajo. Se mostrará cómo crear y configurar un cliente en Keycloak y por último, se procede a experimentación del sistema creado a través de un cliente realizado en \textit{Python}.
+
+\section{Configuración de cliente Keycloak} \label{config-client}
+ 
+%Para la ejecución de Keycloak se debe ejecutar el siguiente comando:
+%
+%\lstset{language=csh}
+%\lstset{frame=lines}
+%\lstset{caption={Ejecución de Keycloak}}
+%\lstset{label={lst:runkecloak}}
+%\lstset{basicstyle=\footnotesize}
+%\begin{lstlisting}
+%$ kc.sh start-dev
+%\end{lstlisting}
+%
+%Por defecto \href{http://localhost:8080/}{\textcolor{blue}{http://localhost:8080/}}
+
+Para la siguiente experimentación se ha utilizado una base de datos del Nodo Central a la cual se accede de forma remota a través de una VPN y accediendo a una IP. La máquina en la cual se hospeda tiene 1 GB de RAM. La computadora en la que se experimentó tiene  8 GB de RAM y 2.7 GHz Dual-Core Intel Core i5 de CPU.
+
+ Luego de configurado LDAP y sincronizados los usuarios, Keycloak permite añadir clientes de forma sencilla. En las siguientes imágenes se muestra paso a paso como se agrega un nuevo cliente al sistema:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/client_new1}
+	\caption{Nuevo cliente en Keycloak}
+	\label{fig:clientnew1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/client_new2}
+	\caption{Nuevo cliente en Keycloak}
+	\label{fig:clientnew2}
+\end{figure}
+
+Luego se puede ver el nuevo cliente nodo en la lista de clientes:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_list}
+	\caption{Lista de clientes}
+	\label{fig:clientlist}
+\end{figure}
+
+Luego de crear el cliente, se puede este conectar a los servicios de Keycloak con la correcta configuración. Para ello será necesario utilizar las credenciales del cliente:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo}
+	\caption{Cliente nodo}
+	\label{fig:clientnodo}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo_credentials}
+	\caption{Credenciales del cliente nodo}
+	\label{fig:clientnodocredentials}
+\end{figure}
+
+%\textcolor{red} {cómo se configura un cliente en keycloak?
+%Qué endpoints expone la API de keycloak?
+%Hablar sobre la biblioteca de python
+%Poner el ejemplo de cómo se autentica}
+
+\section{Creación de cliente Keycloak para obtención de token}
+
+En el siguiente código se muestra cómo se puede conectar el cliente a Keycloak a través de la biblioteca \textbf{python-keycloak}. También se crea una interfaz básica con Flask para visualizar los resultados.
+
+
+\input{MainMatter/Code/client_app.tex}
+
+El código anterior genera la siguiente interfaz:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/interfaz}
+	\caption{Interfaz visual}
+	\label{fig:interfaz}
+\end{figure}
+
+Luego de introducir un correo y su correspondiente contraseña se obtiene el token de autenticación y el \textit{refresh token}:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{Graphics/interfaz_token_success}
+	\caption{Resultado de autenticación exitosa}
+	\label{fig:interfaztokensuccess}
+\end{figure}

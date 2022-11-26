@@ -1,8 +1,7 @@
-\chapter{Detalles de Implementación y Experimentos}\label{chapter:implementation}
+\chapter{Elección de herramientas y detalles de implementación}\label{chapter:implementation}
+En el siguiente capítulo se toman decisiones claves respecto a qué herramientas utilizar para lidiar con problemas que surgen al autenticarse. También se proveen instrucciones específicas para la ejecución y configuración de las herramientas mencionadas.  Además, se brindan los pasos a seguir para la implementación de un sistema de autenticación central. 
 
-En este capítulo se toman decisiones claves respecto a qué herramientas utilizar para lidiar con problemas claves que surgen al autenticarse.
-
-\section*{Elección de herramientas}
+\section{Elección de herramientas} \label{tools-used}
 En la siguiente propuesta se utiliza LDAP como herramienta para ingerir datos. Como ya se ha explicado anteriormente, LDAP es el programa que se utiliza actualmente para unificar las distintas bases de datos de usuarios de toda la Universidad de La Habana. Para el manejo de LDAP se utilizará \textit{Apache Directory Studio} (ApacheDS), un software libre que permite la gestión de directorios.
 
 También se utilizará Keycloak, una solución de gestión de acceso e identidad de código abierto dirigida a aplicaciones y servicios modernos. Esta facilita la protección de aplicaciones y servicios con poco o ningún código [\cite{muyon2020metodos}]. 
@@ -13,7 +12,7 @@ Keycloak contiene una alta elegibilidad de configuración en sí mismo. Su papel
 
 Este servicio ofrece un amplio abanico de posibilidades en la configuración del acceso entre servicios. Se ha elegido frente a otras soluciones de código abierto como STYTCH, Ory, Okta o Auth0 porque Keycloak ofrece un nivel más alto en cuanto a rendimiento, escalabilidad y disponibilidad [\cite{lobato2022regulacion}]. 
 
-Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
+Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo, \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
 
 Para la experimentación se creará un cliente capaz de interactuar con el sistema implementado para autenticar usuarios. Keycloak permite proteger aplicaciones que se ejecutan en diversas plataformas y tecnologías que usan los protocolos \textit{OpenID Connect } y SAML [\cite{secure_apps_2022}]. 
 
@@ -21,9 +20,9 @@ Entre los soportes ofrecidos, se ha escogido la biblioteca de Python \href{https
 
 Para la visualización de la solución se utiliza Flask, un \textit{micro framework} de Python que proporciona las funcionalidades básicas de\textit{ web frameworks}.
 
-\section*{Ingestión de Datos}
+\section{Ingestión de Datos}
 
-\subsection*{Herramientas para el uso de LDAP}
+\subsection{Herramientas para el uso de LDAP}
 
 A partir del protocolo LDAP se han desarrollado diversas implementaciones por parte de algunas empresas o fundaciones. El cuadro siguiente lista algunas de las implementaciones de este protocolo, así como la empresa o fundación detrás de esta y el tipo de licencia con que es distribuido [\cite{gonzalez2010implementacion}]:
 
@@ -38,13 +37,13 @@ lineamientos, las opciones elegibles son:
 	\item \textit{OpenLDAP}
 \end{itemize}
 
-Además, se comprobó un tercer criterio al realizar las pruebas a las opciones candidatas, el cual fue la capacidad de despliegue de dicha solución en diferentes sistemas operativos. \textit{OpenLDAP} no se ecuentra disponible en el sitio oficial para Windows, sistema operativo utilizado en el Node Central, por lo cual no se utilizará. 
+Además, se comprobó un tercer criterio al realizar las pruebas a las opciones candidatas, el cual fue la capacidad de despliegue de dicha solución en diferentes sistemas operativos. \textit{OpenLDAP} no se encuentra disponible en el sitio oficial para Windows, sistema operativo utilizado en el Nodo Central, por lo cual no se utilizará. 
 
-\textit{ApacheDS} tiene una documentación amplia y es fácil de desplegar. También cuenta con instaladores fáciles de usar para diversos sistemas operativos, entre los cuales se encuentran Linux, Solaris, Mac OS X y Windows. Además provee el código fuente en caso que sea necesaria su compilación. Por lo tanto, esta será la herramienta utilizada para acceder a LDAP.
+\textit{ApacheDS} tiene una documentación amplia y es fácil de desplegar. También cuenta con instaladores fáciles de usar para diversos sistemas operativos, entre los cuales se encuentran Linux, Solaris, Mac OS X y Windows. Además, provee el código fuente en caso que sea necesaria su compilación. Por lo tanto, esta será la herramienta utilizada para acceder a LDAP.
 
 \textit{ApacheDS} cuenta con una herramienta bastante completa para la gestión del directorio llamada \textit{Apache Directory Studio} la cual está basada en el entorno de desarrollo Eclipse. Esta se utilizará para acceder a los dos LDAP con los que se interactúa, la de los trabajadores y la de los estudiantes.
 
-\subsection*{Keycloak como herramienta para la ingestión de datos}
+\subsection{Keycloak como herramienta para la ingestión de datos} \label{keycloak-config}
 %
 %Cómo se instala LDAP?
 %Cómo se configura Keycloak con dos LDAPs?
@@ -118,19 +117,42 @@ Se realizan las siguientes configuraciones:
 
 	En la siguiente imagen se puede comprobar que Keycloak sincroniza todos los usuarios de LDAP:
 	
-		\textcolor{red}{*Insertar imagen*}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Graphics/users_not_mapped}
+		\caption{Usuarios }
+		\label{fig:usersnotmapped}
+	\end{figure}
+	
+	Los usuarios sincronizan correctamente el \textit{username}, los apellidos y los nombres. Sin embargo, el correo no sincronizó correctamente de forma automática. Para ello Keycloak brinda la opción de mapear atributos de LDAP a los de Keycloak. 
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Graphics/mappers}
+		\caption{Configuración para mapear }
+		\label{fig:mapper}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Graphics/mapper_config}
+		\caption{Configuración para mapear email}
+		\label{fig:mapperconfig}
+	\end{figure}
+	
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=1\linewidth]{Graphics/users_with_email}
+		\caption{Usuarios con email mapeado}
+		\label{fig:userswithemail}
+	\end{figure}
+	
 
 \end{enumerate}
 
 
-
-
-
- 
-
-Cómo se configuran los permisos por grupo de usuarios?
-
-\section*{Capa de autenticación}
+\section{Capa de autenticación} \label{auth-flow}
 
 
 Para la autenticación se necesita un nombre de usuario único para cada trabajador y estudiante de la institución. Al utilizarse distintas fuentes de datos, no se puede garantizar que todas las bases de datos tengan las mismas estructuras. Sin embargo, todos los usuarios tienen una cuenta de correo que los identifica unívocamente, por lo que utilizar este campo como nombre de usuario garantiza que cada persona es identificada.
@@ -176,62 +198,3 @@ Cada paso descrito en el diagrama de flujo se explica detalladamente a continuac
 	\item El paso N consiste en el cierre de sesión por parte del cliente y por lo tanto la comunicación se cierra en este ciclo. 
 	
 \end{itemize}
-
-
-\section*{Clientes}
-
-\subsection*{Configuración de cliente Keycloak}
-
-Keycloak permite añadir clientes de forma sencilla. En las siguientes imágenes se muestra paso a paso como se agrega un nuevo cliente al sistema:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\linewidth]{Graphics/client_new1}
-	\caption{Nuevo cliente en Keycloak}
-	\label{fig:clientnew1}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=1\linewidth]{Graphics/client_new2}
-	\caption{Nuevo cliente en Keycloak}
-	\label{fig:clientnew2}
-\end{figure}
-
-Luego se puede ver el nuevo cliente nodo en la lista de clientes:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Graphics/client_list}
-	\caption{}
-	\label{fig:clientlist}
-\end{figure}
-
-Luego de crear el cliente, se puede este conectar a los servicios de Keycloak con la correcta configuración. Para ello será necesario utilizar las credenciales del cliente:
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo}
-	\caption{Cliente nodo}
-	\label{fig:clientnodo}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.9\linewidth]{Graphics/client_nodo_credentials}
-	\caption{Credenciales del cliente nodo}
-	\label{fig:clientnodocredentials}
-\end{figure}
-
-%\textcolor{red} {cómo se configura un cliente en keycloak?
-%Qué endpoints expone la API de keycloak?
-%Hablar sobre la biblioteca de python
-%Poner el ejemplo de cómo se autentica}
-
-\subsection*{Creación de cliente Keycloak para obtención de token}
-
-En el siguiente código se muestra cómo se puede conectar el cliente a Keycloak a través de la biblioteca \textbf{python-keycloak}. También se crea una interfaz básica con Flask para visualizar los resultados.
-
-
-\input{MainMatter/Code/client_app.tex}
-

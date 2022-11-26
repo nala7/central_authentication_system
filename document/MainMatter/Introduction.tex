@@ -16,9 +16,9 @@
 %Debido a esto se hace necesaria la gestión de la autenticación mediante la utilización de mecanismos que agilicen este proceso, sin que cause perdida de información, seguridad, confidencialidad o disponibilidad y que faciliten la gestión de grandes volúmenes de usuarios reduciendo el riesgo de caída de las aplicaciones y garantizando la gestión de identidades con el aumento de la seguridad, preferentemente con el uso de sistemas de identidad unificados
 
 
-Hoy en día las personas utilizan muchos aplicaciones con distintas identidades. La identidad del usuario es considerada un conjunto de atributos, permanente o de larga vida, asociados a un usuario. Para obtener acceso a servicios muchas aplicaciones requieren que el usuario esté registrado y haya iniciado sesión. La mayoría de las veces los usuarios están registrados en distintos sitios o servicios con el mismo nombre de usuario y con la misma o similar contraseña, lo cual no es la mejor práctica para preservar la seguridad de las cuentas. Por todo ello el manejo de múltiples nombres de usuarios y contraseñas es una tarea molesta del Internet actual.
+Hoy en día las personas utilizan muchas aplicaciones con distintas identidades. La identidad del usuario es considerada un conjunto de atributos, permanente o de larga vida, asociados a un usuario. Para obtener acceso a servicios muchas aplicaciones requieren que el usuario esté registrado y haya iniciado sesión. La mayoría de las veces los usuarios están registrados en distintos sitios o servicios con el mismo nombre de usuario y con la misma o similar contraseña, lo cual no es la mejor práctica para preservar la seguridad de las cuentas. Por todo ello el manejo de múltiples nombres de usuarios y contraseñas es una tarea molesta del Internet actual.
 
-Teniendo en cuenta todos esos problemas de seguridad, cada vez más los administradores de sitios web deciden delegar esos servicios de administración y autenticación a terceros, entidades externas especializadas en ese tipo de actividad, que pueden alojar, almacenar, administrar y proteger los datos de los usuarios de un proveedor de servicios en particular. Además, ofrecen una interfaz de programación de aplicaciones (conocida también por la sigla API, en inglés, \textit{Application Programming Interface}), para proporcionar acceso a los datos del usuario a las aplicaciones externas. Estas soluciones permiten compartir los datos con más de un sistema web, permitiendo así el Inicio de Sesión Único (SSO) para aplicaciones de terceros.[\cite{kutera2016single}]
+Teniendo en cuenta todos esos problemas de seguridad, cada vez más los administradores de sitios web deciden delegar esos servicios de administración y autenticación a terceros, entidades externas especializadas en ese tipo de actividad, que pueden alojar, almacenar, administrar y proteger los datos de los usuarios de un proveedor de servicios en particular. Además, ofrecen una interfaz de programación de aplicaciones (conocida también por la sigla API, en inglés, \textit{Application Programming Interface}), para proporcionar acceso a los datos del usuario a las aplicaciones externas. Estas soluciones permiten compartir los datos con más de un sistema web, permitiendo así el Inicio de Sesión Único (SSO) para aplicaciones de terceros. [\cite{kutera2016single}]
 
 El Nodo Central de la Universidad de La Habana tiene entre sus responsabilidades dar las credenciales digitales a todos los usuarios de la Universidad. Los trabajadores y estudiantes de la institución registran sus datos personales en las bases de datos de recursos humanos y secretaria docente, respectivamente. Esa información es utilizada más adelante para que los usuarios puedan autenticarse en los distintos servicios de la institución, respaldado por sus sistemas de origen.
 
@@ -46,7 +46,7 @@ Cada aplicación y servicio tiene un mecanismo de autenticación individual que 
 \section*{Problemática}
 La Universidad brinda servicios como Wi-Fi, correo, proxy y EVEA (Entorno Virtual de Enseñanza Aprendizaje), imprescindibles para el funcionamiento de la institución. También brinda otros servicios más especializados como los sistemas de contabilidad, recursos humanos, inventarios, el registro de notas, entre otros. Todos ellos utilizan la autenticación de forma individual, lo cual significa que un usuario tiene diversas cuentas a pesar de pertenecer todas a la misma institución.
 
-El sistema implementado actualmente es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los mecanismos de autenticación. Esto genera tiempos elevados de respuesta y dificulta el mencionado proceso de transformación digital que está siendo llevado a cabo por nuestra niversidad.
+El sistema implementado actualmente es poco eficiente y requiere de intervención humana constante para corregir y/o restablecer el apropiado funcionamiento de los mecanismos de autenticación. Esto genera tiempos elevados de respuesta y dificulta el mencionado proceso de transformación digital que está siendo llevado a cabo por nuestra universidad.
 
 %\textcolor{red}{\section*{Hipotesis}}
 
@@ -65,5 +65,15 @@ Con el propósito de presentar una propuesta para solucionar la problemática ex
 	\item Implementar la gestión de control de acceso a todos los servicios ofrecidos por el Nodo Central de forma extensible a futuros servicios y fuentes de datos.
 \end{itemize}
 
-%\section*{\textcolor{red}{Estructura de la Tesis}}
+\section*{Estructura de la Tesis}
 %\textcolor{blue}{Aca realmente toca hablar de como has organizado la tesis. De cada capítulo que tema toca, sus secciones y siempre un poco de información al respecto}
+
+
+En el \textbf{Capítulo 1} (Métodos para la autenticación central \ref{chapter:state-of-the-art}) se investiga sobre las herramientas utilizadas actualmente para la realización de sistemas de autenticación y su estado del arte. Se investiga sobre le inicio de sesión único \ref{sso}, protocolos de autenticación \ref{protocols} y gestores de usuarios \ref{directories}. También se analizan varios de los servicios administradores de identidad \ref{user-admin} que se utilizan en la industria.
+
+En el \textbf{Capítulo 2} (Propuesta de sistema central de autenticación \ref{chapter:proposal}) se realiza un estudio y análisis de las causas por las cuales se decide implementar un sistema central de autenticación. Se enumeran los requisitos del software \ref{software-req} y se detalla por etapas la implementación del sistema: base de datos \ref{db-layer}, ingestión de datos \ref{data-layer}, capa de autenticación \ref{auth-layer}, clientes \ref{client-layer} y usuarios \ref{user-layer}
+En el segundo capítulo se hace una propuesta detallada de un sistema central de autenticación. 
+
+En el \textbf{Capítulo 3} (Elección de herramientas y detalles de la implementación \ref{chapter:implementation}) se desarrolla la implementación de el concepto descrito en el capítulo anterior. Se explican herramientas utilizadas \ref{tools-used} para la ingestión de datos y para la autenticación basada en tokens. También se lleva a cabo la implementación del sistema \ref{keycloak-config} y se describe el flujo de información durante la autenticación \ref{auth-flow}.
+
+En el \textbf{Capítulo 4} (Experimentación y resultados \ref{chapter:experimentation}) se procede a la experimentación del sistema a través de un cliente de Keycloak para la obtención del token realizado en \textit{Python} \ref{config-client}.
