@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  28 NOV 2022 16:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  28 NOV 2022 18:28
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1273,31 +1273,31 @@ LaTeX Warning: Label `fig:keycloakconfiguracionldap1' multiply defined.
 (./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
-LaTeX Font Info:    ... okay on input line 83.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 83
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 93
 .
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
-Package tocbasic Info: usage of `tocbibind' detected on input line 83.
+LaTeX Info: Redefining \. on input line 93.
+LaTeX Info: Redefining \% on input line 93.
+Package tocbasic Info: usage of `tocbibind' detected on input line 93.
 
 (/usr/local/texlive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1336,10 +1336,10 @@ Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
 
 (./Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 83.
-Package biblatex Info: Reference segment=0 on input line 83.
+Package biblatex Info: Reference section=0 on input line 93.
+Package biblatex Info: Reference segment=0 on input line 93.
 \AtBeginShipoutBox=\box122
-Package hyperref Info: Link coloring ON on input line 83.
+Package hyperref Info: Link coloring ON on input line 93.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1353,9 +1353,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count470
 )
-LaTeX Info: Redefining \ref on input line 83.
-LaTeX Info: Redefining \pageref on input line 83.
-LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+LaTeX Info: Redefining \nameref on input line 93.
  (./Thesis.out) (./Thesis.out)
 \@outlinefile=\write6
 \openout6 = `Thesis.out'.
@@ -1369,7 +1369,7 @@ Package caption Info: End \AtBeginDocument code.
 <Graphics/uhlogo.pdf, id=195, 375.98297pt x 481.67456pt>
 File: Graphics/uhlogo.pdf Graphic file (type pdf)
 <use Graphics/uhlogo.pdf>
-Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 86.
+Package pdftex.def Info: Graphics/uhlogo.pdf  used on input line 96.
 (pdftex.def)             Requested size: 49.79231pt x 63.7885pt.
 
 [1
@@ -1391,19 +1391,18 @@ ics/uhlogo.pdf>]
 ]
 \openout2 = `FrontMatter/SupervisorOpinion.aux'.
 
- (./FrontMatter/SupervisorOpinion.tex) [4
+ (./FrontMatter/SupervisorOpinion.tex [4
 
 
 
-]
+]) [5]
 \openout2 = `FrontMatter/Abstract.aux'.
 
- (./FrontMatter/Abstract.tex
-[5
+ (./FrontMatter/Abstract.tex [6
 
 
 
-]) [6
+]) [7
 
 ]
 \openout2 = `FrontMatter/Contents.aux'.
@@ -1453,7 +1452,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 8.
- [7
+ [8
 
 
 
@@ -1461,7 +1460,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 \tf@toc=\write7
 \openout7 = `Thesis.toc'.
 
- [8]
+ [9]
 (./Thesis.lof
 LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
@@ -1469,24 +1468,24 @@ LaTeX Info: Redefining \% on input line 2.
 \tf@lof=\write8
 \openout8 = `Thesis.lof'.
 
- [9
+ [10
 
 ] (./Thesis.lol)
 \tf@lol=\write9
 \openout9 = `Thesis.lol'.
 
-) [10
+) [11
 
 ]
 \openout2 = `MainMatter/Introduction.aux'.
 
- (./MainMatter/Introduction.tex [1
+ (./MainMatter/Introduction.tex
+[1
 
 
 
 
-]
-[2]) [3]
+] [2]) [3]
 \openout2 = `MainMatter/Background.aux'.
 
  (./MainMatter/Background.tex
@@ -1567,7 +1566,7 @@ LaTeX Info: Redefining \% on input line 133.
 LaTeX Info: Redefining \. on input line 150.
 LaTeX Info: Redefining \% on input line 150.
  [12]
-<Graphics/estructura de un objeto JWS.png, id=521, 873.2625pt x 562.1pt>
+<Graphics/estructura de un objeto JWS.png, id=525, 873.2625pt x 562.1pt>
 File: Graphics/estructura de un objeto JWS.png Graphic file (type png)
 <use Graphics/estructura de un objeto JWS.png>
 Package pdftex.def Info: Graphics/estructura de un objeto JWS.png  used on inpu
@@ -1579,7 +1578,7 @@ LaTeX Info: Redefining \% on input line 180.
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
  [14 <./Graphics/estructura de un objeto JWS.png>]
-<Graphics/keycloak_info_flux.png, id=538, 594.22pt x 688.5725pt>
+<Graphics/keycloak_info_flux.png, id=543, 594.22pt x 688.5725pt>
 File: Graphics/keycloak_info_flux.png Graphic file (type png)
 <use Graphics/keycloak_info_flux.png>
 Package pdftex.def Info: Graphics/keycloak_info_flux.png  used on input line 20
@@ -1589,8 +1588,8 @@ LaTeX Info: Redefining \. on input line 206.
 LaTeX Info: Redefining \% on input line 206.
 
 [15])
-LaTeX Info: Redefining \. on input line 98.
-LaTeX Info: Redefining \% on input line 98.
+LaTeX Info: Redefining \. on input line 108.
+LaTeX Info: Redefining \% on input line 108.
  [16 <./Graphics/keycloak_info_flux.png>]
 \openout2 = `MainMatter/Proposal.aux'.
 
@@ -1601,7 +1600,7 @@ Cap\'{\i }tulo 2.
 
 
 ]
-<Graphics/Diagrama Tesis.png, id=557, 939.51pt x 346.29375pt>
+<Graphics/Diagrama Tesis.png, id=561, 939.51pt x 346.29375pt>
 File: Graphics/Diagrama Tesis.png Graphic file (type png)
 <use Graphics/Diagrama Tesis.png>
 Package pdftex.def Info: Graphics/Diagrama Tesis.png  used on input line 28.
@@ -1620,7 +1619,7 @@ LaTeX Info: Redefining \% on input line 46.
 LaTeX Info: Redefining \. on input line 70.
 LaTeX Info: Redefining \% on input line 70.
  [20]
-<Graphics/token-based-auth.jpeg, id=583, 803.0pt x 389.455pt>
+<Graphics/token-based-auth.jpeg, id=588, 803.0pt x 389.455pt>
 File: Graphics/token-based-auth.jpeg Graphic file (type jpg)
 <use Graphics/token-based-auth.jpeg>
 Package pdftex.def Info: Graphics/token-based-auth.jpeg  used on input line 89.
@@ -1638,8 +1637,8 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 LaTeX Info: Redefining \. on input line 103.
 LaTeX Info: Redefining \% on input line 103.
  [22 <./Graphics/token-based-auth.jpeg>])
-LaTeX Info: Redefining \. on input line 99.
-LaTeX Info: Redefining \% on input line 99.
+LaTeX Info: Redefining \. on input line 109.
+LaTeX Info: Redefining \% on input line 109.
  [23]
 \openout2 = `MainMatter/Implementation.aux'.
 
@@ -1676,12 +1675,12 @@ LaTeX Info: Redefining \% on input line 30.
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
  [26]
-<Graphics/admin_console.png, id=643, 331.2375pt x 287.0725pt>
+<Graphics/admin_console.png, id=648, 331.2375pt x 287.0725pt>
 File: Graphics/admin_console.png Graphic file (type png)
 <use Graphics/admin_console.png>
 Package pdftex.def Info: Graphics/admin_console.png  used on input line 64.
 (pdftex.def)             Requested size: 303.53267pt x 263.07175pt.
-<Graphics/keycloak_realm.png, id=644, 610.28pt x 165.61874pt>
+<Graphics/keycloak_realm.png, id=649, 610.28pt x 165.61874pt>
 File: Graphics/keycloak_realm.png Graphic file (type png)
 <use Graphics/keycloak_realm.png>
 Package pdftex.def Info: Graphics/keycloak_realm.png  used on input line 75.
@@ -1689,7 +1688,7 @@ Package pdftex.def Info: Graphics/keycloak_realm.png  used on input line 75.
 LaTeX Info: Redefining \. on input line 79.
 LaTeX Info: Redefining \% on input line 79.
  [27 <./Graphics/admin_console.png>]
-<Graphics/keycloak_user federation.png, id=656, 715.67375pt x 472.76625pt>
+<Graphics/keycloak_user federation.png, id=660, 715.67375pt x 472.76625pt>
 File: Graphics/keycloak_user federation.png Graphic file (type png)
 <use Graphics/keycloak_user federation.png>
 Package pdftex.def Info: Graphics/keycloak_user federation.png  used on input l
@@ -1698,13 +1697,13 @@ ine 87.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
  [28 <./Graphics/keycloak_realm.png> <./Graphics/keycloak_user federation.png>]
-<Graphics/keycloak_configuracion_ldap1.png, id=665, 701.11937pt x 707.64375pt>
+<Graphics/keycloak_configuracion_ldap1.png, id=669, 701.11937pt x 707.64375pt>
 File: Graphics/keycloak_configuracion_ldap1.png Graphic file (type png)
 <use Graphics/keycloak_configuracion_ldap1.png>
 Package pdftex.def Info: Graphics/keycloak_configuracion_ldap1.png  used on inp
 ut line 97.
 (pdftex.def)             Requested size: 390.25534pt x 393.8915pt.
-<Graphics/keycloak_configuracion_ldap2.png, id=666, 705.13437pt x 700.11563pt>
+<Graphics/keycloak_configuracion_ldap2.png, id=670, 705.13437pt x 700.11563pt>
 File: Graphics/keycloak_configuracion_ldap2.png Graphic file (type png)
 <use Graphics/keycloak_configuracion_ldap2.png>
 Package pdftex.def Info: Graphics/keycloak_configuracion_ldap2.png  used on inp
@@ -1713,7 +1712,7 @@ ut line 104.
 LaTeX Info: Redefining \. on input line 108.
 LaTeX Info: Redefining \% on input line 108.
  [29 <./Graphics/keycloak_configuracion_ldap1.png>]
-<Graphics/ADS_usuarios.png, id=672, 420.57124pt x 260.47313pt>
+<Graphics/ADS_usuarios.png, id=676, 420.57124pt x 260.47313pt>
 File: Graphics/ADS_usuarios.png Graphic file (type png)
 <use Graphics/ADS_usuarios.png>
 Package pdftex.def Info: Graphics/ADS_usuarios.png  used on input line 113.
@@ -1721,13 +1720,13 @@ Package pdftex.def Info: Graphics/ADS_usuarios.png  used on input line 113.
 LaTeX Info: Redefining \. on input line 117.
 LaTeX Info: Redefining \% on input line 117.
  [30 <./Graphics/keycloak_configuracion_ldap2.png>]
-<Graphics/users_not_mapped.png, id=678, 817.0525pt x 272.51813pt>
+<Graphics/users_not_mapped.png, id=682, 817.0525pt x 272.51813pt>
 File: Graphics/users_not_mapped.png Graphic file (type png)
 <use Graphics/users_not_mapped.png>
 Package pdftex.def Info: Graphics/users_not_mapped.png  used on input line 122.
 
 (pdftex.def)             Requested size: 433.62pt x 144.62935pt.
-<Graphics/mappers.png, id=679, 534.99875pt x 356.33125pt>
+<Graphics/mappers.png, id=683, 534.99875pt x 356.33125pt>
 File: Graphics/mappers.png Graphic file (type png)
 <use Graphics/mappers.png>
 Package pdftex.def Info: Graphics/mappers.png  used on input line 131.
@@ -1735,7 +1734,7 @@ Package pdftex.def Info: Graphics/mappers.png  used on input line 131.
 LaTeX Info: Redefining \. on input line 135.
 LaTeX Info: Redefining \% on input line 135.
  [31 <./Graphics/ADS_usuarios.png> <./Graphics/users_not_mapped.png>]
-<Graphics/mapper_config.png, id=686, 705.63625pt x 570.13pt>
+<Graphics/mapper_config.png, id=690, 705.63625pt x 570.13pt>
 File: Graphics/mapper_config.png Graphic file (type png)
 <use Graphics/mapper_config.png>
 Package pdftex.def Info: Graphics/mapper_config.png  used on input line 138.
@@ -1743,7 +1742,7 @@ Package pdftex.def Info: Graphics/mapper_config.png  used on input line 138.
 LaTeX Info: Redefining \. on input line 142.
 LaTeX Info: Redefining \% on input line 142.
  [32 <./Graphics/mappers.png>]
-<Graphics/users_with_email.png, id=692, 900.86563pt x 269.005pt>
+<Graphics/users_with_email.png, id=697, 900.86563pt x 269.005pt>
 File: Graphics/users_with_email.png Graphic file (type png)
 <use Graphics/users_with_email.png>
 Package pdftex.def Info: Graphics/users_with_email.png  used on input line 146.
@@ -1752,7 +1751,7 @@ Package pdftex.def Info: Graphics/users_with_email.png  used on input line 146.
 LaTeX Info: Redefining \. on input line 159.
 LaTeX Info: Redefining \% on input line 159.
  [33 <./Graphics/mapper_config.png> <./Graphics/users_with_email.png>]
-<Graphics/diagrama de flujo del prototipo del servicio.png, id=700, 966.61125pt
+<Graphics/diagrama de flujo del prototipo del servicio.png, id=704, 966.61125pt
  x 720.6925pt>
 File: Graphics/diagrama de flujo del prototipo del servicio.png Graphic file (t
 ype png)
@@ -1771,15 +1770,15 @@ LaTeX Info: Redefining \% on input line 174.
 LaTeX Info: Redefining \. on input line 197.
 LaTeX Info: Redefining \% on input line 197.
  [35])
-LaTeX Info: Redefining \. on input line 100.
-LaTeX Info: Redefining \% on input line 100.
+LaTeX Info: Redefining \. on input line 110.
+LaTeX Info: Redefining \% on input line 110.
 
 [36]
 \openout2 = `MainMatter/Experimentation.aux'.
 
  (./MainMatter/Experimentation.tex
 Cap\'{\i }tulo 4.
-<Graphics/client_new1.png, id=714, 653.44125pt x 340.27126pt>
+<Graphics/client_new1.png, id=718, 653.44125pt x 340.27126pt>
 File: Graphics/client_new1.png Graphic file (type png)
 <use Graphics/client_new1.png>
 Package pdftex.def Info: Graphics/client_new1.png  used on input line 26.
@@ -1789,12 +1788,12 @@ Package pdftex.def Info: Graphics/client_new1.png  used on input line 26.
 
 
 ]
-<Graphics/client_new2.png, id=719, 653.44125pt x 340.27126pt>
+<Graphics/client_new2.png, id=724, 653.44125pt x 340.27126pt>
 File: Graphics/client_new2.png Graphic file (type png)
 <use Graphics/client_new2.png>
 Package pdftex.def Info: Graphics/client_new2.png  used on input line 33.
 (pdftex.def)             Requested size: 433.62pt x 225.79987pt.
-<Graphics/client_list.png, id=720, 587.19376pt x 473.77pt>
+<Graphics/client_list.png, id=725, 587.19376pt x 473.77pt>
 File: Graphics/client_list.png Graphic file (type png)
 <use Graphics/client_list.png>
 Package pdftex.def Info: Graphics/client_list.png  used on input line 42.
@@ -1802,7 +1801,7 @@ Package pdftex.def Info: Graphics/client_list.png  used on input line 42.
 LaTeX Info: Redefining \. on input line 46.
 LaTeX Info: Redefining \% on input line 46.
  [38 <./Graphics/client_new1.png> <./Graphics/client_new2.png>]
-<Graphics/client_nodo.png, id=728, 723.70375pt x 349.305pt>
+<Graphics/client_nodo.png, id=733, 723.70375pt x 349.305pt>
 File: Graphics/client_nodo.png Graphic file (type png)
 <use Graphics/client_nodo.png>
 Package pdftex.def Info: Graphics/client_nodo.png  used on input line 51.
@@ -1810,7 +1809,7 @@ Package pdftex.def Info: Graphics/client_nodo.png  used on input line 51.
 LaTeX Info: Redefining \. on input line 55.
 LaTeX Info: Redefining \% on input line 55.
  [39 <./Graphics/client_list.png>]
-<Graphics/client_nodo_credentials.png, id=735, 697.60625pt x 436.63126pt>
+<Graphics/client_nodo_credentials.png, id=739, 697.60625pt x 436.63126pt>
 File: Graphics/client_nodo_credentials.png Graphic file (type png)
 <use Graphics/client_nodo_credentials.png>
 Package pdftex.def Info: Graphics/client_nodo_credentials.png  used on input li
@@ -1828,12 +1827,12 @@ nput line 6.
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
  [41])
-<Graphics/interfaz.png, id=784, 1284.8pt x 803.0pt>
+<Graphics/interfaz.png, id=788, 1284.8pt x 803.0pt>
 File: Graphics/interfaz.png Graphic file (type png)
 <use Graphics/interfaz.png>
 Package pdftex.def Info: Graphics/interfaz.png  used on input line 79.
 (pdftex.def)             Requested size: 433.62pt x 271.00693pt.
-<Graphics/interfaz_token_success.png, id=785, 1284.8pt x 803.0pt>
+<Graphics/interfaz_token_success.png, id=789, 1284.8pt x 803.0pt>
 File: Graphics/interfaz_token_success.png Graphic file (type png)
 <use Graphics/interfaz_token_success.png>
 Package pdftex.def Info: Graphics/interfaz_token_success.png  used on input lin
@@ -1853,7 +1852,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ))
-<Graphics/locust_visual.png, id=805, 1284.8pt x 803.0pt>
+<Graphics/locust_visual.png, id=809, 1284.8pt x 803.0pt>
 File: Graphics/locust_visual.png Graphic file (type png)
 <use Graphics/locust_visual.png>
 Package pdftex.def Info: Graphics/locust_visual.png  used on input line 109.
@@ -1861,12 +1860,12 @@ Package pdftex.def Info: Graphics/locust_visual.png  used on input line 109.
 LaTeX Info: Redefining \. on input line 113.
 LaTeX Info: Redefining \% on input line 113.
  [44]
-<Graphics/locust_config.png, id=838, 367.3725pt x 560.0925pt>
+<Graphics/locust_config.png, id=843, 367.3725pt x 560.0925pt>
 File: Graphics/locust_config.png Graphic file (type png)
 <use Graphics/locust_config.png>
 Package pdftex.def Info: Graphics/locust_config.png  used on input line 118.
 (pdftex.def)             Requested size: 130.08731pt x 198.33426pt.
-<Graphics/locust_statistics.png, id=839, 1016.79875pt x 410.53375pt>
+<Graphics/locust_statistics.png, id=844, 1016.79875pt x 410.53375pt>
 File: Graphics/locust_statistics.png Graphic file (type png)
 <use Graphics/locust_statistics.png>
 Package pdftex.def Info: Graphics/locust_statistics.png  used on input line 127
@@ -1875,14 +1874,14 @@ Package pdftex.def Info: Graphics/locust_statistics.png  used on input line 127
 LaTeX Info: Redefining \. on input line 131.
 LaTeX Info: Redefining \% on input line 131.
  [45 <./Graphics/locust_visual.png> <./Graphics/locust_config.png>]
-<Graphics/locust_total_requests_per_second.png, id=847, 1003.75pt x 351.3125pt>
+<Graphics/locust_total_requests_per_second.png, id=851, 1003.75pt x 351.3125pt>
 
 File: Graphics/locust_total_requests_per_second.png Graphic file (type png)
 <use Graphics/locust_total_requests_per_second.png>
 Package pdftex.def Info: Graphics/locust_total_requests_per_second.png  used on
  input line 134.
 (pdftex.def)             Requested size: 390.25534pt x 136.59319pt.
-<Graphics/locust_response_times_(ms).png, id=848, 1003.75pt x 351.3125pt>
+<Graphics/locust_response_times_(ms).png, id=852, 1003.75pt x 351.3125pt>
 File: Graphics/locust_response_times_(ms).png Graphic file (type png)
 <use Graphics/locust_response_times_(ms).png>
 Package pdftex.def Info: Graphics/locust_response_times_(ms).png  used on input
@@ -1892,15 +1891,15 @@ LaTeX Info: Redefining \. on input line 147.
 LaTeX Info: Redefining \% on input line 147.
  [46 <./Graphics/locust_statistics.png> <./Graphics/locust_total_requests_per_s
 econd.png>]
-<Graphics/locust_number_of_users.png, id=855, 1003.75pt x 351.3125pt>
+<Graphics/locust_number_of_users.png, id=859, 1003.75pt x 351.3125pt>
 File: Graphics/locust_number_of_users.png Graphic file (type png)
 <use Graphics/locust_number_of_users.png>
 Package pdftex.def Info: Graphics/locust_number_of_users.png  used on input lin
 e 152.
 (pdftex.def)             Requested size: 390.25534pt x 136.59319pt.
 )
-LaTeX Info: Redefining \. on input line 101.
-LaTeX Info: Redefining \% on input line 101.
+LaTeX Info: Redefining \. on input line 111.
+LaTeX Info: Redefining \% on input line 111.
  [47 <./Graphics/locust_response_times_(ms).png> <./Graphics/locust_number_of_u
 sers.png>]
 \openout2 = `BackMatter/Conclusions.aux'.
@@ -2023,8 +2022,8 @@ i-ca-tions,^^T en
  []
 
 [52]) [53]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./Thesis.aux
 LaTeX Info: Redefining \. on input line 29.
 LaTeX Info: Redefining \% on input line 29.
@@ -2035,8 +2034,8 @@ LaTeX Info: Redefining \% on input line 29.
 (./MainMatter/Proposal.aux) (./MainMatter/Implementation.aux)
 (./MainMatter/Experimentation.aux) (./BackMatter/Conclusions.aux)
 (./BackMatter/Recomendations.aux) (./BackMatter/Bibliography.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: EC7F6E690F17F860D5E13138CD5C4E12;2835.
 
@@ -2048,10 +2047,10 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 32903 strings out of 480608
- 607245 string characters out of 5903629
- 1416067 words of memory out of 5000000
- 47803 multiletter control sequences out of 15000+600000
+ 32906 strings out of 480608
+ 607269 string characters out of 5903629
+ 1416119 words of memory out of 5000000
+ 47805 multiletter control sequences out of 15000+600000
  626613 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,12n,106p,1541b,3633s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2068,10 +2067,10 @@ t/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/lm/lmro10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
 /lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/unc
 b8a.pfb>
-Output written on Thesis.pdf (63 pages, 11464027 bytes).
+Output written on Thesis.pdf (64 pages, 11467046 bytes).
 PDF statistics:
- 1068 PDF objects out of 1200 (max. 8388607)
- 909 compressed objects within 10 object streams
- 265 named destinations out of 1000 (max. 500000)
+ 1072 PDF objects out of 1200 (max. 8388607)
+ 912 compressed objects within 10 object streams
+ 266 named destinations out of 1000 (max. 500000)
  582 words of extra memory for PDF output out of 10000 (max. 10000000)
 
