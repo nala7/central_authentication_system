@@ -16,7 +16,7 @@ app = Flask(__name__)
 keycloak_open_id = KeycloakOpenID(server_url="http://localhost:8080/", 
 	client_id="nodo", 
 	realm_name="master", 
-	client_secret_key="V35a9m9GjYpslkw11mXwEMHM3Ac8hmhD")
+	client_secret_key="secret key")
 keycloak_open_id.well_know()
 
 @app.route('/login', methods=['POST', 'GET'])

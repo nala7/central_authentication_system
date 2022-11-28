@@ -1,0 +1,36 @@
+\lstset{language=Python}
+\lstset{frame=lines}
+\lstset{caption={Conexión de Locust a Keycloak}}
+\lstset{label={lst:locust}}
+\lstset{basicstyle=\footnotesize}
+\begin{lstlisting}
+from locust import HttpUser, task
+from random import choice
+
+URL_TOKEN = "realms/{realm-name}/protocol/openid-connect/token"
+
+class KeycloakUser(HttpUser):
+def on_start(self):
+self.users = [("user", "password")]
+self.realm_name = "realm"
+self.client_id = "client"
+self.secret_key = "secret key"
+
+@task
+def token_load_test(self):
+username, password = choice(self.users)
+params_path = {"realm-name": self.realm_name}
+payload = {
+	"username": username,
+	"password": password,
+	"client_id": self.client_id,
+	"grant_type": ["password"],
+	"code": "",
+	"redirect_uri": "",
+	"client_secret": self.secret_key
+}
+self.client.post(URL_TOKEN.format(**params_path), data=payload)
+
+\end{lstlisting}
+
+

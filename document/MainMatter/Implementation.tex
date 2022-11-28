@@ -1,22 +1,22 @@
 \chapter{Elección de herramientas y detalles de implementación}\label{chapter:implementation}
-En el siguiente capítulo se toman decisiones claves respecto a qué herramientas utilizar para lidiar con problemas que surgen al autenticarse. También se proveen instrucciones específicas para la ejecución y configuración de las herramientas mencionadas.  Además, se brindan los pasos a seguir para la implementación de un sistema de autenticación central. 
+En el siguiente capítulo se toman decisiones claves respecto a qué herramientas utilizar para lidiar con los problemas que surgen al autenticarse. También se proveen instrucciones específicas para la ejecución y configuración de las herramientas mencionadas.  Además, se brindan los pasos a seguir para la implementación de un sistema de autenticación central. 
 
 \section{Elección de herramientas} \label{tools-used}
 En la siguiente propuesta se utiliza LDAP como herramienta para ingerir datos. Como ya se ha explicado anteriormente, LDAP es el programa que se utiliza actualmente para unificar las distintas bases de datos de usuarios de toda la Universidad de La Habana. Para el manejo de LDAP se utilizará \textit{Apache Directory Studio} (ApacheDS), un software libre que permite la gestión de directorios.
 
 También se utilizará Keycloak, una solución de gestión de acceso e identidad de código abierto dirigida a aplicaciones y servicios modernos. Esta facilita la protección de aplicaciones y servicios con poco o ningún código [\cite{muyon2020metodos}]. 
 
-Esta es una herramienta que se encarga de abstraer la parte de autenticación de usuarios y almacenamiento de información privada de estos, del flujo de comunicación entre cliente y servidor. Ofrece \textit{Single Sign-On} a través de una autenticación basada en tokens y está diseñada para que sea sencillo añadir nuevos servidores de usuarios y clientes.
+Keycloak es una herramienta que se encarga de abstraer la parte de autenticación de usuarios y almacenamiento de la información privada de estos, del flujo de comunicación entre cliente y servidor. Ofrece Single Sign-On a través de una autenticación basada en \textit{tokens} y está diseñada para que sea sencillo añadir nuevos servidores de usuarios y clientes.
 
-Keycloak contiene una alta elegibilidad de configuración en sí mismo. Su papel es meramente intermediario entre servicios externos, por lo que cuando un usuario quiere iniciar sesión en una aplicación, la autenticación se le transfiere directamente al servicio Keycloak, que se encarga de generar los objetos JWT que se envían necesariamente entre servicios para transmitir los datos de dicho usuario.
+Esta herramienta contiene una alta elegibilidad de configuración en sí misma. Su papel es meramente de intermediario entre servicios externos, por lo que cuando un usuario quiere iniciar sesión en una aplicación, la autenticación se le transfiere directamente al servicio Keycloak, que se encarga de generar los objetos JWT que se envían necesariamente entre servicios para transmitir los datos de dicho usuario.
 
 Este servicio ofrece un amplio abanico de posibilidades en la configuración del acceso entre servicios. Se ha elegido frente a otras soluciones de código abierto como STYTCH, Ory, Okta o Auth0 porque Keycloak ofrece un nivel más alto en cuanto a rendimiento, escalabilidad y disponibilidad [\cite{lobato2022regulacion}]. 
 
-Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{Open Source} que soporta \textit{SAML}, \textit{OpenID Connect}, \textit{SSO} y \textit{OAuth 2.0}. Sin embargo, \textit{Gluu} es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
+Gluu es otra de las tecnologías que tienen prestaciones y ventajas similares a Keycloak. Es un servicio \textit{open source} que soporta SAML, OpenID Connect, SSO y OAuth 2.0. Sin embargo, Gluu es un sistema que requiere de 8 GB de RAM y 40 GB de espacio en disco, mientras que Keycloak solo necesita de 512 Mb de RAM y 1 GB de disco. Por ello la segunda tecnología se ajusta más a los recursos con que cuenta  la Universidad de La Habana [\cite{vassallo2017continuous}].
 
-Para la experimentación se creará un cliente capaz de interactuar con el sistema implementado para autenticar usuarios. Keycloak permite proteger aplicaciones que se ejecutan en diversas plataformas y tecnologías que usan los protocolos \textit{OpenID Connect } y SAML [\cite{secure_apps_2022}]. 
+Para la experimentación se creará un cliente capaz de interactuar con el sistema implementado para autenticar usuarios. Keycloak permite proteger aplicaciones que se ejecutan en diversas plataformas y tecnologías que usan los protocolos OpenID Connect y SAML [\cite{secure_apps_2022}]. 
 
-Entre los soportes ofrecidos, se ha escogido la biblioteca de Python \href{https://pypi.org/project/python-keycloak/}{\textcolor{blue}{\textbf{Python Keycloak}}}, que provee fácil acceso a la API de Keycloak. Python es un lenguaje de programación que permite trabajar rápido e integrar sistemas eficientemente [\cite{python_2022}]. Podría decirse que durante la última década Python se ha convertido en uno de los lenguajes de código abierto más utilizados.
+Entre los soportes ofrecidos, se ha escogido la biblioteca de Python \href{https://pypi.org/project/python-keycloak/}{\textcolor{blue}{\textbf{Python Keycloak}}}, que provee fácil acceso a la API de Keycloak. Python es un lenguaje de programación que facilita trabajar rápido e integrar sistemas eficientemente [\cite{python_2022}]. Podría decirse que durante la última década Python se ha convertido en uno de los lenguajes de código abierto más utilizados.
 
 Para la visualización de la solución se utiliza Flask, un \textit{micro framework} de Python que proporciona las funcionalidades básicas de\textit{ web frameworks}.
 
@@ -32,16 +32,16 @@ Teniendo en cuenta la tabla previa, se puede extraer una serie de opciones candi
 lineamientos, las opciones elegibles son:
 
 \begin{itemize}
-	\item \textit{Apache Directory Server}
-	\item \textit{OpenDS}
-	\item \textit{OpenLDAP}
+	\item Apache Directory Server
+	\item OpenDS
+	\item OpenLDAP
 \end{itemize}
 
-Además, se comprobó un tercer criterio al realizar las pruebas a las opciones candidatas, el cual fue la capacidad de despliegue de dicha solución en diferentes sistemas operativos. \textit{OpenLDAP} no se encuentra disponible en el sitio oficial para Windows, sistema operativo utilizado en el Nodo Central, por lo cual no se utilizará. 
+Además, se comprobó un tercer criterio al realizar las pruebas a las opciones candidatas, el cual fue la capacidad de despliegue de dicha solución en diferentes sistemas operativos. OpenLDAP no se encuentra disponible en el sitio oficial para Windows, sistema operativo utilizado en el Nodo Central, por lo cual no se utilizará. 
 
-\textit{ApacheDS} tiene una documentación amplia y es fácil de desplegar. También cuenta con instaladores fáciles de usar para diversos sistemas operativos, entre los cuales se encuentran Linux, Solaris, Mac OS X y Windows. Además, provee el código fuente en caso que sea necesaria su compilación. Por lo tanto, esta será la herramienta utilizada para acceder a LDAP.
+ApacheDS tiene una documentación amplia y es fácil de desplegar. También cuenta con instaladores fáciles de usar para diversos sistemas operativos, entre los cuales se encuentran Linux, Solaris, Mac OS X y Windows. Además, provee el código fuente en caso que sea necesaria su compilación. Por lo tanto, esta será la herramienta utilizada para acceder a LDAP.
 
-\textit{ApacheDS} cuenta con una herramienta bastante completa para la gestión del directorio llamada \textit{Apache Directory Studio} la cual está basada en el entorno de desarrollo Eclipse. Esta se utilizará para acceder a los dos LDAP con los que se interactúa, la de los trabajadores y la de los estudiantes.
+ApacheDS cuenta con una herramienta bastante completa para la gestión del directorio llamada Apache Directory Studio la cual está basada en el entorno de desarrollo Eclipse. Esta se utilizará para acceder a los dos LDAP con los que se interactúa, la de los trabajadores y la de los estudiantes.
 
 \subsection{Keycloak como herramienta para la ingestión de datos} \label{keycloak-config}
 %
@@ -56,13 +56,13 @@ Se realizan las siguientes configuraciones:
 \begin{enumerate}
 	\item \textbf{Creación de usuario administrador}
 	
-	Para ello se debe abrir \href{http://localhost:8080/}{\textcolor{blue}{http://localhost:8080/}}
+	Para ello se debe abrir \texttt{http://localhost:8080/}
 	y rellenar el formulario con el nombre de usuario y contraseña de preferencia.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{Graphics/admin_console}
-		\caption{Usuario Administrador}
+		\caption{Usuario administrador}
 		\label{fig:adminconsole}
 	\end{figure}
 	
@@ -95,23 +95,23 @@ Se realizan las siguientes configuraciones:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{Graphics/keycloak_configuracion_ldap1}
-		\caption{Configuración de LDAP en Keycloak}
+		\caption{Configuración de LDAP en Keycloak(1)}
 		\label{fig:keycloakconfiguracionldap1}
 	\end{figure}
 	
 		\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{Graphics/keycloak_configuracion_ldap2}
-		\caption{Configuración de LDAP en Keycloak}
+		\caption{Configuración de LDAP en Keycloak (2)}
 		\label{fig:keycloakconfiguracionldap1}
 	\end{figure}
 
-	Luego de conectar Keycloak con LDAP, se puede comprobar que los usuarios sincronizan. En la siguiente imagen se pueden ver los usuarios en LDAP desde \textit{Apache Directory Studio}:
+	Luego de conectar Keycloak con LDAP, se puede comprobar que los usuarios sincronizan. En la siguiente imagen se pueden ver los usuarios en LDAP desde Apache Directory Studio:
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{Graphics/ADS_usuarios}
-		\caption{Usuarios en LDAP vistos desde \textit{Apache Directory Studio}}
+		\caption{Usuarios en LDAP vistos desde Apache Directory Studio}
 		\label{fig:adsusuarios}
 	\end{figure}
 
@@ -120,7 +120,7 @@ Se realizan las siguientes configuraciones:
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=1\linewidth]{Graphics/users_not_mapped}
-		\caption{Usuarios }
+		\caption{Lista de usuarios }
 		\label{fig:usersnotmapped}
 	\end{figure}
 	
@@ -172,13 +172,13 @@ Cada paso descrito en el diagrama de flujo se explica detalladamente a continuac
 \begin{itemize}
 	\item La primera acción (1) consiste en que el cliente haga login en el sistema por medio de unas credenciales básicas que son su identificador y contraseña. Esta petición se redirigirá automáticamente al servidor Keycloak, el único que contiene la información almacenada de los clientes del sistema, así como sus credenciales. 
 	
-	\item El segundo paso (2), viene con la validación de dichas credenciales en la aplicación de autenticación Keycloak, y la generación de un \textit{Access Token}.
+	\item El segundo paso (2), consiste en la validación de dichas credenciales en la aplicación de autenticación Keycloak, y la generación de un \textit{Access Token}.
 	
-	\item El tercer paso (3) es el envío de dicho token a través de JWT hacia el usuario o aplicación cliente. Sin embargo, en caso de que las credenciales hayan resultado erróneas, se enviará el mensaje de error correspondiente. 
+	\item El tercer paso (3) es el envío de dicho \textit{token} a través de JWT hacia el usuario o aplicación cliente. Sin embargo, en caso de que las credenciales hayan resultado erróneas, se enviará el mensaje de error correspondiente. 
 	
 	\item En el cuarto paso (4), la aplicación cliente ya iniciada sesión, dispone del \textit{Access Token} para realizar consultas, por lo que genera la primera petición de algún recurso cualquiera al servidor del Nodo.
 	
-	\item El paso denominado X es la validación instantánea del token que contiene la petición del cliente. Antes de entrar en la lógica de interfaz que ofrece la API del servidor, cabe mencionar aquí que se ha insertado un denominado “Interceptor”. Este, procesa el JWT que le llega en la petición al servidor y valida toda la información del mismo. Este paso se repite por lo tanto en varias ocasiones, para cada petición de recurso ya que cada recurso requiere unos permisos o scopes específicos. 
+	\item El paso denominado X es la validación instantánea del \textit{token} que contiene la petición del cliente. Antes de entrar en la lógica de interfaz que ofrece la API del servidor, cabe mencionar que aquí  se ha insertado un denominado “Interceptor”. Este, procesa el JWT que le llega en la petición al servidor y valida toda la información del mismo. Este paso se repite en varias ocasiones, para cada petición de recurso ya que cada recurso requiere unos permisos o ámbitos específicos. 
 	
 	\item El quinto (5) paso consiste en la generación de la respuesta que envía el servidor a la aplicación cliente en caso de validación de token correcta. 
 	

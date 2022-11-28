@@ -5,7 +5,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Estructura de JWT\relax }}{14}{figure.caption.20}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Flujo de Información en Keycloak\relax }}{16}{figure.caption.21}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Flujo de información en Keycloak\relax }}{16}{figure.caption.21}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -15,19 +15,19 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Usuario Administrador\relax }}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Usuario administrador\relax }}{27}{figure.caption.25}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Relación de entidades en Keycloak\relax }}{28}{figure.caption.26}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Keycloak: \textit {User Federation}\relax }}{28}{figure.caption.27}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Configuración de LDAP en Keycloak(1)\relax }}{29}{figure.caption.28}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuración de LDAP en Keycloak\relax }}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Configuración de LDAP en Keycloak (2)\relax }}{30}{figure.caption.29}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Usuarios en LDAP vistos desde \textit {Apache Directory Studio}\relax }}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Usuarios en LDAP vistos desde Apache Directory Studio\relax }}{31}{figure.caption.30}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Usuarios \relax }}{31}{figure.caption.31}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Lista de usuarios \relax }}{31}{figure.caption.31}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Configuración para mapear \relax }}{32}{figure.caption.32}%
 \defcounter {refsection}{0}\relax 
@@ -39,9 +39,9 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Nuevo cliente en Keycloak\relax }}{38}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Nuevo cliente en Keycloak(1)\relax }}{38}{figure.caption.36}%
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Nuevo cliente en Keycloak\relax }}{38}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Nuevo cliente en Keycloak (2)\relax }}{38}{figure.caption.37}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Lista de clientes\relax }}{39}{figure.caption.38}%
 \defcounter {refsection}{0}\relax 
@@ -52,3 +52,15 @@
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Interfaz visual\relax }}{42}{figure.caption.41}%
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Resultado de autenticación exitosa\relax }}{43}{figure.caption.42}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Interfaz visual de Locust\relax }}{45}{figure.caption.43}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Configuración de Locust\relax }}{45}{figure.caption.44}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Estadísticas obtenidas de prueba de Locust\relax }}{46}{figure.caption.45}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Total de pedidos por segundo\relax }}{46}{figure.caption.46}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Tiempo de respuesta\relax }}{47}{figure.caption.47}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Número de usuarios\relax }}{47}{figure.caption.48}%

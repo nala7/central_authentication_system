@@ -78,7 +78,7 @@
       \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{C{ó}mo programar Internet \& World Wide Web .}
+      \field{title}{C{ó}mo programar Internet \& World Wide Web}
       \field{year}{2014}
     \endentry
     \entry{ye2022diseno}{article}{}
@@ -105,116 +105,6 @@
       \field{title}{Dise{ñ}o e implantaci{ó}n de un sistema de autenticaci{ó}n Cross-platform para React y React Native}
       \field{year}{2022}
     \endentry
-    \entry{microsoft-doc}{online}{}
-      \name{author}{1}{}{%
-        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
-           family={Microsoft},
-           familyi={M\bibinitperiod}}}%
-      }
-      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
-      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
-      \field{extraname}{1}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{What is single sign-on in Azure Active Directory?}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
-      \endverb
-      \verb{url}
-      \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
-      \endverb
-    \endentry
-    \entry{radha2012survey}{article}{}
-      \name{author}{2}{}{%
-        {{hash=2da1267b9ef6adb02b06ccb4214e70a5}{%
-           family={Radha},
-           familyi={R\bibinitperiod},
-           given={V},
-           giveni={V\bibinitperiod}}}%
-        {{hash=d60104f78df9f19a50b2744c10009d85}{%
-           family={Reddy},
-           familyi={R\bibinitperiod},
-           given={D\bibnamedelima Hitha},
-           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Elsevier}%
-      }
-      \strng{namehash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \strng{fullhash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \strng{bibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \strng{authorbibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \strng{authornamehash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \strng{authorfullhash}{2a532673e73605096ffcb7fdd6bd0ece}
-      \field{sortinit}{5}
-      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{Procedia Technology}
-      \field{title}{A survey on single sign-on techniques}
-      \field{volume}{4}
-      \field{year}{2012}
-      \field{pages}{134\bibrangedash 139}
-      \range{pages}{6}
-    \endentry
-    \entry{google-support}{online}{}
-      \name{author}{1}{}{%
-        {{hash=8b36e9207c24c76e6719268e49201d94}{%
-           family={Google},
-           familyi={G\bibinitperiod}}}%
-      }
-      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
-      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
-      \field{sortinit}{6}
-      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{About SSO}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://support.google.com/
-      \endverb
-      \verb{url}
-      \verb https://support.google.com/
-      \endverb
-    \endentry
-    \entry{sso-doc}{online}{}
-      \name{author}{1}{}{%
-        {{hash=2a723769d08b0732d8563ffe6bdaee7d}{%
-           family={Auth0},
-           familyi={A\bibinitperiod}}}%
-      }
-      \strng{namehash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \strng{fullhash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \strng{bibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \strng{authorbibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \field{extraname}{1}
-      \field{sortinit}{7}
-      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Single Sign-On}
-      \field{year}{2022}
-      \verb{urlraw}
-      \verb https://auth0.com/docs/authenticate/single-sign-on
-      \endverb
-      \verb{url}
-      \verb https://auth0.com/docs/authenticate/single-sign-on
-      \endverb
-    \endentry
     \entry{auth0AccessTokens}{misc}{}
       \name{author}{1}{}{%
         {{hash=2a723769d08b0732d8563ffe6bdaee7d}{%
@@ -227,13 +117,13 @@
       \strng{authorbibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
       \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
-      \field{extraname}{2}
-      \field{sortinit}{8}
-      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{extraname}{1}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://auth0.com/docs/secure/tokens/access-tokens}}
-      \field{title}{Access Tokens --- auth0.com}
+      \field{title}{Access Tokens}
       \field{year}{2022}
     \endentry
     \entry{banerjee2018token}{article}{}
@@ -255,8 +145,8 @@
       \strng{authorbibnamehash}{ca50f2092937579f084d191b2c2732ed}
       \strng{authornamehash}{ca50f2092937579f084d191b2c2732ed}
       \strng{authorfullhash}{ca50f2092937579f084d191b2c2732ed}
-      \field{sortinit}{9}
-      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Sistemas y Telem{á}tica}
@@ -294,8 +184,8 @@
       \strng{authorbibnamehash}{83e6debfafd08b2d14fb12b94e8aab61}
       \strng{authornamehash}{83e6debfafd08b2d14fb12b94e8aab61}
       \strng{authorfullhash}{83e6debfafd08b2d14fb12b94e8aab61}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{OASIS Standard (March 2005)}
@@ -323,8 +213,8 @@
       \strng{authorbibnamehash}{79d2d3ef7a0e8985e548a44ecddacdf4}
       \strng{authornamehash}{79d2d3ef7a0e8985e548a44ecddacdf4}
       \strng{authorfullhash}{79d2d3ef7a0e8985e548a44ecddacdf4}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{Proceedings of the second ACM workshop on Digital identity management}
@@ -365,8 +255,8 @@
       \strng{authorbibnamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authornamehash}{db8f37c4b02f7977bfb70afe41231f3a}
       \strng{authorfullhash}{db8f37c4b02f7977bfb70afe41231f3a}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{booktitle}{2017 IEEE European Symposium on Security and Privacy}
@@ -389,8 +279,8 @@
       \strng{authorbibnamehash}{645c23d98c8c0ad0899cb4be651e6a02}
       \strng{authornamehash}{645c23d98c8c0ad0899cb4be651e6a02}
       \strng{authorfullhash}{645c23d98c8c0ad0899cb4be651e6a02}
-      \field{sortinit}{1}
-      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{The OAuth 2.0 authorization framework}
@@ -427,79 +317,115 @@
       \field{title}{OAuth 2 in action}
       \field{year}{2017}
     \endentry
-    \entry{zheng2014token}{inproceedings}{}
-      \name{author}{2}{}{%
-        {{hash=344f5b0e0d962edf27e0a4af939d760a}{%
-           family={Zheng},
-           familyi={Z\bibinitperiod},
-           given={Kai},
-           giveni={K\bibinitperiod}}}%
-        {{hash=6595226a3e2753e80b5c256aeb1fd93d}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Weihua},
-           giveni={W\bibinitperiod}}}%
+    \entry{microsoft-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=140864078aeca1c7c35b4beb33c53c34}{%
+           family={Microsoft},
+           familyi={M\bibinitperiod}}}%
       }
-      \list{organization}{1}{%
-        {IEEE}%
-      }
-      \strng{namehash}{8dbb652f81ed815ce518d201e8379a40}
-      \strng{fullhash}{8dbb652f81ed815ce518d201e8379a40}
-      \strng{bibnamehash}{8dbb652f81ed815ce518d201e8379a40}
-      \strng{authorbibnamehash}{8dbb652f81ed815ce518d201e8379a40}
-      \strng{authornamehash}{8dbb652f81ed815ce518d201e8379a40}
-      \strng{authorfullhash}{8dbb652f81ed815ce518d201e8379a40}
+      \strng{namehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{fullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{bibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorbibnamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authornamehash}{140864078aeca1c7c35b4beb33c53c34}
+      \strng{authorfullhash}{140864078aeca1c7c35b4beb33c53c34}
+      \field{extraname}{1}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{International Conference on Data Science and Advanced Analytics}
-      \field{title}{A token authentication solution for hadoop based on kerberos pre-authentication}
-      \field{year}{2014}
-      \field{pages}{354\bibrangedash 360}
-      \range{pages}{7}
+      \field{title}{What is single sign-on in Azure Active Directory?}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
+      \endverb
+      \verb{url}
+      \verb https://learn.microsoft.com/es-es/azure/active-directory/manage-apps/what-is-single-sign-on
+      \endverb
     \endentry
-    \entry{ethelbert2017json}{inproceedings}{}
-      \name{author}{4}{}{%
-        {{hash=56c48bfff67b513fe569c969030c2c8e}{%
-           family={Ethelbert},
-           familyi={E\bibinitperiod},
-           given={Obinna},
-           giveni={O\bibinitperiod}}}%
-        {{hash=267c78f9358b4432b148685b1ef7f959}{%
-           family={Moghaddam},
-           familyi={M\bibinitperiod},
-           given={Faraz\bibnamedelima Fatemi},
-           giveni={F\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
-        {{hash=214c3807f600aff29d5516e6162ff644}{%
-           family={Wieder},
-           familyi={W\bibinitperiod},
-           given={Philipp},
-           giveni={P\bibinitperiod}}}%
-        {{hash=924db91f79c05e1404293d4682f02a49}{%
-           family={Yahyapour},
-           familyi={Y\bibinitperiod},
-           given={Ramin},
-           giveni={R\bibinitperiod}}}%
+    \entry{radha2012survey}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2da1267b9ef6adb02b06ccb4214e70a5}{%
+           family={Radha},
+           familyi={R\bibinitperiod},
+           given={V},
+           giveni={V\bibinitperiod}}}%
+        {{hash=d60104f78df9f19a50b2744c10009d85}{%
+           family={Reddy},
+           familyi={R\bibinitperiod},
+           given={D\bibnamedelima Hitha},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
       }
-      \list{organization}{1}{%
-        {IEEE}%
+      \list{publisher}{1}{%
+        {Elsevier}%
       }
-      \strng{namehash}{4ffcf028551aa389067703cdecb874f2}
-      \strng{fullhash}{4ffcf028551aa389067703cdecb874f2}
-      \strng{bibnamehash}{4ffcf028551aa389067703cdecb874f2}
-      \strng{authorbibnamehash}{4ffcf028551aa389067703cdecb874f2}
-      \strng{authornamehash}{4ffcf028551aa389067703cdecb874f2}
-      \strng{authorfullhash}{4ffcf028551aa389067703cdecb874f2}
+      \strng{namehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{fullhash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{bibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authorbibnamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authornamehash}{2a532673e73605096ffcb7fdd6bd0ece}
+      \strng{authorfullhash}{2a532673e73605096ffcb7fdd6bd0ece}
       \field{sortinit}{1}
       \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{IEEE International Conference on Future Internet of Things and Cloud}
-      \field{title}{A JSON token-based authentication and access management schema for cloud SaaS applications}
-      \field{year}{2017}
-      \field{pages}{47\bibrangedash 53}
-      \range{pages}{7}
+      \field{journaltitle}{Procedia Technology}
+      \field{title}{A survey on single sign-on techniques}
+      \field{volume}{4}
+      \field{year}{2012}
+      \field{pages}{134\bibrangedash 139}
+      \range{pages}{6}
+    \endentry
+    \entry{google-support}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8b36e9207c24c76e6719268e49201d94}{%
+           family={Google},
+           familyi={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{fullhash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{bibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorbibnamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authornamehash}{8b36e9207c24c76e6719268e49201d94}
+      \strng{authorfullhash}{8b36e9207c24c76e6719268e49201d94}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{About SSO}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://support.google.com/
+      \endverb
+      \verb{url}
+      \verb https://support.google.com/
+      \endverb
+    \endentry
+    \entry{sso-doc}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2a723769d08b0732d8563ffe6bdaee7d}{%
+           family={Auth0},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{fullhash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{bibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authorbibnamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authornamehash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \strng{authorfullhash}{2a723769d08b0732d8563ffe6bdaee7d}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Single Sign-On}
+      \field{year}{2022}
+      \verb{urlraw}
+      \verb https://auth0.com/docs/authenticate/single-sign-on
+      \endverb
+      \verb{url}
+      \verb https://auth0.com/docs/authenticate/single-sign-on
+      \endverb
     \endentry
     \entry{openid-doc}{online}{}
       \name{author}{1}{}{%
@@ -667,7 +593,6 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{" RFC editor}
-      \field{month}{5}
       \field{title}{JSON Web Token (JWT)}
       \field{year}{2015}
       \verb{urlraw}
@@ -694,8 +619,8 @@
       \strng{authorbibnamehash}{18086961279ed50e3721df1041acac89}
       \strng{authornamehash}{18086961279ed50e3721df1041acac89}
       \strng{authorfullhash}{18086961279ed50e3721df1041acac89}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Regulaci{ó}n de acceso a una aplicaci{ó}n m{é}dica mediante Keycloak}
@@ -723,8 +648,8 @@
       \strng{authorbibnamehash}{ee4acf150db72823f23e2c89642004bc}
       \strng{authornamehash}{ee4acf150db72823f23e2c89642004bc}
       \strng{authorfullhash}{ee4acf150db72823f23e2c89642004bc}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista Ib{é}rica de Sistemas e Tecnologias de Informa{ç}{ã}o}
@@ -788,21 +713,21 @@
       \true{moreauthor}
       \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=591c6a02ff906a3230f20729fbd7c9d6}{%
+        {{hash=e58f0ec56cc0af02b3aae62c75c68326}{%
            family={Teher{á}n\bibnamedelima Sierra},
            familyi={T\bibinitperiod\bibinitdelim S\bibinitperiod},
-           given={Jeny\bibnamedelima Luc{ı́}a},
+           given={Jeny\bibnamedelima Luc{í}a},
            giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {Uniandes}%
       }
-      \strng{namehash}{aa76f3615193451617f7183b5e18c7d5}
-      \strng{fullhash}{aa76f3615193451617f7183b5e18c7d5}
-      \strng{bibnamehash}{aa76f3615193451617f7183b5e18c7d5}
-      \strng{authorbibnamehash}{aa76f3615193451617f7183b5e18c7d5}
-      \strng{authornamehash}{aa76f3615193451617f7183b5e18c7d5}
-      \strng{authorfullhash}{aa76f3615193451617f7183b5e18c7d5}
+      \strng{namehash}{a550b63a857e0bb47d9a71e12103989d}
+      \strng{fullhash}{a550b63a857e0bb47d9a71e12103989d}
+      \strng{bibnamehash}{a550b63a857e0bb47d9a71e12103989d}
+      \strng{authorbibnamehash}{a550b63a857e0bb47d9a71e12103989d}
+      \strng{authornamehash}{a550b63a857e0bb47d9a71e12103989d}
+      \strng{authorfullhash}{a550b63a857e0bb47d9a71e12103989d}
       \field{sortinit}{3}
       \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
@@ -842,42 +767,11 @@
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Revista Cubana de Ciencias Inform{á}ticas}
-      \field{title}{Seguridad y usabilidad de los esquemas y t{é}cnicas de autenticaci{ó}n gr{á}fica.}
+      \field{title}{Seguridad y usabilidad de los esquemas y t{é}cnicas de autenticaci{ó}n gr{á}fica}
       \field{volume}{12}
       \field{year}{2018}
       \field{pages}{13\bibrangedash 27}
       \range{pages}{15}
-    \endentry
-    \entry{vassallo2017continuous}{article}{}
-      \name{author}{3}{}{%
-        {{hash=b18b0397ad8f3b2f81391f6a9b44adde}{%
-           family={Vassallo},
-           familyi={V\bibinitperiod},
-           given={Gabriele},
-           giveni={G\bibinitperiod}}}%
-        {{hash=b8adbff25ced901fb8b08523ce5ad81e}{%
-           family={Chiusano},
-           familyi={C\bibinitperiod},
-           given={Silvia},
-           giveni={S\bibinitperiod}}}%
-        {{hash=af4793f424b7bc9924c9a88df890dcce}{%
-           family={Preuveneers},
-           familyi={P\bibinitperiod},
-           given={D},
-           giveni={D\bibinitperiod}}}%
-      }
-      \strng{namehash}{474e11ed6954b5fc513dee26084d0652}
-      \strng{fullhash}{474e11ed6954b5fc513dee26084d0652}
-      \strng{bibnamehash}{474e11ed6954b5fc513dee26084d0652}
-      \strng{authorbibnamehash}{474e11ed6954b5fc513dee26084d0652}
-      \strng{authornamehash}{474e11ed6954b5fc513dee26084d0652}
-      \strng{authorfullhash}{474e11ed6954b5fc513dee26084d0652}
-      \field{sortinit}{3}
-      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Continuous authentication with behaviometrics on smartphones}
-      \field{year}{2017}
     \endentry
     \entry{lizama2016redes}{article}{}
       \name{author}{4}{}{%
@@ -947,12 +841,11 @@
       \strng{authorbibnamehash}{996b81ce0a8df7cee9ab0b20d5e0c7df}
       \strng{authornamehash}{996b81ce0a8df7cee9ab0b20d5e0c7df}
       \strng{authorfullhash}{996b81ce0a8df7cee9ab0b20d5e0c7df}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Cubadebate}
-      \field{month}{4}
       \field{title}{Evea: Una puerta hacia otra forma de Estudio}
       \field{year}{2022}
       \verb{urlraw}
@@ -979,8 +872,8 @@
       \strng{authorbibnamehash}{7862f55e81ba7eb1190beed305f274c9}
       \strng{authornamehash}{7862f55e81ba7eb1190beed305f274c9}
       \strng{authorfullhash}{7862f55e81ba7eb1190beed305f274c9}
-      \field{sortinit}{4}
-      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Medicina intensiva}
@@ -991,6 +884,37 @@
       \field{pages}{323}
       \range{pages}{1}
     \endentry
+    \entry{vassallo2017continuous}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b18b0397ad8f3b2f81391f6a9b44adde}{%
+           family={Vassallo},
+           familyi={V\bibinitperiod},
+           given={Gabriele},
+           giveni={G\bibinitperiod}}}%
+        {{hash=b8adbff25ced901fb8b08523ce5ad81e}{%
+           family={Chiusano},
+           familyi={C\bibinitperiod},
+           given={Silvia},
+           giveni={S\bibinitperiod}}}%
+        {{hash=af4793f424b7bc9924c9a88df890dcce}{%
+           family={Preuveneers},
+           familyi={P\bibinitperiod},
+           given={D},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{fullhash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{bibnamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authorbibnamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authornamehash}{474e11ed6954b5fc513dee26084d0652}
+      \strng{authorfullhash}{474e11ed6954b5fc513dee26084d0652}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Continuous authentication with behaviometrics on smartphones}
+      \field{year}{2017}
+    \endentry
     \entry{secure_apps_2022}{misc}{}
       \list{publisher}{1}{%
         {Keycloak}%
@@ -998,7 +922,6 @@
       \field{sortinit}{4}
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labeltitlesource}{title}
-      \field{month}{11}
       \field{title}{Securing Applications and Services Guide}
       \field{year}{2022}
       \verb{urlraw}
@@ -1062,7 +985,6 @@
       \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
       \field{labelnamesource}{author}
       \field{journaltitle}{Server administration guide}
-      \field{month}{11}
       \field{year}{2022}
       \verb{urlraw}
       \verb https://www.keycloak.org/docs/latest/server_admin/
@@ -1070,6 +992,92 @@
       \verb{url}
       \verb https://www.keycloak.org/docs/latest/server_admin/
       \endverb
+    \endentry
+    \entry{dullmann2017caspa}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=4e638ce1f083b333d207c586af098fd3}{%
+           family={D{ü}llmann},
+           familyi={D\bibinitperiod},
+           given={Thomas\bibnamedelima F},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=3560bc0cad59a19a23274e4da94b8d57}{%
+           family={Heinrich},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=f22e0405e994ff1d1d4400c03e531d20}{%
+           family={Hoorn},
+           familyi={H\bibinitperiod},
+           given={Andr{é}},
+           giveni={A\bibinitperiod},
+           prefix={van},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=2223095f3438560dfdd5101ad1d3b929}{%
+           family={Pitakrat},
+           familyi={P\bibinitperiod},
+           given={Teerat},
+           giveni={T\bibinitperiod}}}%
+        {{hash=98eba217674fe4e6bdeda1f384b03a6f}{%
+           family={Walter},
+           familyi={W\bibinitperiod},
+           given={J{ü}rgen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=72d1bc340cd4074d8bb08f4fb997791e}{%
+           family={Willnecker},
+           familyi={W\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{11379149faaa0d985383da312e50bf79}
+      \strng{fullhash}{11379149faaa0d985383da312e50bf79}
+      \strng{bibnamehash}{11379149faaa0d985383da312e50bf79}
+      \strng{authorbibnamehash}{11379149faaa0d985383da312e50bf79}
+      \strng{authornamehash}{11379149faaa0d985383da312e50bf79}
+      \strng{authorfullhash}{11379149faaa0d985383da312e50bf79}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International Conference on Software Architecture Workshops (ICSAW)}
+      \field{title}{CASPA: A platform for comparability of architecture-based software performance engineering approaches}
+      \field{year}{2017}
+      \field{pages}{294\bibrangedash 297}
+      \range{pages}{4}
+    \endentry
+    \entry{pradeep2019pragmatic}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=5e5fd0c30f49e7087b559060738dc71d}{%
+           family={Pradeep},
+           familyi={P\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=eee7bd21f9672dfe1de6318c54efd54c}{%
+           family={Sharma},
+           familyi={S\bibinitperiod},
+           given={Yogesh\bibnamedelima Kumar},
+           giveni={Y\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{dd893c53846a14b79556819a6fc6ebdb}
+      \strng{fullhash}{dd893c53846a14b79556819a6fc6ebdb}
+      \strng{bibnamehash}{dd893c53846a14b79556819a6fc6ebdb}
+      \strng{authorbibnamehash}{dd893c53846a14b79556819a6fc6ebdb}
+      \strng{authornamehash}{dd893c53846a14b79556819a6fc6ebdb}
+      \strng{authorfullhash}{dd893c53846a14b79556819a6fc6ebdb}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 Amity International Conference on Artificial Intelligence (AICAI)}
+      \field{title}{A pragmatic evaluation of stress and performance testing technologies for web based applications}
+      \field{year}{2019}
+      \field{pages}{399\bibrangedash 403}
+      \range{pages}{5}
     \endentry
     \entry{gallegos2015aplicacion}{article}{}
       \name{author}{1}{}{%
