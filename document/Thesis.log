@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  27 NOV 2022 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.12.15)  28 NOV 2022 16:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1607,7 +1607,7 @@ File: Graphics/Diagrama Tesis.png Graphic file (type png)
 Package pdftex.def Info: Graphics/Diagrama Tesis.png  used on input line 28.
 (pdftex.def)             Requested size: 520.34267pt x 191.79372pt.
 
-Overfull \hbox (53.19875pt too wide) in paragraph at lines 27--29
+Overfull \hbox (45.97131pt too wide) in paragraph at lines 27--29
  []|  [] 
  []
 
@@ -2006,7 +2006,7 @@ roa-ches,^^T en
  []
 
 
-Overfull \hbox (30.10791pt too wide) in paragraph at lines 1--1
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
 |   []\T1/lmr/m/n/12 ,
  []
 
@@ -2050,7 +2050,7 @@ Package logreq Info: Writing requests to 'Thesis.run.xml'.
 Here is how much of TeX's memory you used:
  32903 strings out of 480608
  607245 string characters out of 5903629
- 1416075 words of memory out of 5000000
+ 1416067 words of memory out of 5000000
  47803 multiletter control sequences out of 15000+600000
  626613 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2068,7 +2068,7 @@ t/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/lm/lmro10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public
 /lm/lmtt12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/urw/ncntrsbk/unc
 b8a.pfb>
-Output written on Thesis.pdf (63 pages, 11464042 bytes).
+Output written on Thesis.pdf (63 pages, 11464027 bytes).
 PDF statistics:
  1068 PDF objects out of 1200 (max. 8388607)
  909 compressed objects within 10 object streams
